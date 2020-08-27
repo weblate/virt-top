@@ -1,38 +1,49 @@
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Robert Antoni Buj i Gelonch, 2015
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2015. #zanata
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-06 14:58+0000\n"
-"PO-Revision-Date: 2015-02-05 04:28-0500\n"
-"Last-Translator: Robert Antoni Buj i Gelonch\n"
+"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"PO-Revision-Date: 2017-08-31 04:07-0400\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/virttop/language/ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 4.6.2\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# %s fitxer de configuració de virt-top\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Habilita la sortida CSV al fitxer named\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# Per protegir aquest fitxer de ser sobreescrit, descomenteu la següent "
+"línia\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Per a enviar missatges de depuració o d'error a un fitxer, descomenteu la "
+"següent línia\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# generat el %s per %s\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -47,20 +58,20 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d dominis, %d en actiu, %d en execució, %d dormint, %d en pausa, %d "
-"inactius D:%d O:%d X:%d"
+"%d domini(s), %d en actiu, %d en execució, %d dormint, %d en pausa, %d "
+"inactiu(s) D:%d O:%d X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: no s'ha pogut analitzar «%s» al fitxer init: s'esperava %s"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
-msgstr ""
+msgstr "%s: no s'ha pogut analitzar «%s» al fitxer init: s'esperava un número"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
-msgstr ""
+msgstr "%s: no s'ha pogut analitzar «%s» al fitxer init: s'esperava un enter"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
@@ -75,8 +86,12 @@ msgid "%s: unknown parameter"
 msgstr "%s: paràmetre desconegut"
 
 #: ../src/top.ml:269
-msgid "%s:%d: configuration item ``%s'' ignored\n%!"
+msgid ""
+"%s:%d: configuration item ``%s'' ignored\n"
+"%!"
 msgstr ""
+"%s:%d: l'element de configuració «%s» s'ha ignorat\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
@@ -96,7 +111,7 @@ msgstr "Sol·licituds d'escriptura de blocs"
 
 #: ../src/top.ml:1244
 msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
-msgstr "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB per als amfitrions)"
+msgstr "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB per als convidats)"
 
 #: ../src/top.ml:1493
 msgid "Change delay from %.1f to: "
@@ -104,11 +119,11 @@ msgstr "Canvia el retard de %.1f a: "
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "Connecta a l'URI de libvirt"
 
 #: ../src/top.ml:1744
 msgid "Connect: %s; Hostname: %s"
-msgstr "Connexió: %s; Nom d'amfitrió: %s"
+msgstr "Connexió: %s; Nom amfitrió: %s"
 
 #: ../src/top.ml:1783
 msgid "DISPLAY MODES"
@@ -124,23 +139,23 @@ msgstr "Interval del retard (segons)"
 
 #: ../src/top.ml:1737
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
-msgstr "Retard: %.1f seg; Per lots: %s; Seguretat: %s; Ordenació: %s"
+msgstr "Retard: %.1f s; Per lots: %s; Seguretat: %s; Ordenació: %s"
 
 #: ../src/top.ml:181
 msgid "Disable CPU stats in CSV"
-msgstr "En el CSV, deshabilita les estadístiques de la CPU"
+msgstr "En el CSV, inhabilita les estadístiques de la CPU"
 
 #: ../src/top.ml:185
 msgid "Disable block device stats in CSV"
-msgstr "En el CSV, deshabilita les estadístiques dels dispositius de blocs"
+msgstr "En el CSV, inhabilita les estadístiques dels dispositius de blocs"
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "En el CSV, inhabilita les estadístiques de la memòria"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
-msgstr "En el CSV, deshabilita les estadístiques de la xarxa"
+msgstr "En el CSV, inhabilita les estadístiques de la xarxa"
 
 #: ../src/top.ml:214
 msgid "Display version number and exit"
@@ -193,8 +208,10 @@ msgstr ""
 "tornar."
 
 #: ../src/top.ml:294
-msgid "NB: If you want to monitor a local hypervisor, you usually need to be root"
+msgid ""
+"NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
+"N.B.: Si voleu monitorar un hipervisor local, normalment heu de ser root"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
@@ -210,7 +227,7 @@ msgstr "No és un número vàlid"
 
 #: ../src/top.ml:201
 msgid "Number of iterations to run"
-msgstr "Número d'iteracions a executar"
+msgstr "Nombre d'iteracions a executar"
 
 #: ../src/top.ml:1740 ../src/top.ml:1739
 msgid "Off"
@@ -218,7 +235,7 @@ msgstr "Apagat"
 
 #: ../src/top.ml:1740 ../src/top.ml:1739
 msgid "On"
-msgstr "Encés"
+msgstr "Encès"
 
 #: ../src/top.ml:1764
 msgid "Quit"
@@ -226,7 +243,7 @@ msgstr "Surt"
 
 #: ../src/top.ml:208
 msgid "Run from a script (no user interface)"
-msgstr "Executa des d'una seqüència d'ordres (sense interfície gràfica)"
+msgstr "Executa des d'un script (sense interfície gràfica)"
 
 #: ../src/top.ml:1771
 msgid "SORTING"
@@ -234,7 +251,7 @@ msgstr "ORDENACIÓ"
 
 #: ../src/top.ml:206
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Mode (\"kiosk\") segur"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
@@ -306,11 +323,11 @@ msgstr "Commuta CPU físiques"
 
 #: ../src/top.ml:1515
 msgid "Type key or use up and down cursor keys."
-msgstr "Teclegeu una tecla o utilitzeu les fletxes del cursor amunt o abaix."
+msgstr "Teclegeu una tecla o utilitzeu les fletxes del cursor amunt o avall."
 
 #: ../src/top.ml:1809
 msgid "Unknown command - try 'h' for help"
-msgstr "Ordre no reconeguda - proveu 'h' per l'ajuda"
+msgstr "Ordre no reconeguda - proveu «h» per l'ajuda"
 
 #: ../src/top.ml:1763
 msgid "Update display"
@@ -318,7 +335,7 @@ msgstr "Actualitza la pantalla"
 
 #: ../src/top.ml:1703
 msgid "Wrote settings to %s"
-msgstr "S'ha escrit les preferències a %s"
+msgstr "S'han escrit les preferències a %s"
 
 #: ../src/top.ml:1745
 msgid "default"
@@ -326,7 +343,7 @@ msgstr "predet."
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "bolca la sortida a stdout (sense interfícies d'usuari)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
@@ -334,11 +351,11 @@ msgstr "get_xml_desc no va retornar <domain/>"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
-msgstr ""
+msgstr "mostra la càrrega del dispositiu de blocs en bytes en lloc de reqs"
 
 #: ../src/top.ml:1767
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "commuta req/bytes d'info del bloc"
 
 #: ../src/top.ml:1725
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
@@ -353,7 +370,7 @@ msgid ""
 "\n"
 "OPTIONS"
 msgstr ""
-"virt-top : una utilitat similar a «top» per a la virtualització\n"
+"virt-top: una utilitat similar a «top» per a la virtualització\n"
 "\n"
 "RESUM\n"
 "  virt-top [-opcions]\n"
@@ -367,4 +384,3 @@ msgstr "virt-top fou compilat sense compatibilitat per a fitxers CSV"
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
 msgstr "virt-top fou compilat sense compatibilitat per data i hora"
-

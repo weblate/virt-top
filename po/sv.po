@@ -1,38 +1,47 @@
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Göran Uddeborg <goeran@uddeborg.se>, 2012
+# Göran Uddeborg <goeran@uddeborg.se>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-06 14:58+0000\n"
-"PO-Revision-Date: 2013-11-20 06:00-0500\n"
+"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"PO-Revision-Date: 2018-05-18 04:17-0400\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/virttop/language/sv/)\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 4.6.2\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# konfigurationsfilen %s för virt-top\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Aktivera CSV-utmatning till den namngivna filen\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# För att skydda denna fil från att skrivas över, avkommentera nästa rad\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# För att skicka felsöknings- och felmeddelanden till en fil, avkommentera "
+"nästa rad\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# genererad %s av %s\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -52,15 +61,15 @@ msgstr ""
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: kunde inte tolka ”%s” i init-filen: %s förväntades"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
-msgstr ""
+msgstr "%s: kunde inte tolka ”%s” i init-filen: ett tal förväntades"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
-msgstr ""
+msgstr "%s: kunde inte tolka ”%s” i init-filen: ett heltal förväntades"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
@@ -75,8 +84,12 @@ msgid "%s: unknown parameter"
 msgstr "%s: okänd parameter"
 
 #: ../src/top.ml:269
-msgid "%s:%d: configuration item ``%s'' ignored\n%!"
+msgid ""
+"%s:%d: configuration item ``%s'' ignored\n"
+"%!"
 msgstr ""
+"%s:%d: konfigurationspost ”%s” ignoreras\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
@@ -104,7 +117,7 @@ msgstr "Ändra fördröjning från %.1f till: "
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "Anslut till en libvirt-URI"
 
 #: ../src/top.ml:1744
 msgid "Connect: %s; Hostname: %s"
@@ -136,7 +149,7 @@ msgstr "Avaktivera blockenhetsstatistik i CSV"
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "Avaktivera minnesstatistik i CSV"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
@@ -192,8 +205,10 @@ msgstr ""
 "Mer hjälp i manualsidan virt-top(1).  Tryck en tangent för att återvända."
 
 #: ../src/top.ml:294
-msgid "NB: If you want to monitor a local hypervisor, you usually need to be root"
+msgid ""
+"NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
+"OBS: Om du vill övervaka en lokal hypervisor behöver du normalt vara root"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
@@ -233,7 +248,7 @@ msgstr "SORTERING"
 
 #: ../src/top.ml:206
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Säkert (”kiosk”-)läge"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
@@ -325,7 +340,7 @@ msgstr "standard"
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "dumpa utdata till standard ut (inget användargränssnitt)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
@@ -333,11 +348,11 @@ msgstr "get_xml_desc returnerade inte <domain/>"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
-msgstr ""
+msgstr "visa blockenhetslasten i byte istället för begäranden"
 
 #: ../src/top.ml:1767
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "växla blockinfobegäranden/-byte"
 
 #: ../src/top.ml:1725
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
@@ -366,4 +381,3 @@ msgstr "virt-top kompilerade utan stöd för CSV-filer"
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
 msgstr "virt-top kompilerades utan stöd för datum och tider"
-

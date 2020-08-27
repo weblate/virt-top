@@ -1,42 +1,44 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# Daniel Lara <danniel@fedoraproject.org>, 2016. #zanata
+# Zdenek <chmelarz@gmail.com>, 2016. #zanata
+# Zdenek <chmelarz@gmail.com>, 2017. #zanata
+# Pavel Borecki <pavel.borecki@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-27 11:32+0000\n"
-"PO-Revision-Date: 2016-03-21 09:49-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Portuguese (Brazilian) <trans-pt_br@lists.fedoraproject.org>\n"
-"Language: pt_BR\n"
+"PO-Revision-Date: 2018-11-27 06:18-0500\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "X-Generator: Zanata 4.6.2\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# %s soubor s nastaveními pro virt-top\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Zapnout výstup ve formátu CSV do uvedeného souboru\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# Pokud chcete tento soubor ochránit před přepsáním, odkomentujte řádek, "
+"který následuje\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Pokud chcete posílat ladící a chybová hlášení do souboru, odkomentujte "
+"řádek, který následuje\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# vytvořeno na %s v %s\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -51,306 +53,316 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d domínios, %d ativo, %d executando, %d adormecido, %d pausado, %d inativo "
-"D.%d O.%d X.%d"
+"%d domén, %d aktivní, %d spuštěné, %d spí, %d pozastavené, %d neaktivní D:%d"
+" O:%d X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: nelze vyhodnotit „%s“ v inicializačním souboru: očekáváno %s"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
-msgstr ""
+msgstr "%s: nelze vyhodnotit „%s“ v inicializačním souboru: očekáváno číslo"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
 msgstr ""
+"%s: nelze vyhodnotit „%s“ v inicializačním souboru: očekávána celočíselná "
+"hodnota"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
-msgstr "%s: a exibição deveria ser %s"
+msgstr "%s: zobrazení by mělo být %s"
 
 #: ../src/top.ml:83
 msgid "%s: sort order should be: %s"
-msgstr "%s: a ordem da classificação deveria ser: %s"
+msgstr "%s: pořadí řazení by mělo být: %s"
 
 #: ../src/top.ml:217
 msgid "%s: unknown parameter"
-msgstr "%s: parâmetro desconhecido"
+msgstr "%s: neznámý parametr"
 
 #: ../src/top.ml:269
 msgid ""
 "%s:%d: configuration item ``%s'' ignored\n"
 "%!"
 msgstr ""
+"%s:%d: položka nastavení ``%s'' ignorována\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
-msgstr "-d: não é possível atribuir um atraso negativo"
+msgstr "-d: nelze nastavit zápornou prodlevu"
 
 #: ../src/top.ml:173
 msgid "Batch mode"
-msgstr "Modo em lotes"
+msgstr "Dávkový režim"
 
 #: ../src/top.ml:72
 msgid "Block read reqs"
-msgstr "Requisições de leitura em blocos"
+msgstr "Požadavků na čtení bloků"
 
 #: ../src/top.ml:73
 msgid "Block write reqs"
-msgstr "Requisições de escrita em blocos"
+msgstr "Požadavků na zápis bloků"
 
 #: ../src/top.ml:1244
 msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
-msgstr "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB para convidados)"
+msgstr "CPU: %2.1f%%  Pam: %Ld MB (%Ld MB obsazeno hosty)"
 
 #: ../src/top.ml:1493
 msgid "Change delay from %.1f to: "
-msgstr "Alterar o atraso de %.1f para:"
+msgstr "Změnit prodlevu z %.1f na: "
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "Připojit k libvirt URI"
 
 #: ../src/top.ml:1744
 msgid "Connect: %s; Hostname: %s"
-msgstr "Conectar:%s; Nome de máquina: %s"
+msgstr "Připojení: %s; Název stroje: %s"
 
 #: ../src/top.ml:1783
 msgid "DISPLAY MODES"
-msgstr "MODOS DE EXIBIÇÃO"
+msgstr "REŽIMY ZOBRAZENÍ"
 
 #: ../src/top.ml:1500
 msgid "Delay must be > 0"
-msgstr "O atraso deve ser > 0"
+msgstr "Je třeba, aby prodleva byla delší než 0 (nula)"
 
 #: ../src/top.ml:189
 msgid "Delay time interval (seconds)"
-msgstr "Intervalo de tempo do atraso (segundos)"
+msgstr "Časový interval prodlevy (v sekundách)"
 
 #: ../src/top.ml:1737
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
-msgstr "Atraso: %.1f segs; Lote: %s, Seguro: %s; Classificação: %s"
+msgstr "Prodleva: %.1f sekund; Dávka: %s; Zajistit: %s; Řadit: %s"
 
 #: ../src/top.ml:181
 msgid "Disable CPU stats in CSV"
-msgstr "Desabilita a estatística da CPU no CSV"
+msgstr "Nevypisovat do CSV statistiky procesoru"
 
 #: ../src/top.ml:185
 msgid "Disable block device stats in CSV"
-msgstr "Desabilita as estatísticas de bloco no CSV"
+msgstr "Nevypisovat do CSV statistiky blokových zařízení"
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "Nevypisovat do CSV statistiky paměti"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
-msgstr "Desabilita as estatísticas de rede no CSV"
+msgstr "Nevypisovat do CSV statistiky sítě"
 
 #: ../src/top.ml:214
 msgid "Display version number and exit"
-msgstr "Exibir número da versão e sair"
+msgstr "Zobrazit číslo verze a ukončit"
 
 #: ../src/top.ml:199
 msgid "Do not read init file"
-msgstr "Não lê o arquivo init"
+msgstr "Nenačítat inicializační soubor"
 
 #: ../src/top.ml:68
 msgid "Domain ID"
-msgstr "ID do domínio"
+msgstr "Identif. domény"
 
 #: ../src/top.ml:69
 msgid "Domain name"
-msgstr "Nome do domínio"
+msgstr "Název domény"
 
 #: ../src/top.ml:1797
 msgid "Domains display"
-msgstr "Exibe os domínios"
+msgstr "Zobrazení domény"
 
 #: ../src/main.ml:69 ../src/main.ml:44 ../src/top.ml:1711 ../src/top.ml:1708
 msgid "Error"
-msgstr "Erro"
+msgstr "Chyba"
 
 #: ../src/top.ml:193
 msgid "Exit at given time"
-msgstr "Sai em um dado tempo"
+msgstr "Ukončit v daný čas"
 
 #: ../src/top.ml:1766
 msgid "Help"
-msgstr "Ajuda"
+msgstr "Nápověda"
 
 #: ../src/top.ml:195
 msgid "Historical CPU delay"
-msgstr "Histórico do atraso da CPU"
+msgstr "Historie zpoždění procesoru"
 
 #: ../src/top.ml:179
 msgid "Log statistics to CSV file"
-msgstr "Estatísticas de log para o arquivo CSV"
+msgstr "Zapisovat statistiky do CSV souboru"
 
 #: ../src/top.ml:1749
 msgid "MAIN KEYS"
-msgstr "MAIN KEYS"
+msgstr "HLAVNÍ KLÁVESY"
 
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
-"Mais ajuda na página do manual do vit-top(1). Pressione qualquer tecla para "
-"retornar."
+"Další nápověda viz manuálová stránka virt-top(1). Pro návrat stiskněte "
+"libovolnou klávesu."
 
 #: ../src/top.ml:294
 msgid ""
 "NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
+"Poznámka: Pokud chcete sledovat lokální hypervisor, je obvykle třeba mít "
+"práva správce"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
-msgstr "Quantidade líquida de bytes recebidos"
+msgstr "Bajtů příchozích ze sítě"
 
 #: ../src/top.ml:71
 msgid "Net TX bytes"
-msgstr "Quantidade líquida de bytes transmitidos"
+msgstr "Bajtů odeslaných do sítě"
 
 #: ../src/top.ml:1506
 msgid "Not a valid number"
-msgstr "Número inválido"
+msgstr "Neplatné číslo"
 
 #: ../src/top.ml:201
 msgid "Number of iterations to run"
-msgstr "Número de iterações a serem executadas"
+msgstr "Počet průchodů ke spuštění"
 
 #: ../src/top.ml:1740 ../src/top.ml:1739
 msgid "Off"
-msgstr "Off"
+msgstr "Vypnuto"
 
 #: ../src/top.ml:1740 ../src/top.ml:1739
 msgid "On"
-msgstr "On"
+msgstr "Zapnuto"
 
+# auto translated by TM merge from project: libreport, version: rhel6, DocId:
+# libreport
 #: ../src/top.ml:1764
 msgid "Quit"
-msgstr "Sair"
+msgstr "Ukončit"
 
 #: ../src/top.ml:208
 msgid "Run from a script (no user interface)"
-msgstr "Executa a partir de um script (sem interface do usuário)"
+msgstr "Spustit ze skriptu (bez uživatelského rozhraní)"
 
 #: ../src/top.ml:1771
 msgid "SORTING"
-msgstr "CLASSIFICANDO"
+msgstr "ŘAZENÍ"
 
 #: ../src/top.ml:206
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Zabezpečený („kiosk“) režim"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
-msgstr "Selecione o campo para classificação"
+msgstr "Vybrat pole řazení"
 
 #: ../src/top.ml:191
 msgid "Send debug messages to file"
-msgstr "Envia as mensagens de depuração para um arquivo"
+msgstr "Odeslat ladící zprávy do souboru"
 
 #: ../src/top.ml:197
 msgid "Set name of init file"
-msgstr "Define o nome do arquivo init"
+msgstr "Nastavit inicializační soubor"
 
 #: ../src/top.ml:203
 msgid "Set sort order (%s)"
-msgstr "Define a ordem da classificação (%s)"
+msgstr "Nastavit pořadí řazení (%s)"
 
 #: ../src/top.ml:1514
 msgid "Set sort order for main display"
-msgstr "Define a ordem de classificação para a exibição principal"
+msgstr "Nastavit pořadí řazení pro hlavní zobrazení"
 
 #: ../src/top.ml:1765
 msgid "Set update interval"
-msgstr "Define o intervalo de atualização"
+msgstr "Nastavit interval aktualizace"
 
 #: ../src/top.ml:1776
 msgid "Sort by %CPU"
-msgstr "Classificação por %CPU"
+msgstr "Řadit podle %CPU"
 
 #: ../src/top.ml:1777
 msgid "Sort by %MEM"
-msgstr "Classificação por %MEM"
+msgstr "Řadit podle %MEM"
 
 #: ../src/top.ml:1779
 msgid "Sort by ID"
-msgstr "Classificação por ID"
+msgstr "Řadit podle identifikátoru"
 
 #: ../src/top.ml:1778
 msgid "Sort by TIME"
-msgstr "Classificação por TIME"
+msgstr "Řadit podle ČASU"
 
 #: ../src/top.ml:171
 msgid "Start by displaying block devices"
-msgstr "Inicia pela apresentação dos dispositivos de bloco"
+msgstr "Začít zobrazením blokových zařízení"
 
 #: ../src/top.ml:169
 msgid "Start by displaying network interfaces"
-msgstr "Inicia pela apresentação das interfaces de rede"
+msgstr "Začít zobrazením síťových rozhraní"
 
 #: ../src/top.ml:167
 msgid "Start by displaying pCPUs (default: tasks)"
-msgstr "Inicia pela apresentação das pCPUs (padrão: tarefas)"
+msgstr "Začít zobrazením fyzických procesorů (výchozí: úlohy)"
 
 #: ../src/top.ml:67
 msgid "TIME (CPU time)"
-msgstr "TIME (tempo de CPU)"
+msgstr "ČAS (čas procesoru)"
 
 #: ../src/top.ml:1800
 msgid "Toggle block devices"
-msgstr "Alterna entre os dispositivos de bloco"
+msgstr "Přepnout bloková zařízení"
 
 #: ../src/top.ml:1799
 msgid "Toggle network interfaces"
-msgstr "Alterna entre as interfaces de rede"
+msgstr "Přepnout síťová rozhraní"
 
 #: ../src/top.ml:1798
 msgid "Toggle physical CPUs"
-msgstr "Alterna entre as CPUs físicas"
+msgstr "Přepnout fyzické procesory"
 
 #: ../src/top.ml:1515
 msgid "Type key or use up and down cursor keys."
-msgstr ""
-"Pressione uma tecla ou use as teclas de navegação para cima e para baixo."
+msgstr "Zadejte klávesu nebo použijte klávesy šipka nahoru a dolů"
 
 #: ../src/top.ml:1809
 msgid "Unknown command - try 'h' for help"
-msgstr "Comando desconhecido - tente \"h\" para ajuda"
+msgstr "Neznámý příkaz – zkuste „h“ pro nápovědu"
 
 #: ../src/top.ml:1763
 msgid "Update display"
-msgstr "Atualiza a exibição"
+msgstr "Aktualizovat zobrazení"
 
 #: ../src/top.ml:1703
 msgid "Wrote settings to %s"
-msgstr "Configurações gravadas em %s"
+msgstr "Nastavení zapsáno do %s"
 
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId:
+# cockpit
 #: ../src/top.ml:1745
 msgid "default"
-msgstr "padrão"
+msgstr "výchozí"
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "přesměrovat výpis na standardní výstup (žádné uživatelské rozhraní)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
-msgstr "o get_xml_desc não retornou <domain/>"
+msgstr "get_xml_desc nevrátilo <domain/>"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
 msgstr ""
+"zobrazovat vytížení blokového zařízení v bajtech namísto v požadavcích"
 
 #: ../src/top.ml:1767
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "přepnout mezi informacemi o bloku v požadavcích/bajtech"
 
 #: ../src/top.ml:1725
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
-msgstr "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d pela Red Hat"
+msgstr "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d od Red Hat"
 
 #: ../src/top.ml:218
 msgid ""
@@ -361,17 +373,17 @@ msgid ""
 "\n"
 "OPTIONS"
 msgstr ""
-"virt-top: um utilitário do tipo \"top\" para virtualização\n"
+"virt-top : nástroj typu „top“ pro virtualizaci\n"
 "\n"
-"SUMÁRIO\n"
-"  virt-top [-options]\n"
+"SOUHRN\n"
+"  virt-top [-volby]\n"
 "\n"
-"OPÇÕES"
+"VOLBY"
 
 #: ../src/top.ml:42
 msgid "virt-top was compiled without support for CSV files"
-msgstr "o virt-top foi compilado sem suporte para arquivos CSV "
+msgstr "virt-top byl zkompilován bez podpory CSV souborů"
 
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
-msgstr "o virt-top foi compilado sem suporte para datas e horas "
+msgstr "virt-top byl zkompilován bez podpory dat a časů"

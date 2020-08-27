@@ -1,38 +1,48 @@
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Piotr Drąg <piotrdrag@gmail.com>, 2015. #zanata
+# Piotr Drąg <piotrdrag@gmail.com>, 2016. #zanata
+# Piotr Drąg <piotrdrag@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-06 14:58+0000\n"
-"PO-Revision-Date: 2011-03-22 11:29-0400\n"
-"Last-Translator: rjones <rjones@redhat.com>\n"
+"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"PO-Revision-Date: 2017-03-28 11:13-0400\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <None>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 4.6.2\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# Plik konfiguracji programu virt-top %s\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Włącza wyjście CSV do pliku named\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# Aby ochronić ten plik przed zastąpieniem, należy usunąć komentarz "
+"z następnego wiersza\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Aby wysłać komunikaty debugowania i błędów do pliku, należy usunąć "
+"komentarz z następnego wiersza\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# utworzone %s przez %s\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -52,15 +62,16 @@ msgstr ""
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: nie można przetworzyć „%s” w pliku init: oczekiwano %s"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
-msgstr ""
+msgstr "%s: nie można przetworzyć „%s” w pliku init: oczekiwano liczby"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
 msgstr ""
+"%s: nie można przetworzyć „%s” w pliku init: oczekiwano liczby całkowitej"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
@@ -75,8 +86,12 @@ msgid "%s: unknown parameter"
 msgstr "%s: nieznany parametr"
 
 #: ../src/top.ml:269
-msgid "%s:%d: configuration item ``%s'' ignored\n%!"
+msgid ""
+"%s:%d: configuration item ``%s'' ignored\n"
+"%!"
 msgstr ""
+"%s:%d: zignorowano element konfiguracji „%s”\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
@@ -88,27 +103,27 @@ msgstr "Tryb wsadowy"
 
 #: ../src/top.ml:72
 msgid "Block read reqs"
-msgstr "Wymagania odczytania blokowego"
+msgstr "Reqs odczytania blokowego"
 
 #: ../src/top.ml:73
 msgid "Block write reqs"
-msgstr "Wymagania zapisania blokowego"
+msgstr "Reqs zapisania blokowego"
 
 #: ../src/top.ml:1244
 msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
-msgstr "Procesor: %2.1f%%  Pamięć: %Ld MB (%Ld MB przez gości)"
+msgstr "Procesor: %2.1f%%  Pamięć: %Ld MB (%Ld MB przez gości)"
 
 #: ../src/top.ml:1493
 msgid "Change delay from %.1f to: "
-msgstr "Zmień opóźnienie z %.1f na: "
+msgstr "Zmień opóźnienie z %.1f na: "
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "Łączy z adresem URI biblioteki libvirt"
 
 #: ../src/top.ml:1744
 msgid "Connect: %s; Hostname: %s"
-msgstr "Połącz się: %s; nazwa gospodarza: %s"
+msgstr "Połącz: %s; nazwa gospodarza: %s"
 
 #: ../src/top.ml:1783
 msgid "DISPLAY MODES"
@@ -124,28 +139,27 @@ msgstr "Czas między opóźnieniami (sekundy)"
 
 #: ../src/top.ml:1737
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
-msgstr ""
-"Opóźnienie: %.1f sekundy; wsadowo: %s; bezpieczeństwo: %s; sortowanie: %s"
+msgstr "Opóźnienie: %.1f s; wsadowo: %s; bezpieczeństwo: %s; sortowanie: %s"
 
 #: ../src/top.ml:181
 msgid "Disable CPU stats in CSV"
-msgstr "Wyłącza statystyki procesora w CSV"
+msgstr "Wyłącza statystyki procesora w CSV"
 
 #: ../src/top.ml:185
 msgid "Disable block device stats in CSV"
-msgstr "Wyłącza statystyki urządzenia blokowego w CSV"
+msgstr "Wyłącza statystyki urządzenia blokowego w CSV"
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "Wyłącza statystyki pamięci w CSV"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
-msgstr "Wyłącza statystyki sieci w CSV"
+msgstr "Wyłącza statystyki sieci w CSV"
 
 #: ../src/top.ml:214
 msgid "Display version number and exit"
-msgstr "Wyświetla numer wersji i kończy działanie"
+msgstr "Wyświetla numer wersji i kończy działanie"
 
 #: ../src/top.ml:199
 msgid "Do not read init file"
@@ -169,7 +183,7 @@ msgstr "Błąd"
 
 #: ../src/top.ml:193
 msgid "Exit at given time"
-msgstr "Kończy pracę o podanym czasie"
+msgstr "Kończy pracę o podanym czasie"
 
 #: ../src/top.ml:1766
 msgid "Help"
@@ -194,8 +208,9 @@ msgstr ""
 "klawisz, aby kontynuować."
 
 #: ../src/top.ml:294
-msgid "NB: If you want to monitor a local hypervisor, you usually need to be root"
-msgstr ""
+msgid ""
+"NB: If you want to monitor a local hypervisor, you usually need to be root"
+msgstr "NB: aby monitorować lokalnego nadzorcę, zwykle należy być rootem"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
@@ -235,7 +250,7 @@ msgstr "SORTOWANIE"
 
 #: ../src/top.ml:206
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Tryb bezpieczny („kiosk”)"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
@@ -308,11 +323,11 @@ msgstr "Przełącza fizyczne procesory"
 
 #: ../src/top.ml:1515
 msgid "Type key or use up and down cursor keys."
-msgstr "Proszę podać klucz lub użyć klawiszy kursora w górę i w dół."
+msgstr "Proszę podać klucz lub użyć klawiszy kursora w górę i w dół."
 
 #: ../src/top.ml:1809
 msgid "Unknown command - try 'h' for help"
-msgstr "Nieznane polecenie - proszę spróbować \"h\", aby uzyskać pomoc"
+msgstr "Nieznane polecenie — wpisanie „h” wyświetli pomoc"
 
 #: ../src/top.ml:1763
 msgid "Update display"
@@ -329,6 +344,7 @@ msgstr "domyślne"
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
 msgstr ""
+"wyświetla wyjście na standardowym wyjściu (bez interfejsu użytkownika)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
@@ -336,11 +352,11 @@ msgstr "get_xml_desc nie zwróciło <domain/>"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
-msgstr ""
+msgstr "wyświetla wykorzystanie urządzenia blokowego w bajtach zamiast w reqs"
 
 #: ../src/top.ml:1767
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "przełącza reqs/bajty informacji o urządzeniu blokowym"
 
 #: ../src/top.ml:1725
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
@@ -355,7 +371,7 @@ msgid ""
 "\n"
 "OPTIONS"
 msgstr ""
-"virt-top: narzędzie podobne do \"top\" dla wirtualizacji\n"
+"virt-top: narzędzie podobne do „top” dla wirtualizacji\n"
 "\n"
 "PODSUMOWANIE\n"
 "  virt-top [-opcje]\n"
@@ -368,5 +384,4 @@ msgstr "virt-top został skompilowany bez obsługi plików CSV"
 
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
-msgstr "virt-top został skompilowany bez obsługi dat i czasu"
-
+msgstr "virt-top został skompilowany bez obsługi dat i czasu"

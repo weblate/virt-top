@@ -1,38 +1,48 @@
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Andika Triwidada <andika@gmail.com>, 2014
+# Andika Triwidada <andika@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-06 14:58+0000\n"
-"PO-Revision-Date: 2014-09-07 03:27-0400\n"
+"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"PO-Revision-Date: 2017-07-24 02:27-0400\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/virttop/language/id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 4.6.2\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# berkas konfigurasi virt-top %s\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Fungsikan keluaran CSV ke berkas yang dinamai\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# Untuk melindungi berkas ini dari penimpaan, buka komentar di baris "
+"selanjutnya\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Untuk mengirim pesan awakutu dan kesalahan ke suatu berkas, buka komentar "
+"di baris selanjutnya\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# dihasilkan pada %s oleh %s\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -52,15 +62,18 @@ msgstr ""
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: tidak dapat mengurai '%s' dalam berkas init: mengharapkan %s"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
 msgstr ""
+"%s: tidak dapat mengurai '%s' dalam berkas ini: mengharapkan suatu angka"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
 msgstr ""
+"%s: tidak dapat mengurai '%s' dalam berkas ini: mengharapkan suatu bilangan "
+"bulat"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
@@ -75,8 +88,12 @@ msgid "%s: unknown parameter"
 msgstr "%s: parameter tak dikenal"
 
 #: ../src/top.ml:269
-msgid "%s:%d: configuration item ``%s'' ignored\n%!"
+msgid ""
+"%s:%d: configuration item ``%s'' ignored\n"
+"%!"
 msgstr ""
+"%s:%d: butir konfigurasi ''%s'' diabaikan\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
@@ -96,251 +113,256 @@ msgstr "Permintaan tulis blok"
 
 #: ../src/top.ml:1244
 msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
-msgstr ""
+msgstr "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB oleh guest)"
 
 #: ../src/top.ml:1493
 msgid "Change delay from %.1f to: "
-msgstr ""
+msgstr "Ubah tundaan dari %.1f ke:"
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "Menyambung ke URI libvirt"
 
 #: ../src/top.ml:1744
 msgid "Connect: %s; Hostname: %s"
-msgstr ""
+msgstr "Koneksi: %s; Nama host: %s"
 
 #: ../src/top.ml:1783
 msgid "DISPLAY MODES"
-msgstr ""
+msgstr "MODE TAMPILAN"
 
 #: ../src/top.ml:1500
 msgid "Delay must be > 0"
-msgstr ""
+msgstr "Tundaan mesti > 0"
 
 #: ../src/top.ml:189
 msgid "Delay time interval (seconds)"
-msgstr ""
+msgstr "Selang waktu tundaan (detik)"
 
 #: ../src/top.ml:1737
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
-msgstr ""
+msgstr "Tundaan: %.1f detik; Batch: %s; Aman: %s; Urut: %s"
 
 #: ../src/top.ml:181
 msgid "Disable CPU stats in CSV"
-msgstr ""
+msgstr "Nonaktifkan stat CPU dalam CSV"
 
 #: ../src/top.ml:185
 msgid "Disable block device stats in CSV"
-msgstr ""
+msgstr "Nonaktifkan stat perangkat blok dalam CSV"
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "Nonaktifkan stat memori dalam CSV"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
-msgstr ""
+msgstr "Nonaktifkan stat net dalam CSV"
 
 #: ../src/top.ml:214
 msgid "Display version number and exit"
-msgstr ""
+msgstr "Tampilkan nomor versi dan keluar"
 
 #: ../src/top.ml:199
 msgid "Do not read init file"
-msgstr ""
+msgstr "Jangan baca berkas init"
 
 #: ../src/top.ml:68
 msgid "Domain ID"
-msgstr ""
+msgstr "ID Domain"
 
 #: ../src/top.ml:69
 msgid "Domain name"
-msgstr ""
+msgstr "Nama domain"
 
 #: ../src/top.ml:1797
 msgid "Domains display"
-msgstr ""
+msgstr "Tampilan domain"
 
 #: ../src/main.ml:69 ../src/main.ml:44 ../src/top.ml:1711 ../src/top.ml:1708
 msgid "Error"
-msgstr ""
+msgstr "Kesalahan"
 
 #: ../src/top.ml:193
 msgid "Exit at given time"
-msgstr ""
+msgstr "Keluar pada waktu yang diberikan"
 
 #: ../src/top.ml:1766
 msgid "Help"
-msgstr ""
+msgstr "Bantuan"
 
 #: ../src/top.ml:195
 msgid "Historical CPU delay"
-msgstr ""
+msgstr "Tundaan CPU historis"
 
 #: ../src/top.ml:179
 msgid "Log statistics to CSV file"
-msgstr ""
+msgstr "Log statistik ke berkas CSV"
 
 #: ../src/top.ml:1749
 msgid "MAIN KEYS"
-msgstr ""
+msgstr "TOMBOL UTAMA"
 
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
+"Lebih banyak bantuan dalam halaman man virt-top(1). Tekan sebarang tombol "
+"untuk kembali."
 
 #: ../src/top.ml:294
-msgid "NB: If you want to monitor a local hypervisor, you usually need to be root"
+msgid ""
+"NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
+"PS: Bila Anda ingin memantau suatu hipervisor lokal, biasanya Anda perlu "
+"menjadi root"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
-msgstr ""
+msgstr "Byte RX net"
 
 #: ../src/top.ml:71
 msgid "Net TX bytes"
-msgstr ""
+msgstr "Byte TX net"
 
 #: ../src/top.ml:1506
 msgid "Not a valid number"
-msgstr ""
+msgstr "Bukan angka yang valid"
 
 #: ../src/top.ml:201
 msgid "Number of iterations to run"
-msgstr ""
+msgstr "Cacah iterasi yang akan dijalankan"
 
 #: ../src/top.ml:1740 ../src/top.ml:1739
 msgid "Off"
-msgstr ""
+msgstr "Mati"
 
 #: ../src/top.ml:1740 ../src/top.ml:1739
 msgid "On"
-msgstr ""
+msgstr "Nyala"
 
 #: ../src/top.ml:1764
 msgid "Quit"
-msgstr ""
+msgstr "Keluar"
 
 #: ../src/top.ml:208
 msgid "Run from a script (no user interface)"
-msgstr ""
+msgstr "Jalankan dari suatu skrip (tanpa antar muka pengguna)"
 
 #: ../src/top.ml:1771
 msgid "SORTING"
-msgstr ""
+msgstr "MENGURUTKAN"
 
 #: ../src/top.ml:206
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Mode aman (\"kios\")"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
-msgstr ""
+msgstr "Pilih ruas pengurutan"
 
 #: ../src/top.ml:191
 msgid "Send debug messages to file"
-msgstr ""
+msgstr "Kirim pesan awakutu ke berkas"
 
 #: ../src/top.ml:197
 msgid "Set name of init file"
-msgstr ""
+msgstr "Atur nama berkas init"
 
 #: ../src/top.ml:203
 msgid "Set sort order (%s)"
-msgstr ""
+msgstr "Atur urutan (%s)"
 
 #: ../src/top.ml:1514
 msgid "Set sort order for main display"
-msgstr ""
+msgstr "Atur urutan bagi tampilan utama"
 
 #: ../src/top.ml:1765
 msgid "Set update interval"
-msgstr ""
+msgstr "Atur selang waktu pembaruan"
 
 #: ../src/top.ml:1776
 msgid "Sort by %CPU"
-msgstr ""
+msgstr "Urutkan berdasarkan %CPU"
 
 #: ../src/top.ml:1777
 msgid "Sort by %MEM"
-msgstr ""
+msgstr "Urutkan berdasarkan %MEM"
 
 #: ../src/top.ml:1779
 msgid "Sort by ID"
-msgstr ""
+msgstr "Urutkan berdasarkan ID"
 
 #: ../src/top.ml:1778
 msgid "Sort by TIME"
-msgstr ""
+msgstr "Urutkan berdasarkan WAKTU"
 
 #: ../src/top.ml:171
 msgid "Start by displaying block devices"
-msgstr ""
+msgstr "Mulai dengan menampilkan perangkat blok"
 
 #: ../src/top.ml:169
 msgid "Start by displaying network interfaces"
-msgstr ""
+msgstr "Mulai dengan menampilkan antarmuka jaringan"
 
 #: ../src/top.ml:167
 msgid "Start by displaying pCPUs (default: tasks)"
-msgstr ""
+msgstr "Mulai dengan menampilkan pCPU (baku: tugas)"
 
 #: ../src/top.ml:67
 msgid "TIME (CPU time)"
-msgstr ""
+msgstr "WAKTU (waktu CPU)"
 
 #: ../src/top.ml:1800
 msgid "Toggle block devices"
-msgstr ""
+msgstr "Jungkitkan perangkat blok"
 
 #: ../src/top.ml:1799
 msgid "Toggle network interfaces"
-msgstr ""
+msgstr "Jungkitkan antarmuka jaringan"
 
 #: ../src/top.ml:1798
 msgid "Toggle physical CPUs"
-msgstr ""
+msgstr "Jungkitkan CPU fisik"
 
 #: ../src/top.ml:1515
 msgid "Type key or use up and down cursor keys."
-msgstr ""
+msgstr "Ketikkan tombol atau gunakan tombol kursor naik dan turun."
 
 #: ../src/top.ml:1809
 msgid "Unknown command - try 'h' for help"
-msgstr ""
+msgstr "Perintah tidak dikenal - cobalah 'h' untuk bantuan"
 
 #: ../src/top.ml:1763
 msgid "Update display"
-msgstr ""
+msgstr "Perbarui tampilan"
 
 #: ../src/top.ml:1703
 msgid "Wrote settings to %s"
-msgstr ""
+msgstr "Menulis pengaturan ke %s"
 
 #: ../src/top.ml:1745
 msgid "default"
-msgstr ""
+msgstr "baku"
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "curahkan keluaran ke stdout (tanpa antar muka pengguna)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
-msgstr ""
+msgstr "get_xml_desc tak mengembalikan <domain/>"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
-msgstr ""
+msgstr "tampilkan beban perangkat blok dalam byte bukan permintaan"
 
 #: ../src/top.ml:1767
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "jungkitkan info blok permintaan/byte"
 
 #: ../src/top.ml:1725
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
-msgstr ""
+msgstr "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d oleh Red Hat"
 
 #: ../src/top.ml:218
 msgid ""
@@ -351,12 +373,17 @@ msgid ""
 "\n"
 "OPTIONS"
 msgstr ""
+"virt-top : suatu utilitas mirip 'top' untuk virtualisasi\n"
+"\n"
+"RINGKASAN\n"
+"  virt-top [-opsi]\n"
+"\n"
+"OPSI"
 
 #: ../src/top.ml:42
 msgid "virt-top was compiled without support for CSV files"
-msgstr ""
+msgstr "virt-top dikompail tanpa dukungan berkas CSV"
 
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
-msgstr ""
-
+msgstr "virt-top dikompail tanpa dukungan tanggal dan waktu"

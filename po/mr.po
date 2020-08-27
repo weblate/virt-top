@@ -1,18 +1,21 @@
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-06 14:58+0000\n"
-"PO-Revision-Date: 2011-03-22 11:29-0400\n"
-"Last-Translator: sandeeps <sshedmak@redhat.com>\n"
+"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"PO-Revision-Date: 2015-02-21 08:10-0500\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Marathi <None>\n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: mr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 4.6.2\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
@@ -75,7 +78,9 @@ msgid "%s: unknown parameter"
 msgstr "%s: अपरिचीत बाब"
 
 #: ../src/top.ml:269
-msgid "%s:%d: configuration item ``%s'' ignored\n%!"
+msgid ""
+"%s:%d: configuration item ``%s'' ignored\n"
+"%!"
 msgstr ""
 
 #: ../src/top.ml:147
@@ -191,7 +196,8 @@ msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr "virt-top(1) man पान अंतर्गत अधिक मदत. पहाण्याकरीता कुठलिही कि दाबा."
 
 #: ../src/top.ml:294
-msgid "NB: If you want to monitor a local hypervisor, you usually need to be root"
+msgid ""
+"NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
 
 #: ../src/top.ml:70
@@ -365,4 +371,3 @@ msgstr "virt-top ला CSV फाइल करीता समर्थन न 
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
 msgstr "virt-top ला दिनांक व वेळ करीता समर्थन न पुरविता कंपाईल केले गेले"
-

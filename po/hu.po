@@ -1,38 +1,52 @@
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Szabo Attila <atekka@gmail.com>, 2013
+# Zoltan Hoppár <zoltanh721@fedoraproject.org>, 2012
+# Meskó Balázs <meskobalazs@gmail.com>, 2016. #zanata
+# Meskó Balázs <meskobalazs@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-06 14:58+0000\n"
-"PO-Revision-Date: 2013-11-20 06:00-0500\n"
-"Last-Translator: Szabo Attila <atekka@gmail.com>\n"
+"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"PO-Revision-Date: 2018-12-08 05:59-0500\n"
+"Last-Translator: Meskó Balázs <meskobalazs@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/projects/p/virttop/language/hu/)\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 4.6.2\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# %s virt-top konfigurációs fájl\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# CSV kimenet engedélyezése a megnevezett fájlba\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# Hogy megvédje a fájlt a felülírástól, vegye ki a megjegyzésből a következő"
+" sort\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# A hibakeresési és hibaüzenetek fájlba küldéséhez vegye ki a megjegyzésből "
+"a következő sort\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
 msgstr ""
+"# létrehozva: %s,  %s által\n"
+"\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -47,36 +61,40 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d domének, %d aktív, %d fut, %d alszik, %d felfüggesztve, %d inaktív D:%d "
-"O:%d X:%d"
+"%d tartomány, %d aktív, %d fut, %d alszik, %d felfüggesztve, %d inaktív D:%d"
+" O:%d X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: a(z) „%s” nem dolgozható fel az indítási fájlban: %s várt"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
-msgstr ""
+msgstr "%s: a(z) „%s” nem dolgozható fel az indítási fájlban: szám várt"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
-msgstr ""
+msgstr "%s: a(z) „%s” nem dolgozható fel az indítási fájlban: egész szám várt"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
-msgstr "%s: a képernyőnek %snek kellene lennie"
+msgstr "%s: a képernyőnek ilyennek kellene lennie: %s"
 
 #: ../src/top.ml:83
 msgid "%s: sort order should be: %s"
-msgstr "%s: a rövid sorrendnek %snek kellene lennie"
+msgstr "%s: a rendezési sorrendnek ilyennek kellene lennie: %s"
 
 #: ../src/top.ml:217
 msgid "%s: unknown parameter"
 msgstr "%s: ismeretlen paraméter"
 
 #: ../src/top.ml:269
-msgid "%s:%d: configuration item ``%s'' ignored\n%!"
+msgid ""
+"%s:%d: configuration item ``%s'' ignored\n"
+"%!"
 msgstr ""
+"%s:%d: a(z) „%s” konfigurációs elem mellőzve\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
@@ -100,47 +118,47 @@ msgstr "CPU: %2.1f%% Mem: %Ld MB (%Ld MB a vendégek által)"
 
 #: ../src/top.ml:1493
 msgid "Change delay from %.1f to: "
-msgstr "A késleltetés megváltoztatása %.1f-ről:"
+msgstr "A késleltetés megváltoztatása erről: %.1f, erre: "
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "Kapcsolódás a libvirt URI-hoz"
 
 #: ../src/top.ml:1744
 msgid "Connect: %s; Hostname: %s"
-msgstr "Kapcsolódás: %s; Hosztnév: %s"
+msgstr "Kapcsolódás: %s, gazdanév: %s"
 
 #: ../src/top.ml:1783
 msgid "DISPLAY MODES"
-msgstr "Megjelenítési módok"
+msgstr "MEGJELENÍTÉSI MÓDOK"
 
 #: ../src/top.ml:1500
 msgid "Delay must be > 0"
-msgstr "A késleltetés legyen  >0"
+msgstr "A késleltetés legyen > 0"
 
 #: ../src/top.ml:189
 msgid "Delay time interval (seconds)"
-msgstr "Késleltetés intervallumának ideje( másodpercek)"
+msgstr "Késleltetés időintervalluma (másodperc)"
 
 #: ../src/top.ml:1737
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
-msgstr "Késleltetés: %.1f másodperc; Köteg: %s; Biztosított: %s; Rövid: %s"
+msgstr "Késleltetés: %.1f másodperc; Köteg: %s; Biztosított: %s; Rendezés: %s"
 
 #: ../src/top.ml:181
 msgid "Disable CPU stats in CSV"
-msgstr "Processzor statisztika felfüggesztése CSVben"
+msgstr "Processzor statisztika letiltása CSV-ben"
 
 #: ../src/top.ml:185
 msgid "Disable block device stats in CSV"
-msgstr "Blokk eszköz statisztika felfüggesztése CSVben"
+msgstr "Blokkeszköz statisztika letiltása CSV-ben"
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "Memóriastatisztika kikapcsolása a CSV-ben"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
-msgstr "Hálózat statisztika felfüggesztése CSVben"
+msgstr "Hálózati statisztika letiltása CSV-ben"
 
 #: ../src/top.ml:214
 msgid "Display version number and exit"
@@ -148,19 +166,19 @@ msgstr "Verziószám megjelenítése és kilépés"
 
 #: ../src/top.ml:199
 msgid "Do not read init file"
-msgstr "Init fájl ne kerüljön olvasásra"
+msgstr "Ne olvassa fel az init fájlt"
 
 #: ../src/top.ml:68
 msgid "Domain ID"
-msgstr "Domén azonosító"
+msgstr "Tartományazonosító"
 
 #: ../src/top.ml:69
 msgid "Domain name"
-msgstr "Domén név"
+msgstr "Tartománynév"
 
 #: ../src/top.ml:1797
 msgid "Domains display"
-msgstr "Domének megjelenítése"
+msgstr "Tartományok megjelenítése"
 
 #: ../src/main.ml:69 ../src/main.ml:44 ../src/top.ml:1711 ../src/top.ml:1708
 msgid "Error"
@@ -172,15 +190,15 @@ msgstr "Kilépés a megadott időben"
 
 #: ../src/top.ml:1766
 msgid "Help"
-msgstr "Segitség"
+msgstr "Súgó"
 
 #: ../src/top.ml:195
 msgid "Historical CPU delay"
-msgstr "Történeti processzor késleltetés"
+msgstr "Múltbeli CPU késleltetés"
 
 #: ../src/top.ml:179
 msgid "Log statistics to CSV file"
-msgstr "Log statisztika egy CSV fájlba"
+msgstr "Statisztika naplózása CSV fájlba"
 
 #: ../src/top.ml:1749
 msgid "MAIN KEYS"
@@ -189,20 +207,23 @@ msgstr "FŐBB GOMBOK"
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
-"További segitség a virt-top(1) man oldalon. Nyomjon meg bármilyen billentyűt"
-" a visszatéréshez."
+"További segítség a virt-top(1) man oldalon. Nyomja meg bármelyik billentyűt "
+"a visszatéréshez."
 
 #: ../src/top.ml:294
-msgid "NB: If you want to monitor a local hypervisor, you usually need to be root"
+msgid ""
+"NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
+"NB: Ha a helyi hipervizort akarja monitorozni, akkor rendszergazdának kell "
+"lennie"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
-msgstr "Következő RX bájtok"
+msgstr "Hálózati RX bájtok"
 
 #: ../src/top.ml:71
 msgid "Net TX bytes"
-msgstr "Következő TX bájtok"
+msgstr "Hálózati TX bájtok"
 
 #: ../src/top.ml:1506
 msgid "Not a valid number"
@@ -210,7 +231,7 @@ msgstr "Nem egy érvényes szám"
 
 #: ../src/top.ml:201
 msgid "Number of iterations to run"
-msgstr "A futtatni való ismétlések száma"
+msgstr "A futtatandó ismétlések száma"
 
 #: ../src/top.ml:1740 ../src/top.ml:1739
 msgid "Off"
@@ -226,7 +247,7 @@ msgstr "Kilépés"
 
 #: ../src/top.ml:208
 msgid "Run from a script (no user interface)"
-msgstr "Működés szkriptről (nincs felhasználói felület)"
+msgstr "Futtatás parancsfájlból (nincs felhasználói felület)"
 
 #: ../src/top.ml:1771
 msgid "SORTING"
@@ -234,11 +255,11 @@ msgstr "RENDEZÉS"
 
 #: ../src/top.ml:206
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Biztonságos („kioszk”) mód"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
-msgstr "Válassza ki a rövid mezőt"
+msgstr "Válassza ki a rendezési mezőt"
 
 #: ../src/top.ml:191
 msgid "Send debug messages to file"
@@ -246,55 +267,55 @@ msgstr "Hibakeresési üzenetek küldése fájlba"
 
 #: ../src/top.ml:197
 msgid "Set name of init file"
-msgstr "Init fájl nevének beállítása"
+msgstr "Az init fájl nevének beállítása"
 
 #: ../src/top.ml:203
 msgid "Set sort order (%s)"
-msgstr "válogatás sorrendjének beállítása  (%s)"
+msgstr "Rendezési sorrend beállítása  (%s)"
 
 #: ../src/top.ml:1514
 msgid "Set sort order for main display"
-msgstr "válogatás sorrendjének beállítása a fő képernyőhöz"
+msgstr "Rendezési sorrend beállítása a fő képernyőhöz"
 
 #: ../src/top.ml:1765
 msgid "Set update interval"
-msgstr "frissítés intervallumának beállítása"
+msgstr "Frissítési intervallum beállítása"
 
 #: ../src/top.ml:1776
 msgid "Sort by %CPU"
-msgstr "Rendezés %CPU által"
+msgstr "Rendezés %CPU szerint"
 
 #: ../src/top.ml:1777
 msgid "Sort by %MEM"
-msgstr "Rendezés %MEM által"
+msgstr "Rendezés %MEM szerint"
 
 #: ../src/top.ml:1779
 msgid "Sort by ID"
-msgstr "Rendezés azonosító alapján"
+msgstr "Rendezés azonosító szerint"
 
 #: ../src/top.ml:1778
 msgid "Sort by TIME"
-msgstr "Rendezés IDŐ alapján"
+msgstr "Rendezés IDŐ szerint"
 
 #: ../src/top.ml:171
 msgid "Start by displaying block devices"
-msgstr "A blokk eszközök megjelenítésével kezdődjön"
+msgstr "Kezdje a blokkeszközök megjelenítésével"
 
 #: ../src/top.ml:169
 msgid "Start by displaying network interfaces"
-msgstr "A hálózati interfészek megjelenítésével kezdődjön"
+msgstr "Kezdje a hálózati interfészek megjelenítésével"
 
 #: ../src/top.ml:167
 msgid "Start by displaying pCPUs (default: tasks)"
-msgstr "pCPUk megjelenítésével kezdődjön (alapból:  feladatok)"
+msgstr "Kezdje a pCPUk megjelenítésével (alapértelmezetten:  feladatok)"
 
 #: ../src/top.ml:67
 msgid "TIME (CPU time)"
-msgstr "IDŐ ( processzor idő)"
+msgstr "IDŐ (processzoridő)"
 
 #: ../src/top.ml:1800
 msgid "Toggle block devices"
-msgstr "Blokk eszközök váltása"
+msgstr "Blokkeszközök váltása"
 
 #: ../src/top.ml:1799
 msgid "Toggle network interfaces"
@@ -306,43 +327,44 @@ msgstr "Fizikai processzorok váltása"
 
 #: ../src/top.ml:1515
 msgid "Type key or use up and down cursor keys."
-msgstr "Üss le egy billentyűt vagy használd a fel és le kurzor billentyűket."
+msgstr ""
+"Üssön le egy billentyűt vagy használja a fel és le kurzor billentyűket."
 
 #: ../src/top.ml:1809
 msgid "Unknown command - try 'h' for help"
-msgstr "Ismeretlen parancs - próbáld meg a h a segitségért"
+msgstr "Ismeretlen parancs – segítségért próbálja ki a 'h' opciót"
 
 #: ../src/top.ml:1763
 msgid "Update display"
-msgstr "képernyő frissítése"
+msgstr "Képernyő frissítése"
 
 #: ../src/top.ml:1703
 msgid "Wrote settings to %s"
-msgstr "beállítások kiírása a %s-be"
+msgstr "Beállítások kiírva ide: %s"
 
 #: ../src/top.ml:1745
 msgid "default"
-msgstr "alap"
+msgstr "alapértelmezett"
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "kimenet kiírása a szabványos kimenetre (nincs felhasználó felület)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
-msgstr "get_xml_desc nem adta vissza a <domain/>"
+msgstr "a get_xml_desc nem ezt adta vissza: <domain/>"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
-msgstr ""
+msgstr "blokkeszközök terhelésének megjelenítése bájtokban kérések helyett"
 
 #: ../src/top.ml:1767
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "blokkinformáció átállítása kérésekre/bájtokra"
 
 #: ../src/top.ml:1725
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
-msgstr "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d Red Hat által"
+msgstr "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d készítette a Red Hat"
 
 #: ../src/top.ml:218
 msgid ""
@@ -353,12 +375,12 @@ msgid ""
 "\n"
 "OPTIONS"
 msgstr ""
-"virt-top : egy 'top'-szerű eszköz a virtualizációhoz\n"
+"virt-top : egy 'top'-szerű eszköz virtualizációhoz\n"
 "\n"
-"SUMMARY\n"
-"  virt-top [-options]\n"
+"ÖSSZEGZÉS\n"
+"  virt-top [-opciók]\n"
 "\n"
-"OPTIONS"
+"OPCIÓK"
 
 #: ../src/top.ml:42
 msgid "virt-top was compiled without support for CSV files"
@@ -366,5 +388,4 @@ msgstr "A virt-top CSV fájlok támogatása nélkül lett fordítva"
 
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
-msgstr "A virt-top dátumok és idők nélküli támogatással lett fordítva"
-
+msgstr "A virt-top dátum és idő támogatás nélkül lett fordítva"

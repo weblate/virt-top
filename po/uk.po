@@ -1,38 +1,44 @@
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-06 14:58+0000\n"
-"PO-Revision-Date: 2011-03-22 11:29-0400\n"
-"Last-Translator: yurchor <yurchor@ukr.net>\n"
+"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"PO-Revision-Date: 2017-03-29 12:23-0400\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 4.6.2\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# Файл налаштувань %s virt-top\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Увімкнути виведення CSV до вказаного файла\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
-msgstr ""
+msgstr "# Щоб захистити файл від перезапису, розкоментуйте наступний рядок\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Щоб надіслати діагностичні повідомлення та повідомлення про помилки до "
+"файла, розкоментуйте наступний рядок\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# створено %s, %s\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -52,15 +58,17 @@ msgstr ""
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: не вдалося обробити «%s» у файлі ініціалізації: мало бути %s"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
-msgstr ""
+msgstr "%s: не вдалося обробити «%s» у файлі ініціалізації: мало бути число"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
 msgstr ""
+"%s: не вдалося обробити «%s» у файлі ініціалізації: мало бути вказано ціле "
+"число"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
@@ -75,8 +83,12 @@ msgid "%s: unknown parameter"
 msgstr "%s: невідомий параметр"
 
 #: ../src/top.ml:269
-msgid "%s:%d: configuration item ``%s'' ignored\n%!"
+msgid ""
+"%s:%d: configuration item ``%s'' ignored\n"
+"%!"
 msgstr ""
+"%s:%d: запис налаштувань «%s» проігноровано\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
@@ -104,7 +116,7 @@ msgstr "Змінити затримку з %.1f на: "
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "З’єднатися із адресою libvirt"
 
 #: ../src/top.ml:1744
 msgid "Connect: %s; Hostname: %s"
@@ -136,7 +148,7 @@ msgstr "Вимкнути статистику блокових пристрої�
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "Вимкнути статистичні дані щодо пам’яті у CSV"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
@@ -193,8 +205,11 @@ msgstr ""
 "клавішу для повернення."
 
 #: ../src/top.ml:294
-msgid "NB: If you want to monitor a local hypervisor, you usually need to be root"
+msgid ""
+"NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
+"Зауваження: якщо ви хочете спостерігати за локальним гіпервізором, зазвичай,"
+" вам знадобляться права користувача root"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
@@ -234,7 +249,7 @@ msgstr "ВПОРЯДКУВАННЯ"
 
 #: ../src/top.ml:206
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Безпечний режим («кіоск»)"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
@@ -326,7 +341,7 @@ msgstr "типовий"
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "вивести дані до stdout (без інтерфейсу користувача)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
@@ -334,11 +349,11 @@ msgstr "get_xml_desc не повернуто <domain/>"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
-msgstr ""
+msgstr "показувати навантаження на блоковий пристрій у байтах, а не у запитах"
 
 #: ../src/top.ml:1767
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "перемкнути режим даних щодо блокового пристрою: запити/байти"
 
 #: ../src/top.ml:1725
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
@@ -367,4 +382,3 @@ msgstr "virt-top було зібрано без підтримки файлів 
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
 msgstr "virt-top було зібрано без підтримки показу дат і часу"
-

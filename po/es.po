@@ -1,38 +1,46 @@
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Máximo Castañeda Riloba <mcrcctm@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-06 14:58+0000\n"
-"PO-Revision-Date: 2011-03-22 11:29-0400\n"
-"Last-Translator: rjones <rjones@redhat.com>\n"
+"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"PO-Revision-Date: 2017-09-12 11:46-0400\n"
+"Last-Translator: Máximo Castañeda Riloba <mcrcctm@gmail.com>\n"
 "Language-Team: Spanish (Castilian) <trans-es@lists.fedoraproject.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 4.6.2\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# %s archivo de configuración de virt-top\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Activa la salida CSV al archivo indicado\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# Para evitar que este archivo se sobrescriba, quite la marca de comentario "
+"de la siguiente línea\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Para enviar mensajes de depuración a un archivo, quite la marca de "
+"comentario de la siguiente línea\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# generado el %s por %s\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -52,15 +60,18 @@ msgstr ""
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: no se pudo analizar '%s' del archivo de inicio: se esperaba %s"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
 msgstr ""
+"%s: no se pudo analizar '%s' del archivo de inicio: se esperaba un número"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
 msgstr ""
+"%s: no se pudo analizar '%s' del archivo de inicio: se esperaba un número "
+"entero"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
@@ -75,7 +86,9 @@ msgid "%s: unknown parameter"
 msgstr "%s: parámetro desconocido"
 
 #: ../src/top.ml:269
-msgid "%s:%d: configuration item ``%s'' ignored\n%!"
+msgid ""
+"%s:%d: configuration item ``%s'' ignored\n"
+"%!"
 msgstr ""
 
 #: ../src/top.ml:147
@@ -193,7 +206,8 @@ msgstr ""
 "tecla para volver."
 
 #: ../src/top.ml:294
-msgid "NB: If you want to monitor a local hypervisor, you usually need to be root"
+msgid ""
+"NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
 
 #: ../src/top.ml:70
@@ -368,4 +382,3 @@ msgstr "virt-top fue compilado sin soporte para archivos CSV"
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
 msgstr "virt-top fue compilado sin soporte para fechas y horas"
-
