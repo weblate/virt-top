@@ -21,23 +21,27 @@ msgstr ""
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# %s virt-top yapılandırma dosyası\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Belirtilen dosyaya CSV çıktısını etkinleştirin\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# Bu dosyanın üzerine yazılmasını önlemek için sonraki satırın yorumunu "
+"kaldırın\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Hata ayıklama ve hata mesajlarını bir dosyaya göndermek için sonraki "
+"satırın yorumunu kaldırın\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# %s tarihinde %s tarafından oluşturuldu\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -52,26 +56,28 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
+"%d etki alanı, %d etkin, %d çalışıyor, %d uykuda, %d duraklatıldı, %d etkin "
+"değil D:%d O:%d X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: başlatma dosyasında '%s' ayrıştırılamadı: %s bekleniyor"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
-msgstr ""
+msgstr "%s: başlatma dosyasında '%s' ayrıştırılamadı: bir sayı bekleniyor"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
-msgstr ""
+msgstr "%s: başlatma dosyasında '%s' ayrıştırılamadı: bir tam sayı bekleniyor"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
-msgstr ""
+msgstr "%s: ekran %s olmalıdır"
 
 #: ../src/top.ml:83
 msgid "%s: sort order should be: %s"
-msgstr ""
+msgstr "%s: sıralama düzeni %s olmalıdır"
 
 #: ../src/top.ml:217
 msgid "%s: unknown parameter"
@@ -82,90 +88,92 @@ msgid ""
 "%s:%d: configuration item ``%s'' ignored\n"
 "%!"
 msgstr ""
+"%s:%d: yapılandırma ögesi ``%s'' yok sayıldı\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
-msgstr ""
+msgstr "-d: negatif bir gecikme ayarlanamaz"
 
 #: ../src/top.ml:173
 msgid "Batch mode"
-msgstr ""
+msgstr "Toplu işlem modu"
 
 #: ../src/top.ml:72
 msgid "Block read reqs"
-msgstr ""
+msgstr "Blok okuma istekleri"
 
 #: ../src/top.ml:73
 msgid "Block write reqs"
-msgstr ""
+msgstr "Blok yazma istekleri"
 
 #: ../src/top.ml:1244
 msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
-msgstr ""
+msgstr "CPU: %%%2.1f  Bellek: %Ld MB (%Ld MB konuklar tarafından)"
 
 #: ../src/top.ml:1493
 msgid "Change delay from %.1f to: "
-msgstr ""
+msgstr "Gecikmeyi %.1f'den şuna değiştir: "
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "libvirt URI'ye bağlan"
 
 #: ../src/top.ml:1744
 msgid "Connect: %s; Hostname: %s"
-msgstr ""
+msgstr "Bağlan: %s; Ana makine adı: %s"
 
 #: ../src/top.ml:1783
 msgid "DISPLAY MODES"
-msgstr ""
+msgstr "EKRAN MODLARI"
 
 #: ../src/top.ml:1500
 msgid "Delay must be > 0"
-msgstr "Gecikme > 0 olmalı"
+msgstr "Gecikme sıfırdan büyük olmalıdır"
 
 #: ../src/top.ml:189
 msgid "Delay time interval (seconds)"
-msgstr ""
+msgstr "Gecikme süresi aralığı (saniye)"
 
 #: ../src/top.ml:1737
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
-msgstr ""
+msgstr "Gecikme: %.1f secs; Toplu: %s; Güvenli: %s; Sıralama: %s"
 
 #: ../src/top.ml:181
 msgid "Disable CPU stats in CSV"
-msgstr ""
+msgstr "CSV'de CPU istatistiklerini devre dışı bırak"
 
 #: ../src/top.ml:185
 msgid "Disable block device stats in CSV"
-msgstr ""
+msgstr "CSV'de blok aygıtı istatistiklerini devre dışı bırak"
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "CSV'de bellek istatistiklerini devre dışı bırak"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
-msgstr ""
+msgstr "CSV'de ağ istatistiklerini devre dışı bırak"
 
 #: ../src/top.ml:214
 msgid "Display version number and exit"
-msgstr ""
+msgstr "Sürüm numarasını görüntüle ve çık"
 
 #: ../src/top.ml:199
 msgid "Do not read init file"
-msgstr ""
+msgstr "Başlatma dosyasını okuma"
 
 #: ../src/top.ml:68
 msgid "Domain ID"
-msgstr "Alan ID"
+msgstr "Etki alanı kimliği"
 
 #: ../src/top.ml:69
 msgid "Domain name"
-msgstr "Alan adı"
+msgstr "Etki alanı adı"
 
 #: ../src/top.ml:1797
 msgid "Domains display"
-msgstr ""
+msgstr "Etki alanları ekranı"
 
 #: ../src/main.ml:69 ../src/main.ml:44 ../src/top.ml:1711 ../src/top.ml:1708
 msgid "Error"
@@ -173,7 +181,7 @@ msgstr "Hata"
 
 #: ../src/top.ml:193
 msgid "Exit at given time"
-msgstr ""
+msgstr "Belirtilen zamanda çık"
 
 #: ../src/top.ml:1766
 msgid "Help"
@@ -181,40 +189,44 @@ msgstr "Yardım"
 
 #: ../src/top.ml:195
 msgid "Historical CPU delay"
-msgstr ""
+msgstr "Geçmiş CPU gecikmesi"
 
 #: ../src/top.ml:179
 msgid "Log statistics to CSV file"
-msgstr ""
+msgstr "İstatistikleri CSV dosyasına kaydet"
 
 #: ../src/top.ml:1749
 msgid "MAIN KEYS"
-msgstr ""
+msgstr "BAŞLICA TUŞLAR"
 
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
+"Daha fazla yardım için virt-top(1) kılavuz sayfasına bakın. Geri dönmek için "
+"herhangi bir tuşa basın."
 
 #: ../src/top.ml:294
 msgid ""
 "NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
+"NB: Yerel bir hipervizörü izlemek istiyorsanız, genellikle root olmanız "
+"gerekir"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
-msgstr ""
+msgstr "Ağdan alınan (RX) bayt"
 
 #: ../src/top.ml:71
 msgid "Net TX bytes"
-msgstr ""
+msgstr "Ağdan gönderilen (TX) bayt"
 
 #: ../src/top.ml:1506
 msgid "Not a valid number"
-msgstr ""
+msgstr "Geçerli bir numara değil"
 
 #: ../src/top.ml:201
 msgid "Number of iterations to run"
-msgstr ""
+msgstr "Çalıştırılacak yineleme sayısı"
 
 #: ../src/top.ml:1740 ../src/top.ml:1739
 msgid "Off"
@@ -230,7 +242,7 @@ msgstr "Çık"
 
 #: ../src/top.ml:208
 msgid "Run from a script (no user interface)"
-msgstr "Betikten çalıştır (arayüz olmadan)"
+msgstr "Betikten çalıştır (kullanıcı arayüzü olmadan)"
 
 #: ../src/top.ml:1771
 msgid "SORTING"
@@ -238,31 +250,31 @@ msgstr "SIRALAMA"
 
 #: ../src/top.ml:206
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Güvenli (\"kiosk\") mod"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
-msgstr ""
+msgstr "Sıralama ölçütünü seç"
 
 #: ../src/top.ml:191
 msgid "Send debug messages to file"
-msgstr ""
+msgstr "Hata ayıklama mesajlarını dosyaya gönder"
 
 #: ../src/top.ml:197
 msgid "Set name of init file"
-msgstr ""
+msgstr "Başlatma dosyasının adını ayarla"
 
 #: ../src/top.ml:203
 msgid "Set sort order (%s)"
-msgstr ""
+msgstr "Sıralama düzenini ayarla (%s)"
 
 #: ../src/top.ml:1514
 msgid "Set sort order for main display"
-msgstr ""
+msgstr "Ana ekran için sıralama düzenini ayarla"
 
 #: ../src/top.ml:1765
 msgid "Set update interval"
-msgstr ""
+msgstr "Güncelleme aralığını ayarla"
 
 #: ../src/top.ml:1776
 msgid "Sort by %CPU"
@@ -270,7 +282,7 @@ msgstr "%CPU'ya göre sırala"
 
 #: ../src/top.ml:1777
 msgid "Sort by %MEM"
-msgstr ""
+msgstr "%MEM'e göre sırala"
 
 #: ../src/top.ml:1779
 msgid "Sort by ID"
@@ -282,15 +294,15 @@ msgstr "ZAMAN'a göre sırala"
 
 #: ../src/top.ml:171
 msgid "Start by displaying block devices"
-msgstr ""
+msgstr "Blok aygıtlarını görüntüleyerek başla"
 
 #: ../src/top.ml:169
 msgid "Start by displaying network interfaces"
-msgstr ""
+msgstr "Ağ arayüzlerini görüntüleyerek başla"
 
 #: ../src/top.ml:167
 msgid "Start by displaying pCPUs (default: tasks)"
-msgstr ""
+msgstr "Fiziksel CPU'ları görüntüleyerek başla (öntanımlı: görevler)"
 
 #: ../src/top.ml:67
 msgid "TIME (CPU time)"
@@ -298,31 +310,31 @@ msgstr "ZAMAN (CPU zamanı)"
 
 #: ../src/top.ml:1800
 msgid "Toggle block devices"
-msgstr ""
+msgstr "Blok aygıtlarını aç/kapat"
 
 #: ../src/top.ml:1799
 msgid "Toggle network interfaces"
-msgstr ""
+msgstr "Ağ arayüzlerini aç/kapat"
 
 #: ../src/top.ml:1798
 msgid "Toggle physical CPUs"
-msgstr ""
+msgstr "Fiziksel CPU'ları aç/kapat"
 
 #: ../src/top.ml:1515
 msgid "Type key or use up and down cursor keys."
-msgstr ""
+msgstr "Bir tuşa basın veya yukarı ve aşağı imleç tuşlarını kullanın."
 
 #: ../src/top.ml:1809
 msgid "Unknown command - try 'h' for help"
-msgstr ""
+msgstr "Bilinmeyen komut - yardım için 'h' deneyin"
 
 #: ../src/top.ml:1763
 msgid "Update display"
-msgstr ""
+msgstr "Ekranı güncelle"
 
 #: ../src/top.ml:1703
 msgid "Wrote settings to %s"
-msgstr ""
+msgstr "Ayarlar %s dosyasına yazıldı"
 
 #: ../src/top.ml:1745
 msgid "default"
@@ -330,23 +342,23 @@ msgstr "öntanımlı"
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "çıktıyı standart çıkışa yazdır (kullanıcı arayüzü yok)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
-msgstr ""
+msgstr "get_xml_desc <domain/> döndürmedi"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
-msgstr ""
+msgstr "blok aygıtı yükünü istekler yerine bayt cinsinden göster"
 
 #: ../src/top.ml:1767
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "blok istek/bayt bilgilerini aç/kapat"
 
 #: ../src/top.ml:1725
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
-msgstr ""
+msgstr "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d Red Hat tarafından"
 
 #: ../src/top.ml:218
 msgid ""
@@ -357,11 +369,17 @@ msgid ""
 "\n"
 "OPTIONS"
 msgstr ""
+"virt-top : sanallaştırma için 'top' benzeri bir araç\n"
+"\n"
+"ÖZET\n"
+"  virt-top [-seçenekler]\n"
+"\n"
+"SEÇENEKLER"
 
 #: ../src/top.ml:42
 msgid "virt-top was compiled without support for CSV files"
-msgstr ""
+msgstr "virt-top, CSV dosyaları desteği olmadan derlendi"
 
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
-msgstr ""
+msgstr "virt-top, tarih ve saat desteği olmadan derlendi"
