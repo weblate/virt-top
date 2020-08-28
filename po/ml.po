@@ -50,8 +50,8 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d ഡൊമേനുകള്‍, %d സജീവം, %d പ്രവര്‍ത്തിക്കുന്നു, %d ഉറങ്ങുന്നു, %d "
-"താല്‍കാലികമായി നിര്‍ത്തിയിരിക്കുന്നു, %d നിര്‍ജ്ജീവം  D:%d O:%d X:%d"
+"%d ഡൊമേനുകള്‍, %d സജീവം, %d പ്രവര്‍ത്തിക്കുന്നു, %d ഉറങ്ങുന്നു, %d താല്‍കാലികമായി നിര്‍"
+"ത്തിയിരിക്കുന്നു, %d നിര്‍ജ്ജീവം  D:%d O:%d X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
@@ -129,8 +129,7 @@ msgstr "ഡിലേ (കാത്തിരിക്കേണ്ട സമയം
 
 #: ../src/top.ml:1737
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
-msgstr ""
-"ഡിലേ (കാത്തിരിക്കേണ്ട സമയം) : %.1f secs; ബാച്ച്: %s; സുരക്ഷിതം: %s;ക്രമം: %s"
+msgstr "ഡിലേ (കാത്തിരിക്കേണ്ട സമയം) : %.1f secs; ബാച്ച്: %s; സുരക്ഷിതം: %s;ക്രമം: %s"
 
 #: ../src/top.ml:181
 msgid "Disable CPU stats in CSV"
@@ -195,8 +194,7 @@ msgstr "പ്രധാന കീകള്‍"
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
-"virt-top(1) man താളില്‍ കൂടുതല്‍ സഹായം. തിരികെ പോകുന്നതിനായി ഏതെങ്കിലും കീ "
-"അമര്‍ത്തുക."
+"virt-top(1) man താളില്‍ കൂടുതല്‍ സഹായം. തിരികെ പോകുന്നതിനായി ഏതെങ്കിലും കീ അമര്‍ത്തുക."
 
 #: ../src/top.ml:294
 msgid ""
@@ -313,9 +311,7 @@ msgstr "ഫിസിക്കല്‍ സിപിയുകള്‍ ടൊഗ�
 
 #: ../src/top.ml:1515
 msgid "Type key or use up and down cursor keys."
-msgstr ""
-"കീ ടൈപ്പ് ചെയ്യുക അല്ലെങ്കില്‍ മുകളിലേക്കും താഴേക്കുമുള്ള കര്‍സര്‍ കീകള്‍ "
-"ഉപയോഗിക്കുക"
+msgstr "കീ ടൈപ്പ് ചെയ്യുക അല്ലെങ്കില്‍ മുകളിലേക്കും താഴേക്കുമുള്ള കര്‍സര്‍ കീകള്‍ ഉപയോഗിക്കുക"
 
 #: ../src/top.ml:1809
 msgid "Unknown command - try 'h' for help"
@@ -371,8 +367,7 @@ msgstr ""
 
 #: ../src/top.ml:42
 msgid "virt-top was compiled without support for CSV files"
-msgstr ""
-"CSV ഫയലുകള്‍ക്കുള്ള പിന്തുണ ലഭ്യമല്ലാതെ virt-top കംപൈല്‍ ചെയ്തിരിക്കുന്നു"
+msgstr "CSV ഫയലുകള്‍ക്കുള്ള പിന്തുണ ലഭ്യമല്ലാതെ virt-top കംപൈല്‍ ചെയ്തിരിക്കുന്നു"
 
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"

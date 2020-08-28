@@ -50,8 +50,7 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d ডোমেইন, %d সক্ৰিয়, %d চলমান, %d নিদ্ৰিত, %d স্থগিত, %d নিষ্ক্ৰিয় D:%d "
-"O:%d X:%d"
+"%d ডোমেইন, %d সক্ৰিয়, %d চলমান, %d নিদ্ৰিত, %d স্থগিত, %d নিষ্ক্ৰিয় D:%d O:%d X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
@@ -194,8 +193,8 @@ msgstr "MAIN KEYS"
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
-"virt-top(1) man পৃষ্ঠাত অতিৰিক্ত সহায়ক তথ্য উপস্থিত আছে । প্ৰত্যাবৰ্তন কৰাৰ "
-"বাবে যি কোনো চাবি টিপক ।"
+"virt-top(1) man পৃষ্ঠাত অতিৰিক্ত সহায়ক তথ্য উপস্থিত আছে । প্ৰত্যাবৰ্তন কৰাৰ বাবে যি "
+"কোনো চাবি টিপক ।"
 
 #: ../src/top.ml:294
 msgid ""
@@ -232,8 +231,7 @@ msgstr "প্ৰস্থান"
 
 #: ../src/top.ml:208
 msgid "Run from a script (no user interface)"
-msgstr ""
-"স্ক্ৰিপ্টৰ সহযোগত সঞ্চালন কৰা হ'ব (ব্যৱহাৰকৰোঁতাৰ সংযোগ মাধ্যম নোহোৱাকে)"
+msgstr "স্ক্ৰিপ্টৰ সহযোগত সঞ্চালন কৰা হ'ব (ব্যৱহাৰকৰোঁতাৰ সংযোগ মাধ্যম নোহোৱাকে)"
 
 #: ../src/top.ml:1771
 msgid "SORTING"

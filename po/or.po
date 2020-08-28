@@ -49,9 +49,7 @@ msgstr "%MEM"
 msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
-msgstr ""
-"%d ଡମେନ, %d ସକ୍ରିୟ, %d ଚାଲୁଅଛି, %d ସୁପ୍ତ, %d ସ୍ଥିର, %d ନିଷ୍କ୍ରିୟ D:%d O:%d "
-"X:%d"
+msgstr "%d ଡମେନ, %d ସକ୍ରିୟ, %d ଚାଲୁଅଛି, %d ସୁପ୍ତ, %d ସ୍ଥିର, %d ନିଷ୍କ୍ରିୟ D:%d O:%d X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
@@ -193,8 +191,7 @@ msgstr "MAIN KEYS"
 
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
-msgstr ""
-"virt-top(1) man ପୃଷ୍ଠାରେ ଅଧିକ ସହାୟତା। ଫେରିବା ପାଇଁ ଯେକୌଣସି କି କୁ ଦବାନ୍ତୁ।"
+msgstr "virt-top(1) man ପୃଷ୍ଠାରେ ଅଧିକ ସହାୟତା। ଫେରିବା ପାଇଁ ଯେକୌଣସି କି କୁ ଦବାନ୍ତୁ।"
 
 #: ../src/top.ml:294
 msgid ""

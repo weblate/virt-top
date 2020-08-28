@@ -50,8 +50,8 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d ડોમેઇને, %d સક્રિય, %d ચાલી રહ્યુ છે, %d નિષ્ક્રિય, %d અટકેલ, %d "
-"નિષ્ક્રિય D:%d O:%d X:%d"
+"%d ડોમેઇને, %d સક્રિય, %d ચાલી રહ્યુ છે, %d નિષ્ક્રિય, %d અટકેલ, %d નિષ્ક્રિય D:%d O:%d "
+"X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
@@ -193,8 +193,7 @@ msgstr "મુખ્ય કીઓ"
 
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
-msgstr ""
-"virt-top(1) પુસ્તિકા પાનાંમાં વધારે મદદ. પાછુ લાવવા માટે કોઇપણ કીને દબાવો."
+msgstr "virt-top(1) પુસ્તિકા પાનાંમાં વધારે મદદ. પાછુ લાવવા માટે કોઇપણ કીને દબાવો."
 
 #: ../src/top.ml:294
 msgid ""

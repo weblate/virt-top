@@ -50,8 +50,8 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d డొమైన్లు, %d క్రియాశీల, %d నడుస్తున్నవి, %d స్లీపింగ్, %d నిలిపివున్నవి, "
-"%d క్రియాహీన D:%d O:%d X:%d"
+"%d డొమైన్లు, %d క్రియాశీల, %d నడుస్తున్నవి, %d స్లీపింగ్, %d నిలిపివున్నవి, %d క్రియాహీన D:%d O:%d "
+"X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
@@ -193,8 +193,7 @@ msgstr "ముఖ్య కీలు"
 
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
-msgstr ""
-"virt-top(1) man పేజీ నందు మరింత సహాయం. తిరిగివచ్చుటకు యేదేని కీను వత్తుము."
+msgstr "virt-top(1) man పేజీ నందు మరింత సహాయం. తిరిగివచ్చుటకు యేదేని కీను వత్తుము."
 
 #: ../src/top.ml:294
 msgid ""

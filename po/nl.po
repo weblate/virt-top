@@ -50,8 +50,8 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d domeinen, %d actief, %d draaiend, %d slapend, %d gepauzeerd, %d inactieve"
-" D:%d O:%d X:%d"
+"%d domeinen, %d actief, %d draaiend, %d slapend, %d gepauzeerd, %d inactieve "
+"D:%d O:%d X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"

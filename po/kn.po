@@ -50,8 +50,8 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d ಡೊಮೈನ್‌ಗಳು, %d ಸಕ್ರಿಯ, %d ಚಾಲಿತ, %d ಜಡ, %d ವಿರಮಿಸಿದ, %d ನಿಷ್ಕ್ರಿಯ D:%d "
-"O:%d X:%d"
+"%d ಡೊಮೈನ್‌ಗಳು, %d ಸಕ್ರಿಯ, %d ಚಾಲಿತ, %d ಜಡ, %d ವಿರಮಿಸಿದ, %d ನಿಷ್ಕ್ರಿಯ D:%d O:%d X:"
+"%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
@@ -194,8 +194,7 @@ msgstr "MAIN KEYS"
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
-"ಹೆಚ್ಚಿನ ನೆರವು virt-top(1) man ಪುಟದಲ್ಲಿ ಲಭ್ಯವಿದೆ. ಮರಳಲು ಯಾವುದೆ ಕೀಲಿಯನ್ನು "
-"ಒತ್ತಿ."
+"ಹೆಚ್ಚಿನ ನೆರವು virt-top(1) man ಪುಟದಲ್ಲಿ ಲಭ್ಯವಿದೆ. ಮರಳಲು ಯಾವುದೆ ಕೀಲಿಯನ್ನು ಒತ್ತಿ."
 
 #: ../src/top.ml:294
 msgid ""
