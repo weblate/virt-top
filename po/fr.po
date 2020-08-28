@@ -19,23 +19,26 @@ msgstr ""
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# fichier de configuration de %s virt-top\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Activer la sortie en CSV vers le fichier nommé\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# Pour éviter que ce fichier ne soit écrasé, décommentez la ligne suivante\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Pour envoyer des messages de débogage et d’erreur dans un fichier, "
+"décommentez la ligne suivante\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# généré le %s par %s\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -50,40 +53,50 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
+"%d domaines, %d actifs, %d en exécution, %d au repos, %d en pause, %d "
+"inactifs D : %d O : %d X : %d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
 msgstr ""
+"%s : impossible d’analyser « %s » dans le fichier d’initialisation : %s "
+"attendu"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
 msgstr ""
+"%s : impossible d’analyser « %s » dans le fichier d’initialisation : nombre "
+"attendu"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
 msgstr ""
+"%s : impossible d’analyser « %s » dans le fichier d’initialisation : chiffre "
+"attendu"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
-msgstr ""
+msgstr "%s : l’affichage devrait être %s"
 
 #: ../src/top.ml:83
 msgid "%s: sort order should be: %s"
-msgstr ""
+msgstr "%s : l’ordre de tri devrait être : %s"
 
 #: ../src/top.ml:217
 msgid "%s: unknown parameter"
-msgstr ""
+msgstr "%s : paramètre inconnu"
 
 #: ../src/top.ml:269
 msgid ""
 "%s:%d: configuration item ``%s'' ignored\n"
 "%!"
 msgstr ""
+"%s : %d : élément de configuration ``%s'' ignoré\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
-msgstr ""
+msgstr "-d : impossible de définir un délai négatif"
 
 #: ../src/top.ml:173
 msgid "Batch mode"
