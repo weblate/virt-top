@@ -135,7 +135,7 @@ msgstr "Opóźnienie musi wynosić > 0"
 
 #: ../src/top.ml:189
 msgid "Delay time interval (seconds)"
-msgstr "Czas między opóźnieniami (sekundy)"
+msgstr "Czas między opóźnieniami (w sekundach)"
 
 #: ../src/top.ml:1737
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
@@ -222,7 +222,7 @@ msgstr "Sieciowe bajty TX"
 
 #: ../src/top.ml:1506
 msgid "Not a valid number"
-msgstr "Nie jest prawidłowym numerem"
+msgstr "Nie jest prawidłową liczbą"
 
 #: ../src/top.ml:201
 msgid "Number of iterations to run"
@@ -242,7 +242,7 @@ msgstr "Zakończ"
 
 #: ../src/top.ml:208
 msgid "Run from a script (no user interface)"
-msgstr "Uruchamia ze skryptu (brak interfejsu użytkownika)"
+msgstr "Uruchamia ze skryptu (bez interfejsu użytkownika)"
 
 #: ../src/top.ml:1771
 msgid "SORTING"
