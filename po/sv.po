@@ -202,7 +202,7 @@ msgstr "HUVUDTANGENTER"
 #: ../src/top.ml:1804
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
-"Mer hjälp i manualsidan virt-top(1).  Tryck en tangent för att återvända."
+"Mer hjälp i manualsidan virt-top(1). Tryck en tangent för att återvända."
 
 #: ../src/top.ml:294
 msgid ""
