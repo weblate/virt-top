@@ -1,20 +1,21 @@
 # Zdenek <chmelarz@gmail.com>, 2016. #zanata
 # Zdenek <chmelarz@gmail.com>, 2017. #zanata
-# Pavel Borecki <pavel.borecki@gmail.com>, 2018. #zanata
+# Pavel Borecki <pavel.borecki@gmail.com>, 2018. #zanata, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-27 11:32+0000\n"
-"PO-Revision-Date: 2018-11-27 06:18-0500\n"
+"PO-Revision-Date: 2021-09-04 20:04+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/virt-top/"
+"master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.8\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
@@ -255,7 +256,7 @@ msgstr "Zabezpečený („kiosk“) režim"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
-msgstr "Vybrat pole řazení"
+msgstr "Vybrat kolonku, podle které řadit"
 
 #: ../src/top.ml:191
 msgid "Send debug messages to file"
@@ -323,7 +324,7 @@ msgstr "Přepnout fyzické procesory"
 
 #: ../src/top.ml:1515
 msgid "Type key or use up and down cursor keys."
-msgstr "Zadejte klávesu nebo použijte klávesy šipka nahoru a dolů"
+msgstr "Zadejte klávesu nebo použijte klávesy šipka nahoru a dolů."
 
 #: ../src/top.ml:1809
 msgid "Unknown command - try 'h' for help"
