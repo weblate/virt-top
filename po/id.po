@@ -5,6 +5,7 @@
 # Translators:
 # Andika Triwidada <andika@gmail.com>, 2014, 2021.
 # Andika Triwidada <andika@gmail.com>, 2017. #zanata, 2021.
+# Didik Supriadi <didiksupriadi41@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
@@ -117,7 +118,7 @@ msgstr "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB oleh guest)"
 
 #: ../src/top.ml:1493
 msgid "Change delay from %.1f to: "
-msgstr "Ubah tundaan dari %.1f ke:"
+msgstr "Ubah delay dari %.1f ke: "
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
@@ -342,7 +343,7 @@ msgstr "Menulis pengaturan ke %s"
 
 #: ../src/top.ml:1745
 msgid "default"
-msgstr "baku"
+msgstr "default"
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
