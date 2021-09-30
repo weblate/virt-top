@@ -90,6 +90,8 @@ msgid ""
 "%s:%d: configuration item ``%s'' ignored\n"
 "%!"
 msgstr ""
+"%s:%d: configuration item ``%s'' ignored\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
@@ -113,11 +115,11 @@ msgstr "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB por huéspedes)"
 
 #: ../src/top.ml:1493
 msgid "Change delay from %.1f to: "
-msgstr "Cambiar retraso de %.1f a:"
+msgstr "Cambiar retraso de %.1f a: "
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "Conectar a libvirt URI"
 
 #: ../src/top.ml:1744
 msgid "Connect: %s; Hostname: %s"
@@ -149,7 +151,7 @@ msgstr "Deshabilita stadísticas del dispositivo de bloque en CVS"
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "Deshabilita estadísticas de memoria en CVS"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
@@ -209,6 +211,7 @@ msgstr ""
 msgid ""
 "NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
+"NB: Si desea monitorizar un hipervisor local, normalmente necesita ser root"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
@@ -248,7 +251,7 @@ msgstr "CLASIFICANDO"
 
 #: ../src/top.ml:206
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Modo seguro (\"kiosk\")"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
@@ -341,19 +344,19 @@ msgstr "predeterminado"
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "volcar la salida hacia la salida estándar (no a la interfaz de usuario)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
-msgstr "el get_xml_desc no ha retornado <domain/n>"
+msgstr "get_xml_desc no ha devuelto <domain/n>"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
-msgstr ""
+msgstr "muestre la carga del dispositivo del bloque en bytes en lugar de reqs"
 
 #: ../src/top.ml:1767
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "Alternar información de bloque requerida / bytes"
 
 #: ../src/top.ml:1725
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
