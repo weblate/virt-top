@@ -1,0 +1,376 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"PO-Revision-Date: 2021-04-15 18:02+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"virt-top/master/fi/>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5.3\n"
+
+#: ../src/top.ml:1670
+msgid "# %s virt-top configuration file\n"
+msgstr "# %s virt-top määritystiedosto\n"
+
+#: ../src/top.ml:1688
+msgid "# Enable CSV output to the named file\n"
+msgstr "# Ota käyttöön CSV-ulostulo nimettyyn tiedostoon\n"
+
+#: ../src/top.ml:1691
+msgid "# To protect this file from being overwritten, uncomment next line\n"
+msgstr ""
+"# Suojaa tämä tiedosto ylikirjoitukselta poistamalla seuraavan rivin "
+"kommenttimerkki\n"
+
+#: ../src/top.ml:1685
+msgid "# To send debug and error messages to a file, uncomment next line\n"
+msgstr ""
+"# Jos haluat lähettää virheenkorjaus- ja virhesanomia tiedostoon poista "
+"seuraavan rivin kommenttimerkki\n"
+
+#: ../src/top.ml:1671
+msgid "# generated on %s by %s\n"
+msgstr "# luotu kohteessa %s %s:llä\n"
+
+#: ../src/top.ml:65
+msgid "%CPU"
+msgstr "%CPU"
+
+#: ../src/top.ml:66
+msgid "%MEM"
+msgstr "%MEM"
+
+#: ../src/top.ml:1237
+msgid "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d O:%d X:%d"
+msgstr ""
+"%d toimialuetta, %d aktiivista, %d käynnissä, %d unessa, %d keskeytetty, %d "
+"epäaktiivinen D:%d O:%d X:%d"
+
+#: ../src/top.ml:245
+msgid "%s: could not parse '%s' in init file: expecting %s"
+msgstr "%s: kohdetta '%s' ei voitu jäsentää init-tiedostossa: odotettiin %s"
+
+#: ../src/top.ml:240
+msgid "%s: could not parse '%s' in init file: expecting a number"
+msgstr ""
+"%s: kohdetta '%s' ei voitu jäsentää init-tiedostossa: odotettiin numeroa"
+
+#: ../src/top.ml:235
+msgid "%s: could not parse '%s' in init file: expecting an integer"
+msgstr ""
+"%s: kohdetta '%s' ei voitu jäsentää init-tiedostossa: odotettiin "
+"kokonaislukua"
+
+#: ../src/top.ml:105
+msgid "%s: display should be %s"
+msgstr "%s: näytön tulee olla %s"
+
+#: ../src/top.ml:83
+msgid "%s: sort order should be: %s"
+msgstr "%s: lajittelujärjestyksen tulisi olla: %s"
+
+#: ../src/top.ml:217
+msgid "%s: unknown parameter"
+msgstr "%s: tuntematon parametri"
+
+#: ../src/top.ml:269
+msgid "%s:%d: configuration item ``%s'' ignored\n%!"
+msgstr ""
+"%s:%d: määrityskohde ``%s'' ohitettiin\n"
+"%!"
+
+#: ../src/top.ml:147
+msgid "-d: cannot set a negative delay"
+msgstr "-d: ei voida asettaa negatiivista viivettä"
+
+#: ../src/top.ml:173
+msgid "Batch mode"
+msgstr "Erätila"
+
+#: ../src/top.ml:72
+msgid "Block read reqs"
+msgstr "Estä lukupyynnöt"
+
+#: ../src/top.ml:73
+msgid "Block write reqs"
+msgstr "Estä kirjoituspyynnöt"
+
+#: ../src/top.ml:1244
+msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
+msgstr "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB vierailla)"
+
+#: ../src/top.ml:1493
+msgid "Change delay from %.1f to: "
+msgstr "Vaihda viive %.1f: stä seuraavaan: "
+
+#: ../src/top.ml:177 ../src/top.ml:175
+msgid "Connect to libvirt URI"
+msgstr "Yhdistä libvirt URI:hen"
+
+#: ../src/top.ml:1744
+msgid "Connect: %s; Hostname: %s"
+msgstr "Yhdistä: %s; Isäntänimi: %s"
+
+#: ../src/top.ml:1783
+msgid "DISPLAY MODES"
+msgstr "NÄYTTÖTILAT"
+
+#: ../src/top.ml:1500
+msgid "Delay must be > 0"
+msgstr "Viiveen on oltava > 0"
+
+#: ../src/top.ml:189
+msgid "Delay time interval (seconds)"
+msgstr "Viiveen aikaväli (sekuntia)"
+
+#: ../src/top.ml:1737
+msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
+msgstr "Viive: %.1f sekuntia; Erä: %s; Suojattu: %s; Lajittelu: %s"
+
+#: ../src/top.ml:181
+msgid "Disable CPU stats in CSV"
+msgstr "Poista CPU-tilastot käytöstä CSV:ssä"
+
+#: ../src/top.ml:185
+msgid "Disable block device stats in CSV"
+msgstr "Poista lohkolaitetilastot käytöstä CSV:ssä"
+
+#: ../src/top.ml:183
+msgid "Disable memory stats in CSV"
+msgstr "Poista muistitilastot käytöstä CSV:ssä"
+
+#: ../src/top.ml:187
+msgid "Disable net stats in CSV"
+msgstr "Poista verkkotilastot käytöstä CSV:ssä"
+
+#: ../src/top.ml:214
+msgid "Display version number and exit"
+msgstr "Näytä versionumero ja lopeta"
+
+#: ../src/top.ml:199
+msgid "Do not read init file"
+msgstr "Älä lue init-tiedostoa"
+
+#: ../src/top.ml:68
+msgid "Domain ID"
+msgstr "Toimialueen ID"
+
+#: ../src/top.ml:69
+msgid "Domain name"
+msgstr "Toimialueen nimi"
+
+#: ../src/top.ml:1797
+msgid "Domains display"
+msgstr "Toimialueiden esitys"
+
+#: ../src/main.ml:69 ../src/main.ml:44 ../src/top.ml:1711 ../src/top.ml:1708
+msgid "Error"
+msgstr "Virhe"
+
+#: ../src/top.ml:193
+msgid "Exit at given time"
+msgstr "Poistu tiettynä ajankohtana"
+
+#: ../src/top.ml:1766
+msgid "Help"
+msgstr "Ohjeet"
+
+#: ../src/top.ml:195
+msgid "Historical CPU delay"
+msgstr "Historiallinen suorittimen viive"
+
+#: ../src/top.ml:179
+msgid "Log statistics to CSV file"
+msgstr "Kirjaa tilastot CSV-tiedostoon"
+
+#: ../src/top.ml:1749
+msgid "MAIN KEYS"
+msgstr "PÄÄNÄPPÄIMET"
+
+#: ../src/top.ml:1804
+msgid "More help in virt-top(1) man page. Press any key to return."
+msgstr ""
+"Lisää ohjeita man virt-top(1) sivulla. Palaa painamalla mitä tahansa "
+"näppäintä."
+
+#: ../src/top.ml:294
+msgid "NB: If you want to monitor a local hypervisor, you usually need to be root"
+msgstr ""
+"HUOM: Jos haluat tarkkailla paikallista hypervisoria, sinun on yleensä "
+"oltava root-käyttäjä"
+
+#: ../src/top.ml:70
+msgid "Net RX bytes"
+msgstr "Netto RX-tavut"
+
+#: ../src/top.ml:71
+msgid "Net TX bytes"
+msgstr "Netto TX-tavut"
+
+#: ../src/top.ml:1506
+msgid "Not a valid number"
+msgstr "Virheellinen numero"
+
+#: ../src/top.ml:201
+msgid "Number of iterations to run"
+msgstr "Suoritettavien iteraatioiden määrä"
+
+#: ../src/top.ml:1740 ../src/top.ml:1739
+msgid "Off"
+msgstr "Poissa"
+
+#: ../src/top.ml:1740 ../src/top.ml:1739
+msgid "On"
+msgstr "Päällä"
+
+#: ../src/top.ml:1764
+msgid "Quit"
+msgstr "Lopeta"
+
+#: ../src/top.ml:208
+msgid "Run from a script (no user interface)"
+msgstr "Suorita komentosarjalta (ei käyttöliittymää)"
+
+#: ../src/top.ml:1771
+msgid "SORTING"
+msgstr "LAJITTELU"
+
+#: ../src/top.ml:206
+msgid "Secure (\"kiosk\") mode"
+msgstr "Suojattu (\"kioski\") -tila"
+
+#: ../src/top.ml:1780
+msgid "Select sort field"
+msgstr "Valitse lajittelukenttä"
+
+#: ../src/top.ml:191
+msgid "Send debug messages to file"
+msgstr "Lähetä vianselvitysviestit tiedostoon"
+
+#: ../src/top.ml:197
+msgid "Set name of init file"
+msgstr "Anna init-tiedoston nimi"
+
+#: ../src/top.ml:203
+msgid "Set sort order (%s)"
+msgstr "Aseta lajittelujärjestys (%s)"
+
+#: ../src/top.ml:1514
+msgid "Set sort order for main display"
+msgstr "Aseta lajittelujärjestys päänäytölle"
+
+#: ../src/top.ml:1765
+msgid "Set update interval"
+msgstr "Aseta päivitysväli"
+
+#: ../src/top.ml:1776
+msgid "Sort by %CPU"
+msgstr "Lajittele %CPU:n mukaan"
+
+#: ../src/top.ml:1777
+msgid "Sort by %MEM"
+msgstr "Lajittele %MUISTIN:n mukaan"
+
+#: ../src/top.ml:1779
+msgid "Sort by ID"
+msgstr "Lajittele %ID:n mukaan"
+
+#: ../src/top.ml:1778
+msgid "Sort by TIME"
+msgstr "Lajittele AJAN mukaan"
+
+#: ../src/top.ml:171
+msgid "Start by displaying block devices"
+msgstr "Aloita näyttämällä lohkolaitteet"
+
+#: ../src/top.ml:169
+msgid "Start by displaying network interfaces"
+msgstr "Aloita näyttämällä verkkoliitännät"
+
+#: ../src/top.ml:167
+msgid "Start by displaying pCPUs (default: tasks)"
+msgstr "Aloita näyttämällä pCPU:t (oletus: tehtävät)"
+
+#: ../src/top.ml:67
+msgid "TIME (CPU time)"
+msgstr "TIME (suorittimen aika)"
+
+#: ../src/top.ml:1800
+msgid "Toggle block devices"
+msgstr "Vaihda lohkolaitteet"
+
+#: ../src/top.ml:1799
+msgid "Toggle network interfaces"
+msgstr "Vaihda verkkoliitännät"
+
+#: ../src/top.ml:1798
+msgid "Toggle physical CPUs"
+msgstr "Vaihda fyysiset suorittimet"
+
+#: ../src/top.ml:1515
+msgid "Type key or use up and down cursor keys."
+msgstr "Paina näppäintä tai käytä ylös- ja alas-nuolinäppäimiä."
+
+#: ../src/top.ml:1809
+msgid "Unknown command - try 'h' for help"
+msgstr "Tuntematon komento - kokeile 'h' ohjeet"
+
+#: ../src/top.ml:1763
+msgid "Update display"
+msgstr "Päivitä näyttö"
+
+#: ../src/top.ml:1703
+msgid "Wrote settings to %s"
+msgstr "Kirjoitti asetukset kohteeseen %s"
+
+#: ../src/top.ml:1745
+msgid "default"
+msgstr "Oletus"
+
+#: ../src/top.ml:210
+msgid "dump output to stdout (no userinterface)"
+msgstr "tulosta ulostulo vakiotulosteeseen (ilman käyttöliittymää)"
+
+#: ../src/opt_xml.ml:46
+msgid "get_xml_desc didn't return <domain/>"
+msgstr "get_xml_desc ei palauttanut <domain/>"
+
+#: ../src/top.ml:212
+msgid "show block device load in bytes rather than reqs"
+msgstr "näytä lohkolaitteen kuormitus tavuina mieluummin kuin kyselyinä"
+
+#: ../src/top.ml:1767
+msgid "toggle block info req/bytes"
+msgstr "vaihda lohkotiedot kyselyt/tavut"
+
+#: ../src/top.ml:1725
+msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
+msgstr "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d, kirjoittanut Red Hat"
+
+#: ../src/top.ml:218
+msgid "virt-top : a 'top'-like utility for virtualization\n\nSUMMARY\n  virt-top [-options]\n\nOPTIONS"
+msgstr ""
+"virt-top: 'top'-tyyppinen apuohjelma virtualisointiin\n"
+"\n"
+"YHTEENVETO\n"
+"   virt-top [-optiot]\n"
+"\n"
+"VAIHTOEHDOT"
+
+#: ../src/top.ml:42
+msgid "virt-top was compiled without support for CSV files"
+msgstr "virt-top käännettiin ilman tukea CSV-tiedostoille"
+
+#: ../src/top.ml:53
+msgid "virt-top was compiled without support for dates and times"
+msgstr "virt-top käännettiin ilman tukea päivämäärille ja ajoille"
