@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Geert Warrink <geert.warrink@onsnet.nu>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -14,28 +14,32 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: ../src/top.ml:1670
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# %s virt-top configuratiebestand\n"
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Schakel CSV-uitvoer naar het genoemde bestand in\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# Om te voorkomen dat dit bestand wordt overschreven, verwijder je het "
+"commentaar op de volgende regel\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Als je foutopsporings- en foutmeldingen naar een bestand wilt sturen, "
+"verwijder je het commentaar op de volgende regel\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# gegenereerd op %s door %s\n"
 
 #: ../src/top.ml:65
 msgid "%CPU"
@@ -55,15 +59,15 @@ msgstr ""
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: kon '%s' in init-bestand niet ontleden: verwachtte %s"
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
-msgstr ""
+msgstr "%s: kon '%s' in init-bestand niet ontleden: verwachtte een getal"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
-msgstr ""
+msgstr "%s: kon '%s' in init-bestand niet ontleden: verwachtte een geheel getal"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
@@ -82,6 +86,8 @@ msgid ""
 "%s:%d: configuration item ``%s'' ignored\n"
 "%!"
 msgstr ""
+"%s:%d: configuratie-item ``%s'' genegeerd\n"
+"%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
@@ -89,7 +95,7 @@ msgstr "-d: kan geen negatieve vertraging instellen"
 
 #: ../src/top.ml:173
 msgid "Batch mode"
-msgstr "Batch mode"
+msgstr "Batch modus"
 
 #: ../src/top.ml:72
 msgid "Block read reqs"
@@ -109,7 +115,7 @@ msgstr "Verander vertraging van %.1f naar: "
 
 #: ../src/top.ml:177 ../src/top.ml:175
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "Verbinden met libvirt URI"
 
 #: ../src/top.ml:1744
 msgid "Connect: %s; Hostname: %s"
@@ -141,7 +147,7 @@ msgstr "Zet blokapparaat stats in CSV uit"
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "Zet netwerk stats in CSV uit"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
@@ -200,6 +206,7 @@ msgstr ""
 msgid ""
 "NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
+"NB: Als je een lokale hypervisor wilt monitoren, moet je meestal root zijn"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
@@ -239,7 +246,7 @@ msgstr "SORTEREN"
 
 #: ../src/top.ml:206
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Veilige (\"kiosk\") modus"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
@@ -331,7 +338,7 @@ msgstr "standaard"
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "dump output naar stdout (geen gebruikersinterface)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
@@ -339,11 +346,11 @@ msgstr "get_xml_desc gaf <domain/> niet terug"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
-msgstr ""
+msgstr "toon blokapparaatbelasting in bytes in plaats van reqs"
 
 #: ../src/top.ml:1767
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "schakel block info req/bytes om"
 
 #: ../src/top.ml:1725
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
