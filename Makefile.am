@@ -19,7 +19,6 @@ SUBDIRS = src po
 
 EXTRA_DIST = \
 	.gitignore \
-	gitlog-to-changelog \
 	HACKING
 
 dist-hook: po/POTFILES po/POTFILES-ml
@@ -63,7 +62,3 @@ maintainer-check-extra-dist:
 	[ ! -s comm-out ]
 	rm tarfiles gitfiles comm-out
 	@echo PASS: EXTRA_DIST tests
-
-ChangeLog: $(shell find -type f)
-	./gitlog-to-changelog > $@.new
-	mv $@.new $@
