@@ -33,9 +33,7 @@ EXTRA_DIST = \
 	POTFILES POTFILES-ml \
 	$(DOMAIN).pot \
 	$(POFILES) \
-	$(GMOFILES) \
-	zanata-pull.sh \
-	zanata.xml
+	$(GMOFILES)
 
 if HAVE_GNU_GETTEXT
 
