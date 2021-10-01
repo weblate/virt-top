@@ -1,3 +1,85 @@
+2021-10-01  Richard W.M. Jones  <rjones@redhat.com>
+
+	Convert to using automake
+
+2020-09-21  Richard W.M. Jones  <rjones@redhat.com>
+
+	Merge remote-tracking branch 'weblate/master' into master
+
+2020-09-13  Emilio Herrera  <ehespinosa57@gmail.com>
+
+	Translated using Weblate (Spanish)
+	Currently translated at 84.5% (71 of 84 strings)
+
+	Translation: virt-top/master
+	Translate-URL: https://translate.fedoraproject.org/projects/virt-top/master/es/
+
+2020-08-28  Julien Humbert  <julroy67@gmail.com>
+
+	Translated using Weblate (French)
+	Currently translated at 20.2% (17 of 84 strings)
+
+	Translation: virt-top/master
+	Translate-URL: https://translate.fedoraproject.org/projects/virt-top/master/fr/
+
+2020-08-28  Yuri Chornoivan  <yurchor@ukr.net>
+
+	Translated using Weblate (Ukrainian)
+	Currently translated at 100.0% (84 of 84 strings)
+
+	Translation: virt-top/master
+	Translate-URL: https://translate.fedoraproject.org/projects/virt-top/master/uk/
+
+2020-08-28  Göran Uddeborg  <goeran@uddeborg.se>
+
+	Translated using Weblate (Swedish)
+	Currently translated at 100.0% (84 of 84 strings)
+
+	Translation: virt-top/master
+	Translate-URL: https://translate.fedoraproject.org/projects/virt-top/master/sv/
+
+2020-08-28  Oğuz Ersen  <oguzersen@protonmail.com>
+
+	Translated using Weblate (Turkish)
+	Currently translated at 100.0% (84 of 84 strings)
+
+	Translation: virt-top/master
+	Translate-URL: https://translate.fedoraproject.org/projects/virt-top/master/tr/
+
+2020-08-28  Piotr Drąg  <piotrdrag@gmail.com>
+
+	Translated using Weblate (Polish)
+	Currently translated at 100.0% (84 of 84 strings)
+
+	Translation: virt-top/master
+	Translate-URL: https://translate.fedoraproject.org/projects/virt-top/master/pl/
+
+	Translated using Weblate (Polish)
+
+	Currently translated at 100.0% (84 of 84 strings)
+
+	Translation: virt-top/master
+	Translate-URL: https://translate.fedoraproject.org/projects/virt-top/master/pl/
+
+2020-08-28  Weblate  <noreply@weblate.org>
+
+	Update translation files
+	Updated by "Update PO files to match POT (msgmerge)" hook in Weblate.
+
+	Translation: virt-top/master
+	Translate-URL: https://translate.fedoraproject.org/projects/virt-top/master/
+
+2020-08-27  Richard W.M. Jones  <rjones@redhat.com>
+
+	Update translations from Zanata (RHBZ#1868108).
+
+2019-08-21  Stephane Glondu  <steph@glondu.net>
+
+	libvirt: Handle VIR_DOMAIN_PMSUSPENDED state.
+	Fixes FTBFS with ocaml-libvirt 0.6.1.5.
+
+	RWMJ: Added documentation and changed the letter to 'M'.
+
 2019-08-20  Richard W.M. Jones  <rjones@redhat.com>
 
 	Version 1.0.9.
