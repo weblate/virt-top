@@ -1,5 +1,5 @@
 (* 'top'-like tool for libvirt domains.
-   (C) Copyright 2007-2017 Richard W.M. Jones, Red Hat Inc.
+   (C) Copyright 2007-2021 Richard W.M. Jones, Red Hat Inc.
    http://libvirt.org/
 
    This program is free software; you can redistribute it and/or modify
@@ -24,12 +24,6 @@ open Printf
 
 open Utils
 open Types
-
-(* Hook for XML support (see [opt_xml.ml]). *)
-let parse_device_xml : (int -> [>`R] D.t -> string list * string list) ref =
-  ref (
-    fun _ _ -> [], []
-  )
 
 (* Intermediate "domain + stats" structure that we use to collect
  * everything we know about a domain within the collect function.
@@ -94,7 +88,7 @@ let devices = Hashtbl.create 13
 let get_devices id dom =
   try Hashtbl.find devices id
   with Not_found ->
-    let blkdevs, netifs = (!parse_device_xml) id dom in
+    let blkdevs, netifs = Xml.parse_device_xml dom in
     Hashtbl.replace devices id (blkdevs, netifs);
     blkdevs, netifs
 

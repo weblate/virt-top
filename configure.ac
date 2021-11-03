@@ -36,6 +36,9 @@ AM_PROG_CC_C_O
 dnl Check support for 64 bit file offsets.
 AC_SYS_LARGEFILE
 
+dnl Check for libxml2 (required).
+PKG_CHECK_MODULES([LIBXML2], [libxml-2.0])
+
 dnl Check for basic OCaml environment & findlib.
 AC_PROG_OCAML
 if test "$OCAMLC" = "no"; then
@@ -70,11 +73,9 @@ fi
 dnl Check for optional OCaml packages.
 AC_CHECK_OCAML_PKG(calendar)
 AC_CHECK_OCAML_PKG(gettext)
-AC_CHECK_OCAML_PKG(xml-light)
 
 AM_CONDITIONAL([HAVE_PKG_CALENDAR], [test "x$OCAML_PKG_calendar" != "xno"])
 AM_CONDITIONAL([HAVE_PKG_GETTEXT],  [test "x$OCAML_PKG_gettext" != "xno"])
-AM_CONDITIONAL([HAVE_PKG_XML_LIGHT],[test "x$OCAML_PKG_xml_light" != "xno"])
 
 dnl Check if ocamlc/ocamlopt -runtime-variant _pic works.  It was
 dnl added in OCaml >= 4.03, but in theory might be disabled by

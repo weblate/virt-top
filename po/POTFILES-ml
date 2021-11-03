@@ -4,7 +4,6 @@
 ./src/opt_calendar.ml
 ./src/opt_csv.ml
 ./src/opt_gettext.ml
-./src/opt_xml.ml
 ./src/redraw.ml
 ./src/screen.ml
 ./src/stream_output.ml
@@ -12,3 +11,4 @@
 ./src/types.ml
 ./src/utils.ml
 ./src/version.ml
+./src/xml.ml

@@ -24,11 +24,9 @@ EXTRA_DIST = \
 	collect.mli \
 	csv_output.ml \
 	csv_output.mli \
-	dummy.c \
 	main.ml \
 	opt_calendar.ml \
 	opt_gettext.ml \
-	opt_xml.ml \
 	redraw.ml \
 	redraw.mli \
 	screen.ml \
@@ -42,7 +40,9 @@ EXTRA_DIST = \
 	utils.ml \
 	utils.mli \
 	version.ml \
-	virt-top.pod
+	virt-top.pod \
+	xml-c.c \
+	xml.ml
 
 OCAMLPACKAGES = -package unix,curses,str,libvirt
 
@@ -55,16 +55,13 @@ BOBJS = \
 	opt_gettext.cmo \
 	utils.cmo \
 	types.cmo \
+	xml.cmo \
 	collect.cmo \
 	screen.cmo \
 	redraw.cmo \
 	csv_output.cmo \
 	stream_output.cmo \
 	top.cmo
-if HAVE_PKG_XML_LIGHT
-BOBJS += opt_xml.cmo
-OCAMLPACKAGES += -package xml-light
-endif
 if HAVE_PKG_CALENDAR
 BOBJS += opt_calendar.cmo
 OCAMLPACKAGES += -package calendar
@@ -73,12 +70,18 @@ BOBJS += main.cmo
 
 XOBJS = $(BOBJS:.cmo=.cmx)
 
-OCAMLFLAGS = -g -warn-error +C+D+E+F+L+M+P+S+U+V+Y+Z+X-3 -ccopt '@CFLAGS@'
-OCAMLLIBS =
+OCAMLFLAGS = \
+	-g \
+	-warn-error +C+D+E+F+L+M+P+S+U+V+Y+Z+X-3 \
+	-ccopt '$(CFLAGS)'
+OCAMLLIBS = $(LIBXML2_LIBS)
 
 bin_PROGRAMS = virt-top
 
-virt_top_SOURCES = dummy.c
+virt_top_SOURCES = xml-c.c
+virt_top_CFLAGS = \
+	$(LIBXML2_CFLAGS) \
+	-I$(libdir)/ocaml
 
 if !HAVE_OCAMLOPT
 OBJECTS = $(BOBJS)

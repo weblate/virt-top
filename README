@@ -20,10 +20,10 @@ Requirements
 OCaml >= 3.11.0
 ocaml-libvirt >= 0.6.1.1 (for virDomainGetCPUStats support)
 OCaml curses
+libxml2
 
 Optional:
 OCaml gettext
-OCaml xml-light
 OCaml Calendar, version 2 is preferred
 perldoc
 msgfmt
