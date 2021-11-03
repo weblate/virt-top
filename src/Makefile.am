@@ -78,7 +78,7 @@ BOBJS += main.cmo
 
 XOBJS = $(BOBJS:.cmo=.cmx)
 
-OCAMLFLAGS = -g -warn-error CDEFLMPSUVYZX-3 -ccopt '@CFLAGS@'
+OCAMLFLAGS = -g -warn-error +C+D+E+F+L+M+P+S+U+V+Y+Z+X-3 -ccopt '@CFLAGS@'
 OCAMLLIBS =
 
 bin_PROGRAMS = virt-top
