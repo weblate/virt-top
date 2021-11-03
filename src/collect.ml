@@ -137,174 +137,185 @@ let collect (conn, _, _, _, _, node_info, _, _) =
     let doms = Array.to_list doms in
     List.map (
       fun { D.dom_uuid = uuid; D.params = params } ->
-        let nr_params = Array.length params in
-        let get_param name =
-          let rec loop i =
-            if i = nr_params then None
-            else if fst params.(i) = name then Some (snd params.(i))
-            else loop (i+1)
+        try
+          let nr_params = Array.length params in
+          let get_param name =
+            let rec loop i =
+              if i = nr_params then None
+              else if fst params.(i) = name then Some (snd params.(i))
+              else loop (i+1)
+            in
+            loop 0
           in
-          loop 0
-        in
-        let get_param_int name default =
-          match get_param name with
-          | None -> None
-          | Some (D.TypedFieldInt32 i)
-          | Some (D.TypedFieldUInt32 i) -> Some (Int32.to_int i)
-          | Some (D.TypedFieldInt64 i)
-          | Some (D.TypedFieldUInt64 i) -> Some (Int64.to_int i)
-          | _ -> default
-        in
-        let get_param_int64 name default =
-          match get_param name with
-          | None -> None
-          | Some (D.TypedFieldInt32 i)
-          | Some (D.TypedFieldUInt32 i) -> Some (Int64.of_int32 i)
-          | Some (D.TypedFieldInt64 i)
-          | Some (D.TypedFieldUInt64 i) -> Some i
-          | _ -> default
-        in
+          let get_param_int name default =
+            match get_param name with
+            | None -> None
+            | Some (D.TypedFieldInt32 i)
+            | Some (D.TypedFieldUInt32 i) -> Some (Int32.to_int i)
+            | Some (D.TypedFieldInt64 i)
+            | Some (D.TypedFieldUInt64 i) -> Some (Int64.to_int i)
+            | _ -> default
+          in
+          let get_param_int64 name default =
+            match get_param name with
+            | None -> None
+            | Some (D.TypedFieldInt32 i)
+            | Some (D.TypedFieldUInt32 i) -> Some (Int64.of_int32 i)
+            | Some (D.TypedFieldInt64 i)
+            | Some (D.TypedFieldUInt64 i) -> Some i
+            | _ -> default
+          in
 
-        let dom = D.lookup_by_uuid conn uuid in
-        let id = D.get_id dom in
-        let name = D.get_name dom in
-        let state = get_param_int "state.state" None in
+          let dom = D.lookup_by_uuid conn uuid in
+          let id = D.get_id dom in
+          let name = D.get_name dom in
+          let state = get_param_int "state.state" None in
 
-        if state = Some 5 (* VIR_DOMAIN_SHUTOFF *) then
-          (name, Inactive)
-        else (
-          (* Active domain. *)
+          if state = Some 5 (* VIR_DOMAIN_SHUTOFF *) then
+            (name, Inactive)
+          else (
+            (* Active domain. *)
 
-          (* Synthesize a D.info struct out of the data we have
-           * from virConnectGetAllDomainStats.  Doing this is an
-           * artifact from the old APIs we used to use to fetch
-           * stats, we could simplify here, and also return the
-           * RSS memory. XXX
-           *)
-          let state =
-            match state with
-            | None | Some 0 -> D.InfoNoState
-            | Some 1 -> D.InfoRunning
-            | Some 2 -> D.InfoBlocked
-            | Some 3 -> D.InfoPaused
-            | Some 4 -> D.InfoShutdown
-            | Some 5 -> D.InfoShutoff
-            | Some 6 -> D.InfoCrashed
-            | Some 7 -> D.InfoPaused (* XXX really VIR_DOMAIN_PMSUSPENDED *)
-            | _ -> D.InfoNoState in
-          let memory =
-            match get_param_int64 "balloon.current" None with
-            | None -> 0_L
-            | Some m -> m in
-          let nr_virt_cpu =
-            match get_param_int "vcpu.current" None with
-            | None -> 1
-            | Some v -> v in
-          let cpu_time =
-            (* NB: libvirt does not return cpu.time for non-root domains. *)
-            match get_param_int64 "cpu.time" None with
-            | None -> 0_L
-            | Some ns -> ns in
-          let info = {
-            D.state = state;
-            max_mem = -1_L; (* not used anywhere in virt-top *)
-            memory = memory;
-            nr_virt_cpu = nr_virt_cpu;
-            cpu_time = cpu_time
-          } in
+            (* Synthesize a D.info struct out of the data we have
+             * from virConnectGetAllDomainStats.  Doing this is an
+             * artifact from the old APIs we used to use to fetch
+             * stats, we could simplify here, and also return the
+             * RSS memory. XXX
+             *)
+            let state =
+              match state with
+              | None | Some 0 -> D.InfoNoState
+              | Some 1 -> D.InfoRunning
+              | Some 2 -> D.InfoBlocked
+              | Some 3 -> D.InfoPaused
+              | Some 4 -> D.InfoShutdown
+              | Some 5 -> D.InfoShutoff
+              | Some 6 -> D.InfoCrashed
+              | Some 7 -> D.InfoPaused (* XXX really VIR_DOMAIN_PMSUSPENDED *)
+              | _ -> D.InfoNoState in
+            let memory =
+              match get_param_int64 "balloon.current" None with
+              | None -> 0_L
+              | Some m -> m in
+            let nr_virt_cpu =
+              match get_param_int "vcpu.current" None with
+              | None -> 1
+              | Some v -> v in
+            let cpu_time =
+              (* NB: libvirt does not return cpu.time for non-root domains. *)
+              match get_param_int64 "cpu.time" None with
+              | None -> 0_L
+              | Some ns -> ns in
+            let info = {
+              D.state = state;
+              max_mem = -1_L; (* not used anywhere in virt-top *)
+              memory = memory;
+              nr_virt_cpu = nr_virt_cpu;
+              cpu_time = cpu_time
+            } in
 
-          let nr_block_devs =
-            match get_param_int "block.count" None with
-            | None -> 0
-            | Some i -> i in
-          let block_stats =
-            List.map (
-              fun i ->
-              let dev =
-                match get_param (sprintf "block.%d.name" i) with
-                | None -> sprintf "blk%d" i
-                | Some (D.TypedFieldString s) -> s
-                | _ -> assert false in
-              dev, {
-                D.rd_req =
-                  (match get_param_int64 (sprintf "block.%d.rd.reqs" i) None
-                   with None -> 0_L | Some v -> v);
-                rd_bytes =
-                  (match get_param_int64 (sprintf "block.%d.rd.bytes" i) None
-                   with None -> 0_L | Some v -> v);
-                wr_req =
-                  (match get_param_int64 (sprintf "block.%d.wr.reqs" i) None
-                   with None -> 0_L | Some v -> v);
-                wr_bytes =
-                  (match get_param_int64 (sprintf "block.%d.wr.bytes" i) None
-                   with None -> 0_L | Some v -> v);
-                errs = 0_L
-              }
-            ) (range 0 (nr_block_devs-1)) in
+            let nr_block_devs =
+              match get_param_int "block.count" None with
+              | None -> 0
+              | Some i -> i in
+            let block_stats =
+              List.map (
+                fun i ->
+                  let dev =
+                    match get_param (sprintf "block.%d.name" i) with
+                    | None -> sprintf "blk%d" i
+                    | Some (D.TypedFieldString s) -> s
+                    | _ -> assert false in
+                  dev, {
+                    D.rd_req =
+                      (let n = sprintf "block.%d.rd.reqs" i in
+                       match get_param_int64 n None
+                       with None -> 0_L | Some v -> v);
+                    rd_bytes =
+                      (let n = sprintf "block.%d.rd.bytes" i in
+                       match get_param_int64 n None
+                       with None -> 0_L | Some v -> v);
+                    wr_req =
+                      (let n = sprintf "block.%d.wr.reqs" i in
+                       match get_param_int64 n None
+                       with None -> 0_L | Some v -> v);
+                    wr_bytes =
+                      (let n = sprintf "block.%d.wr.bytes" i in
+                       match get_param_int64 n None
+                       with None -> 0_L | Some v -> v);
+                    errs = 0_L
+                  }
+              ) (range 0 (nr_block_devs-1)) in
 
-          let nr_interface_devs =
-            match get_param_int "net.count" None with
-            | None -> 0
-            | Some i -> i in
-          let interface_stats =
-            List.map (
-              fun i ->
-              let dev =
-                match get_param (sprintf "net.%d.name" i) with
-                | None -> sprintf "net%d" i
-                | Some (D.TypedFieldString s) -> s
-                | _ -> assert false in
-              dev, {
-                D.rx_bytes =
-                  (match get_param_int64 (sprintf "net.%d.rx.bytes" i) None
-                   with None -> 0_L | Some v -> v);
-                rx_packets =
-                  (match get_param_int64 (sprintf "net.%d.rx.pkts" i) None
-                   with None -> 0_L | Some v -> v);
-                rx_errs =
-                  (match get_param_int64 (sprintf "net.%d.rx.errs" i) None
-                   with None -> 0_L | Some v -> v);
-                rx_drop =
-                  (match get_param_int64 (sprintf "net.%d.rx.drop" i) None
-                   with None -> 0_L | Some v -> v);
-                tx_bytes =
-                  (match get_param_int64 (sprintf "net.%d.tx.bytes" i) None
-                   with None -> 0_L | Some v -> v);
-                tx_packets =
-                  (match get_param_int64 (sprintf "net.%d.tx.pkts" i) None
-                   with None -> 0_L | Some v -> v);
-                tx_errs =
-                  (match get_param_int64 (sprintf "net.%d.tx.errs" i) None
-                   with None -> 0_L | Some v -> v);
-                tx_drop =
-                  (match get_param_int64 (sprintf "net.%d.tx.drop" i) None
-                   with None -> 0_L | Some v -> v);
-              }
-            ) (range 0 (nr_interface_devs-1)) in
+            let nr_interface_devs =
+              match get_param_int "net.count" None with
+              | None -> 0
+              | Some i -> i in
+            let interface_stats =
+              List.map (
+                fun i ->
+                  let dev =
+                    match get_param (sprintf "net.%d.name" i) with
+                    | None -> sprintf "net%d" i
+                    | Some (D.TypedFieldString s) -> s
+                    | _ -> assert false in
+                  dev, {
+                    D.rx_bytes =
+                      (match get_param_int64 (sprintf "net.%d.rx.bytes" i) None
+                       with None -> 0_L | Some v -> v);
+                    rx_packets =
+                      (match get_param_int64 (sprintf "net.%d.rx.pkts" i) None
+                       with None -> 0_L | Some v -> v);
+                    rx_errs =
+                      (match get_param_int64 (sprintf "net.%d.rx.errs" i) None
+                       with None -> 0_L | Some v -> v);
+                    rx_drop =
+                      (match get_param_int64 (sprintf "net.%d.rx.drop" i) None
+                       with None -> 0_L | Some v -> v);
+                    tx_bytes =
+                      (match get_param_int64 (sprintf "net.%d.tx.bytes" i) None
+                       with None -> 0_L | Some v -> v);
+                    tx_packets =
+                      (match get_param_int64 (sprintf "net.%d.tx.pkts" i) None
+                       with None -> 0_L | Some v -> v);
+                    tx_errs =
+                      (match get_param_int64 (sprintf "net.%d.tx.errs" i) None
+                       with None -> 0_L | Some v -> v);
+                    tx_drop =
+                      (match get_param_int64 (sprintf "net.%d.tx.drop" i) None
+                       with None -> 0_L | Some v -> v);
+                  }
+              ) (range 0 (nr_interface_devs-1)) in
 
-	  let prev_info, prev_block_stats, prev_interface_stats =
-	    try
-	      let prev_info, prev_block_stats, prev_interface_stats =
-		Hashtbl.find last_info uuid in
-	      Some prev_info, prev_block_stats, prev_interface_stats
-	    with Not_found -> None, [], [] in
+	    let prev_info, prev_block_stats, prev_interface_stats =
+	      try
+	        let prev_info, prev_block_stats, prev_interface_stats =
+		  Hashtbl.find last_info uuid in
+	        Some prev_info, prev_block_stats, prev_interface_stats
+	      with Not_found -> None, [], [] in
 
-	  (name,
-           Active {
-	     rd_domid = id; rd_domuuid = uuid; rd_dom = dom;
-             rd_info = info;
-	     rd_block_stats = block_stats;
-	     rd_interface_stats = interface_stats;
-	     rd_prev_info = prev_info;
-	     rd_prev_block_stats = prev_block_stats;
-	     rd_prev_interface_stats = prev_interface_stats;
-	     rd_cpu_time = 0.; rd_percent_cpu = 0.;
-             rd_mem_bytes = 0L; rd_mem_percent = 0L;
-	     rd_block_rd_reqs = None; rd_block_wr_reqs = None;
-             rd_block_rd_bytes = None; rd_block_wr_bytes = None;
-	     rd_net_rx_bytes = None; rd_net_tx_bytes = None;
-	   })
-        )
+	    (name,
+             Active {
+	       rd_domid = id; rd_domuuid = uuid; rd_dom = dom;
+               rd_info = info;
+	       rd_block_stats = block_stats;
+	       rd_interface_stats = interface_stats;
+	       rd_prev_info = prev_info;
+	       rd_prev_block_stats = prev_block_stats;
+	       rd_prev_interface_stats = prev_interface_stats;
+	       rd_cpu_time = 0.; rd_percent_cpu = 0.;
+               rd_mem_bytes = 0L; rd_mem_percent = 0L;
+	       rd_block_rd_reqs = None; rd_block_wr_reqs = None;
+               rd_block_rd_bytes = None; rd_block_wr_bytes = None;
+	       rd_net_rx_bytes = None; rd_net_tx_bytes = None;
+	    })
+          )
+        with
+          Libvirt.Virterror _ ->
+            (* this can happen if a domain goes away while we
+             * are reading it, just report an inactive domain
+             *)
+            ("", Inactive)
     ) doms in
 
   (* Calculate the CPU time (ns) and %CPU used by each domain. *)
