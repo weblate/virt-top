@@ -33,14 +33,6 @@ opt_calendar.cmo : \
 opt_calendar.cmx : \
     top.cmx \
     opt_gettext.cmx
-opt_csv.cmo : \
-    top.cmi \
-    opt_gettext.cmo \
-    csv_output.cmi
-opt_csv.cmx : \
-    top.cmx \
-    opt_gettext.cmx \
-    csv_output.cmx
 opt_gettext.cmo :
 opt_gettext.cmx :
 opt_xml.cmo : \

@@ -24,7 +24,6 @@ OCaml curses
 Optional:
 OCaml gettext
 OCaml xml-light
-OCaml CSV
 OCaml Calendar, version 2 is preferred
 perldoc
 msgfmt

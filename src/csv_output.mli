@@ -1,5 +1,5 @@
 (* 'top'-like tool for libvirt domains.
-   (C) Copyright 2007-2017 Richard W.M. Jones, Red Hat Inc.
+   (C) Copyright 2007-2021 Richard W.M. Jones, Red Hat Inc.
    http://libvirt.org/
 
    This program is free software; you can redistribute it and/or modify
@@ -19,8 +19,7 @@
 
 (** CSV output functions. *)
 
-(* Hook for [Opt_csv] to override (if present). *)
-val csv_write : (string list -> unit) ref
+val csv_set_filename : string -> unit
 
 val write_csv_header : bool * bool * bool * bool -> bool -> unit
 

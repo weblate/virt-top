@@ -69,12 +69,10 @@ fi
 
 dnl Check for optional OCaml packages.
 AC_CHECK_OCAML_PKG(calendar)
-AC_CHECK_OCAML_PKG(csv)
 AC_CHECK_OCAML_PKG(gettext)
 AC_CHECK_OCAML_PKG(xml-light)
 
 AM_CONDITIONAL([HAVE_PKG_CALENDAR], [test "x$OCAML_PKG_calendar" != "xno"])
-AM_CONDITIONAL([HAVE_PKG_CSV],      [test "x$OCAML_PKG_csv" != "xno"])
 AM_CONDITIONAL([HAVE_PKG_GETTEXT],  [test "x$OCAML_PKG_gettext" != "xno"])
 AM_CONDITIONAL([HAVE_PKG_XML_LIGHT],[test "x$OCAML_PKG_xml_light" != "xno"])
 

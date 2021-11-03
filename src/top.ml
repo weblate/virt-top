@@ -32,12 +32,6 @@ module N = Libvirt.Network
 
 let rcfile = ".virt-toprc"
 
-(* Hooks for CSV support (see [opt_csv.ml]). *)
-let csv_start : (string -> unit) ref =
-  ref (
-    fun _ -> failwith (s_"virt-top was compiled without support for CSV files")
-  )
-
 (* Hook for calendar support (see [opt_calendar.ml]). *)
 let parse_date_time : (string -> float) ref =
   ref (
@@ -83,7 +77,7 @@ let start_up () =
   and set_net_mode () = display_mode := NetDisplay
   and set_block_mode () = display_mode := BlockDisplay
   and set_csv filename =
-    (!csv_start) filename;
+    Csv_output.csv_set_filename filename;
     csv_enabled := true
   and no_init_file () = init_file := NoInitFile
   and set_init_file filename = init_file := InitFile filename

@@ -27,7 +27,6 @@ EXTRA_DIST = \
 	dummy.c \
 	main.ml \
 	opt_calendar.ml \
-	opt_csv.ml \
 	opt_gettext.ml \
 	opt_xml.ml \
 	redraw.ml \
@@ -65,10 +64,6 @@ BOBJS = \
 if HAVE_PKG_XML_LIGHT
 BOBJS += opt_xml.cmo
 OCAMLPACKAGES += -package xml-light
-endif
-if HAVE_PKG_CSV
-BOBJS += opt_csv.cmo
-OCAMLPACKAGES += -package csv
 endif
 if HAVE_PKG_CALENDAR
 BOBJS += opt_calendar.cmo

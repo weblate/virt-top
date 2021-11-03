@@ -114,10 +114,6 @@ Currently the statistics which this records vary between releases of
 virt-top (but the column headers will stay the same, so you can use
 those to process the CSV file).
 
-Not every version of virt-top supports CSV output - it depends how the
-program was compiled (see I<README> file in the source distribution
-for details).
-
 To save space you can compress your CSV files (if your shell supports
 this feature, eg. I<bash>):
 
