@@ -57,11 +57,6 @@ if test "x$OCAML_PKG_unix" = "xno"; then
     AC_MSG_ERROR([Cannot find required OCaml package 'unix'])
 fi
 
-AC_CHECK_OCAML_PKG(extlib)
-if test "x$OCAML_PKG_extlib" = "xno"; then
-    AC_MSG_ERROR([Cannot find required OCaml package 'extlib'])
-fi
-
 AC_CHECK_OCAML_PKG(libvirt)
 if test "x$OCAML_PKG_libvirt" = "xno"; then
     AC_MSG_ERROR([Cannot find required OCaml package 'libvirt'])

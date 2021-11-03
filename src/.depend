@@ -11,9 +11,11 @@ collect.cmx : \
 collect.cmi : \
     types.cmi
 csv_output.cmo : \
+    utils.cmi \
     collect.cmi \
     csv_output.cmi
 csv_output.cmx : \
+    utils.cmx \
     collect.cmx \
     csv_output.cmi
 csv_output.cmi : \

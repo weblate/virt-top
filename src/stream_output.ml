@@ -20,7 +20,6 @@
 (* [--stream] mode output functions. *)
 
 open Printf
-open ExtList
 
 open Utils
 open Collect
@@ -54,7 +53,7 @@ let append_stream (_, _, _, _, _, node_info, hostname, _) (* setup *)
        | Inactive, Inactive -> 0)
     in
     let cmp  (name1, dom1) (name2, dom2) = compare(dom1, dom2) in
-    List.sort ~cmp doms in
+    List.sort cmp doms in
   (*Print domains *)
   let dump_domain = fun name rd
   -> begin

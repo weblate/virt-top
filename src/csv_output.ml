@@ -20,8 +20,8 @@
 (* CSV output functions. *)
 
 open Printf
-open ExtList
 
+open Utils
 open Collect
 
 module C = Libvirt.Connect
@@ -92,9 +92,9 @@ let append_csv (_, _, _, _, _, node_info, hostname, _) (* setup *)
   let cmp (_, { rd_domid = rd_domid1 }) (_, { rd_domid = rd_domid2 }) =
     compare rd_domid1 rd_domid2
   in
-  let doms = List.sort ~cmp doms in
+  let doms = List.sort cmp doms in
 
-  let string_of_int64_option = Option.map_default Int64.to_string "" in
+  let string_of_int64_option = map_default Int64.to_string "" in
 
   let domain_fields = List.map (
     fun (domname, rd) ->

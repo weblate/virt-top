@@ -36,6 +36,12 @@ val read_config_file : string -> (int * string * string) list
 (* Pad or truncate a string to a fixed width. *)
 val pad : int -> string -> string
 
+(* Take up to n elements of xs, if available. *)
+val list_take : int -> 'a list -> 'a list
+
+(* Apply function f to [Some v], return default for [None] *)
+val map_default : ('a -> 'b) -> 'b -> 'a option -> 'b
+
 (* Int64 operators for convenience. *)
 val (+^) : int64 -> int64 -> int64
 val (-^) : int64 -> int64 -> int64

@@ -22,14 +22,18 @@
 open CalendarLib
 
 open Printf
-open ExtString
 
 open Opt_gettext.Gettext ;;
 
 Top.parse_date_time :=
 fun time ->
   let cal : Calendar.t =
-    if String.starts_with time "+" then ( (* +something *)
+    (* time is "+something" *)
+    let is_plus =
+      let n = String.length time in
+      n >= 1 && time.[0] = '+'
+    in
+    if is_plus then (
       let period = String.sub time 1 (String.length time - 1) in
       let period =
 	if String.contains period ':' then ( (* +HH:MM:SS *)

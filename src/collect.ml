@@ -21,7 +21,6 @@ module C = Libvirt.Connect
 module D = Libvirt.Domain
 
 open Printf
-open ExtList
 
 open Utils
 open Types

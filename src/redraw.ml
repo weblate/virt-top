@@ -17,7 +17,6 @@
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 *)
 
-open ExtList
 open Curses
 open Printf
 
@@ -137,7 +136,7 @@ let redraw display_mode sort_order
 	  if r <> 0 then r
 	  else compare name1 name2
 	in
-	List.sort ~cmp doms in
+	List.sort cmp doms in
 
       (* Print domains. *)
       attron A.reverse;
@@ -316,7 +315,7 @@ let redraw display_mode sort_order
 	  if r <> 0 then r
 	  else compare (dev1, name1) (dev2, name2)
 	in
-	List.sort ~cmp devs in
+	List.sort cmp devs in
 
       (* Print the header for network devices. *)
       attron A.reverse;
@@ -428,7 +427,7 @@ let redraw display_mode sort_order
 	  if r <> 0 then r
 	  else compare (dev1, name1) (dev2, name2)
 	in
-	List.sort ~cmp devs in
+	List.sort cmp devs in
 
       (* Print the header for block devices. *)
       attron A.reverse;
@@ -491,7 +490,7 @@ let redraw display_mode sort_order
   (* Time to grab another historical %CPU for the list? *)
   if time >= !historical_cpu_last_time +. float historical_cpu_delay
   then (
-    historical_cpu := percent_cpu :: List.take 10 !historical_cpu;
+    historical_cpu := percent_cpu :: list_take 10 !historical_cpu;
     historical_cpu_last_time := time
   );
 

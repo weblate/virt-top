@@ -45,7 +45,7 @@ EXTRA_DIST = \
 	version.ml \
 	virt-top.pod
 
-OCAMLPACKAGES = -package unix,extlib,curses,str,libvirt
+OCAMLPACKAGES = -package unix,curses,str,libvirt
 
 if HAVE_PKG_GETTEXT
 OCAMLPACKAGES  += -package gettext-stub

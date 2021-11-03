@@ -75,6 +75,14 @@ let trimr ?(test = isspace) str =
 let trim ?(test = isspace) str =
   trimr (triml str)
 
+(* Split string on the first instance of 'sep' character. *)
+let split str sep =
+  try
+    let i = String.index str sep in
+    String.sub str 0 i, String.sub str (i+1) (String.length str - 1)
+  with
+    Not_found -> str, ""
+
 (* Read a configuration file as a list of (key, value) pairs.
  * If the config file is missing this returns an empty list.
  *)
@@ -103,7 +111,7 @@ let read_config_file filename =
   (* Convert to key, value pairs. *)
   List.map (
     fun (lineno, line) ->
-      let key, value = ExtString.String.split line " " in
+      let key, value = split line ' ' in
       lineno, trim key, trim value
   ) lines
 
@@ -116,6 +124,19 @@ let pad width str =
     else if n > width then String.sub str 0 width
     else (* if n < width then *) str ^ String.make (width-n) ' '
   )
+
+(* Take up to n elements of xs, if available. *)
+let rec list_take n xs =
+  if n <= 0 then []
+  else (
+    match xs with
+    | [] -> []
+    | x :: xs -> x :: list_take (n-1) xs
+  )
+
+let map_default f def = function
+  | None -> def
+  | Some v -> f v
 
 module Show = struct
   (* Show a percentage in 4 chars. *)

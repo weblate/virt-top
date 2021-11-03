@@ -19,8 +19,6 @@
    This file contains all code which requires xml-light.
 *)
 
-open ExtList
-
 open Opt_gettext.Gettext
 
 module C = Libvirt.Connect

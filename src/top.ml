@@ -18,7 +18,6 @@
 *)
 
 open Printf
-open ExtList
 open Curses
 
 open Opt_gettext.Gettext
