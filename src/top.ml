@@ -306,7 +306,7 @@ let get_string maxlen =
   )
 
 (* Main loop. *)
-let rec main_loop ((_, batch_mode, script_mode, csv_enabled, stream_mode, _, _, _)
+let rec main_loop ((conn, batch_mode, script_mode, csv_enabled, stream_mode, _, _, _)
 		     as setup) =
   let csv_flags = !csv_cpu, !csv_mem, !csv_block, !csv_net in
 
@@ -372,7 +372,8 @@ let rec main_loop ((_, batch_mode, script_mode, csv_enabled, stream_mode, _, _, 
       if not !quit || !end_time <> None then
 	millisleep delay
     )
-  done
+  done;
+  C.close conn
 
 and get_key_press setup delay =
   (* Read the next key, waiting up to 'delay' milliseconds. *)
