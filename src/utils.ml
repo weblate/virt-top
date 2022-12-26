@@ -79,7 +79,7 @@ let trim ?(test = isspace) str =
 let split str sep =
   try
     let i = String.index str sep in
-    String.sub str 0 i, String.sub str (i+1) (String.length str - 1)
+    String.sub str 0 i, String.sub str (i+1) (String.length str - i - 1)
   with
     Not_found -> str, ""
 
