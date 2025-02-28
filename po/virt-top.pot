@@ -6,35 +6,35 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: virt-top 1.1.1\n"
+"Project-Id-Version: virt-top 1.1.2\n"
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
 "component=libguestfs&product=Virtualization+Tools\n"
-"POT-Creation-Date: 2021-11-03 20:20+0000\n"
+"POT-Creation-Date: 2025-02-28 11:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/top.ml:581
+#: src/top.ml:582
 msgid "# %s virt-top configuration file\n"
 msgstr ""
 
-#: src/top.ml:599
+#: src/top.ml:600
 msgid "# Enable CSV output to the named file\n"
 msgstr ""
 
-#: src/top.ml:602
+#: src/top.ml:603
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
 
-#: src/top.ml:596
+#: src/top.ml:597
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
 
-#: src/top.ml:582
+#: src/top.ml:583
 msgid "# generated on %s by %s\n"
 msgstr ""
 
@@ -102,7 +102,7 @@ msgstr ""
 msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
 msgstr ""
 
-#: src/top.ml:404
+#: src/top.ml:405
 msgid "Change delay from %.1f to: "
 msgstr ""
 
@@ -110,15 +110,15 @@ msgstr ""
 msgid "Connect to libvirt URI"
 msgstr ""
 
-#: src/top.ml:655
+#: src/top.ml:656
 msgid "Connect: %s; Hostname: %s"
 msgstr ""
 
-#: src/top.ml:694
+#: src/top.ml:695
 msgid "DISPLAY MODES"
 msgstr ""
 
-#: src/top.ml:411
+#: src/top.ml:412
 msgid "Delay must be > 0"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgstr ""
 msgid "Delay time interval (seconds)"
 msgstr ""
 
-#: src/top.ml:648
+#: src/top.ml:649
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
 msgstr ""
 
@@ -162,11 +162,11 @@ msgstr ""
 msgid "Domain name"
 msgstr ""
 
-#: src/top.ml:708
+#: src/top.ml:709
 msgid "Domains display"
 msgstr ""
 
-#: src/top.ml:622 src/top.ml:619 src/main.ml:69 src/main.ml:44
+#: src/top.ml:623 src/top.ml:620 src/main.ml:69 src/main.ml:44
 msgid "Error"
 msgstr ""
 
@@ -174,7 +174,7 @@ msgstr ""
 msgid "Exit at given time"
 msgstr ""
 
-#: src/top.ml:677
+#: src/top.ml:678
 msgid "Help"
 msgstr ""
 
@@ -186,11 +186,11 @@ msgstr ""
 msgid "Log statistics to CSV file"
 msgstr ""
 
-#: src/top.ml:660
+#: src/top.ml:661
 msgid "MAIN KEYS"
 msgstr ""
 
-#: src/top.ml:715
+#: src/top.ml:716
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
 
@@ -207,7 +207,7 @@ msgstr ""
 msgid "Net TX bytes"
 msgstr ""
 
-#: src/top.ml:417
+#: src/top.ml:418
 msgid "Not a valid number"
 msgstr ""
 
@@ -215,15 +215,15 @@ msgstr ""
 msgid "Number of iterations to run"
 msgstr ""
 
-#: src/top.ml:651 src/top.ml:650
+#: src/top.ml:652 src/top.ml:651
 msgid "Off"
 msgstr ""
 
-#: src/top.ml:651 src/top.ml:650
+#: src/top.ml:652 src/top.ml:651
 msgid "On"
 msgstr ""
 
-#: src/top.ml:675
+#: src/top.ml:676
 msgid "Quit"
 msgstr ""
 
@@ -231,7 +231,7 @@ msgstr ""
 msgid "Run from a script (no user interface)"
 msgstr ""
 
-#: src/top.ml:682
+#: src/top.ml:683
 msgid "SORTING"
 msgstr ""
 
@@ -239,7 +239,7 @@ msgstr ""
 msgid "Secure (\"kiosk\") mode"
 msgstr ""
 
-#: src/top.ml:691
+#: src/top.ml:692
 msgid "Select sort field"
 msgstr ""
 
@@ -255,27 +255,27 @@ msgstr ""
 msgid "Set sort order (%s)"
 msgstr ""
 
-#: src/top.ml:425
+#: src/top.ml:426
 msgid "Set sort order for main display"
 msgstr ""
 
-#: src/top.ml:676
+#: src/top.ml:677
 msgid "Set update interval"
 msgstr ""
 
-#: src/top.ml:687
+#: src/top.ml:688
 msgid "Sort by %CPU"
 msgstr ""
 
-#: src/top.ml:688
+#: src/top.ml:689
 msgid "Sort by %MEM"
 msgstr ""
 
-#: src/top.ml:690
+#: src/top.ml:691
 msgid "Sort by ID"
 msgstr ""
 
-#: src/top.ml:689
+#: src/top.ml:690
 msgid "Sort by TIME"
 msgstr ""
 
@@ -295,35 +295,35 @@ msgstr ""
 msgid "TIME (CPU time)"
 msgstr ""
 
-#: src/top.ml:711
+#: src/top.ml:712
 msgid "Toggle block devices"
 msgstr ""
 
-#: src/top.ml:710
+#: src/top.ml:711
 msgid "Toggle network interfaces"
 msgstr ""
 
-#: src/top.ml:709
+#: src/top.ml:710
 msgid "Toggle physical CPUs"
 msgstr ""
 
-#: src/top.ml:426
+#: src/top.ml:427
 msgid "Type key or use up and down cursor keys."
 msgstr ""
 
-#: src/top.ml:720
+#: src/top.ml:721
 msgid "Unknown command - try 'h' for help"
 msgstr ""
 
-#: src/top.ml:674
+#: src/top.ml:675
 msgid "Update display"
 msgstr ""
 
-#: src/top.ml:614
+#: src/top.ml:615
 msgid "Wrote settings to %s"
 msgstr ""
 
-#: src/top.ml:656
+#: src/top.ml:657
 msgid "default"
 msgstr ""
 
@@ -335,11 +335,11 @@ msgstr ""
 msgid "show block device load in bytes rather than reqs"
 msgstr ""
 
-#: src/top.ml:678
+#: src/top.ml:679
 msgid "toggle block info req/bytes"
 msgstr ""
 
-#: src/top.ml:636
+#: src/top.ml:637
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
 msgstr ""
 
