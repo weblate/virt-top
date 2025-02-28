@@ -81,7 +81,7 @@ bin_PROGRAMS = virt-top
 virt_top_SOURCES = xml-c.c
 virt_top_CFLAGS = \
 	$(LIBXML2_CFLAGS) \
-	-I$(libdir)/ocaml
+	-I$(OCAMLLIB)
 
 if !HAVE_OCAMLOPT
 OBJECTS = $(BOBJS)
