@@ -1,9 +1,8 @@
 virt-top
 ----------------------------------------------------------------------
 
-Copyright (C) 2007-2021 Richard W.M. Jones, Red Hat Inc.
-http://et.redhat.com/~rjones/virt-top/
-http://libvirt.org/ocaml/
+Copyright (C) 2007-2026 Richard W.M. Jones, Red Hat Inc.
+https://github.com/rwmjones/virt-top
 http://libvirt.org/
 
 virt-top is a top-like utility for showing stats of virtualized
