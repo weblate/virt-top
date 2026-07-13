@@ -1,5 +1,5 @@
 # virt-top
-# Copyright (C) 2007-2021 Red Hat Inc., Richard W.M. Jones
+# Copyright (C) 2007-2026 Red Hat Inc., Richard W.M. Jones
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -17,7 +17,7 @@
 
 dnl Process this file with autoconf to produce a configure script.
 
-AC_INIT([virt-top],[1.1.2])
+AC_INIT([virt-top],[1.1.3])
 AM_INIT_AUTOMAKE([foreign])
 AC_CONFIG_MACRO_DIR([m4])
 
