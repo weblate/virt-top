@@ -284,26 +284,18 @@ let sleep = Unix.sleep
 let millisleep n =
   ignore (Unix.select [] [] [] (float n /. 1000.))
 
-(* The curses getstr/getnstr functions are just weird.
- * This helper function also enables echo temporarily.
- *)
+(* This helper function enables echo temporarily. *)
 let get_string maxlen =
   ignore (echo ());
-  let str = Bytes.create maxlen in
-  (* Safe because binding calls getnstr.  However the unsafe cast
-   * to string is required because ocaml-curses needs to be fixed.
-   *)
-  let ok = getstr (Obj.magic str) in
+  let ret = match getstr() with
+  | Error _ -> ""
+  | Ok str -> (* Chop at first `\0'. *)
+    match String.index_opt str '\000' with
+    | Some(index) -> String.sub str 0 index
+    | None -> str (* it is full maxlen bytes *)
+  in
   ignore (noecho ());
-  if not ok then ""
-  else (
-    (* Chop at first '\0'. *)
-    try
-      let i = Bytes.index str '\000' in
-      Bytes.sub_string str 0 i
-    with
-      Not_found -> Bytes.to_string str (* it is full maxlen bytes *)
-  )
+  ret
 
 (* Main loop. *)
 let rec main_loop ((conn, batch_mode, script_mode, csv_enabled, stream_mode, _, _, _)

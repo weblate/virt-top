@@ -18,7 +18,7 @@ Requirements
 
 OCaml >= 3.11.0
 ocaml-libvirt >= 0.6.1.1 (for virDomainGetCPUStats support)
-OCaml curses
+OCaml curses >= 1.0.12
 libxml2
 
 Optional:
