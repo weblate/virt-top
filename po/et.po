@@ -10,8 +10,8 @@ msgstr ""
 "enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-06-30 09:13+0100\n"
 "PO-Revision-Date: 2026-07-21 20:17+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Priit Jõerüüt "
+"<jrtkbfdr@users.noreply.translate.fedoraproject.org>\n"
 "Language-Team: Estonian <https://translate.fedoraproject.org/projects/virt-"
 "top/master/et/>\n"
 "Language: et\n"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: src/types.ml:43
 msgid "%CPU"
-msgstr "% CPU"
+msgstr "%CPU"
 
 #: src/types.ml:44
 msgid "%MEM"
@@ -159,7 +159,7 @@ msgstr ""
 
 #: src/types.ml:46
 msgid "Domain ID"
-msgstr "Domeen"
+msgstr "Domeeni tunnus"
 
 #: src/types.ml:47
 msgid "Domain name"
@@ -167,7 +167,7 @@ msgstr "Domeeni nimi"
 
 #: src/top.ml:701
 msgid "Domains display"
-msgstr ""
+msgstr "Domeenide kuvamine"
 
 #: src/top.ml:615 src/top.ml:612 src/main.ml:69 src/main.ml:44
 msgid "Error"
@@ -179,7 +179,7 @@ msgstr ""
 
 #: src/top.ml:670
 msgid "Help"
-msgstr "Abi"
+msgstr "Abiteave"
 
 #: src/top.ml:120
 msgid "Historical CPU delay"
@@ -264,7 +264,7 @@ msgstr ""
 
 #: src/top.ml:669
 msgid "Set update interval"
-msgstr "Uuendamise välp"
+msgstr "Seadista uuendamise välp"
 
 #: src/top.ml:680
 msgid "Sort by %CPU"
@@ -304,7 +304,7 @@ msgstr ""
 
 #: src/top.ml:703
 msgid "Toggle network interfaces"
-msgstr "Võrguliideseid ei leidu"
+msgstr "Vaheta võrguliideseid"
 
 #: src/top.ml:702
 msgid "Toggle physical CPUs"
