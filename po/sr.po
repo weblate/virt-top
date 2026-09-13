@@ -8,8 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
+"component=libguestfs&product=Virtualization+Tools\n"
+"POT-Creation-Date: 2026-06-30 09:13+0100\n"
 "PO-Revision-Date: 2026-07-10 08:17+0000\n"
 "Last-Translator: \"Марко Костић (Marko Kostić)\" <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <https://translate.fedoraproject.org/projects/virt-"
@@ -22,39 +23,39 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2026.7.1.dev0\n"
 
-#: ../src/top.ml:1670
+#: src/top.ml:574
 msgid "# %s virt-top configuration file\n"
 msgstr "# %s датотека са поставкама вирт-топа\n"
 
-#: ../src/top.ml:1688
+#: src/top.ml:592
 msgid "# Enable CSV output to the named file\n"
 msgstr "# Омогући ЦСВ излаз у именовану датотеку\n"
 
-#: ../src/top.ml:1691
+#: src/top.ml:595
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
 "# Да бисте заштитили ову датотеку од преписивања, одкоментаришите следећу "
 "линију\n"
 
-#: ../src/top.ml:1685
+#: src/top.ml:589
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
 "# Да бисте послали поруке за отклањање грешака и поруке о грешкама у "
 "датотеку, одкоментаришите следећу линију\n"
 
-#: ../src/top.ml:1671
+#: src/top.ml:575
 msgid "# generated on %s by %s\n"
 msgstr "# направљено %s од стране %s\n"
 
-#: ../src/top.ml:65
+#: src/types.ml:43
 msgid "%CPU"
 msgstr "%CPU"
 
-#: ../src/top.ml:66
+#: src/types.ml:44
 msgid "%MEM"
 msgstr "%MEM"
 
-#: ../src/top.ml:1237
+#: src/redraw.ml:480
 msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
@@ -62,35 +63,35 @@ msgstr ""
 "%d области, %d активних, %d покренутих, %d мирујућих, %d паузираних, %d "
 "неактивних D:%d O:%d X:%d"
 
-#: ../src/top.ml:245
+#: src/top.ml:170
 msgid "%s: could not parse '%s' in init file: expecting %s"
 msgstr ""
 "%s: неуспешно рашчлањивање '%s' у датотеци за успостављање: очекује се %s"
 
-#: ../src/top.ml:240
+#: src/top.ml:165
 msgid "%s: could not parse '%s' in init file: expecting a number"
 msgstr ""
 "%s: неуспешно рашчлањивање '%s' у датотеци за успостављање: очекује се број"
 
-#: ../src/top.ml:235
+#: src/top.ml:160
 msgid "%s: could not parse '%s' in init file: expecting an integer"
 msgstr ""
 "%s: неуспешно рашчлањивање '%s' у датотеци за успостављање: очекује се цели "
 "број"
 
-#: ../src/top.ml:105
+#: src/types.ml:83
 msgid "%s: display should be %s"
 msgstr "%s: приказ би требао да буде %s"
 
-#: ../src/top.ml:83
+#: src/types.ml:61
 msgid "%s: sort order should be: %s"
 msgstr "%s: начин ређања би требао бити: %s"
 
-#: ../src/top.ml:217
+#: src/top.ml:142
 msgid "%s: unknown parameter"
 msgstr "%s: непознат параметар"
 
-#: ../src/top.ml:269
+#: src/top.ml:194
 msgid ""
 "%s:%d: configuration item ``%s'' ignored\n"
 "%!"
@@ -98,276 +99,272 @@ msgstr ""
 "%s:%d: ставка поставке ``%s'' је занемарена\n"
 "%!"
 
-#: ../src/top.ml:147
+#: src/top.ml:72
 msgid "-d: cannot set a negative delay"
 msgstr "-d: не може се поставити негативна пауза"
 
-#: ../src/top.ml:173
+#: src/top.ml:98
 msgid "Batch mode"
 msgstr "Групни режим"
 
-#: ../src/top.ml:72
+#: src/types.ml:50
 msgid "Block read reqs"
 msgstr "Захтеви блок читања"
 
-#: ../src/top.ml:73
+#: src/types.ml:51
 msgid "Block write reqs"
 msgstr "Захтеви блок уписа"
 
-#: ../src/top.ml:1244
+#: src/redraw.ml:487
 msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
 msgstr "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB од стране гостију)"
 
-#: ../src/top.ml:1493
+#: src/top.ml:397
 msgid "Change delay from %.1f to: "
 msgstr "Променити паузу са %.1f на: "
 
-#: ../src/top.ml:177 ../src/top.ml:175
+#: src/top.ml:102 src/top.ml:100
 msgid "Connect to libvirt URI"
 msgstr "Повежи се на либвирт УРИ"
 
-#: ../src/top.ml:1744
+#: src/top.ml:648
 msgid "Connect: %s; Hostname: %s"
 msgstr "Повежи: %s; Hostname: %s"
 
-#: ../src/top.ml:1783
+#: src/top.ml:687
 msgid "DISPLAY MODES"
 msgstr "РЕЖИМИ ПРИКАЗА"
 
-#: ../src/top.ml:1500
+#: src/top.ml:404
 msgid "Delay must be > 0"
 msgstr "Пауза мора бити > 0"
 
-#: ../src/top.ml:189
+#: src/top.ml:114
 msgid "Delay time interval (seconds)"
 msgstr "Интервал паузе (секунде)"
 
-#: ../src/top.ml:1737
+#: src/top.ml:641
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
 msgstr "Пауза: %.1f секунди; група: %s; безбедност: %s; ређање: %s"
 
-#: ../src/top.ml:181
+#: src/top.ml:106
 msgid "Disable CPU stats in CSV"
 msgstr "Онемогући CPU статистике у ЦСВ-у"
 
-#: ../src/top.ml:185
+#: src/top.ml:110
 msgid "Disable block device stats in CSV"
 msgstr "Онемогући статистике блок уређаја у ЦСВ-у"
 
-#: ../src/top.ml:183
+#: src/top.ml:108
 msgid "Disable memory stats in CSV"
 msgstr "Онемогући статистику меморије у ЦСВ-у"
 
-#: ../src/top.ml:187
+#: src/top.ml:112
 msgid "Disable net stats in CSV"
 msgstr "Онемогући мрежне статистике у ЦСВ-у"
 
-#: ../src/top.ml:214
+#: src/top.ml:139
 msgid "Display version number and exit"
 msgstr "Прикажи број верзије и изађи"
 
-#: ../src/top.ml:199
+#: src/top.ml:124
 msgid "Do not read init file"
 msgstr "Немој читати инициализациону датотеку"
 
-#: ../src/top.ml:68
+#: src/types.ml:46
 msgid "Domain ID"
 msgstr "ID области"
 
-#: ../src/top.ml:69
+#: src/types.ml:47
 msgid "Domain name"
 msgstr "Име области"
 
-#: ../src/top.ml:1797
+#: src/top.ml:701
 msgid "Domains display"
 msgstr "Приказ области"
 
-#: ../src/main.ml:69 ../src/main.ml:44 ../src/top.ml:1711 ../src/top.ml:1708
+#: src/top.ml:615 src/top.ml:612 src/main.ml:69 src/main.ml:44
 msgid "Error"
 msgstr "Грешка"
 
-#: ../src/top.ml:193
+#: src/top.ml:118
 msgid "Exit at given time"
 msgstr "Излаз у одређено време"
 
-#: ../src/top.ml:1766
+#: src/top.ml:670
 msgid "Help"
 msgstr "Помоћ"
 
-#: ../src/top.ml:195
+#: src/top.ml:120
 msgid "Historical CPU delay"
 msgstr "Историјска CPU пауза"
 
-#: ../src/top.ml:179
+#: src/top.ml:104
 msgid "Log statistics to CSV file"
 msgstr "Записуј статистике у CSV датотеку"
 
-#: ../src/top.ml:1749
+#: src/top.ml:653
 msgid "MAIN KEYS"
 msgstr "ГЛАВНИ КЉУЧЕВИ"
 
-#: ../src/top.ml:1804
+#: src/top.ml:708
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
 "Више помоћи на virt-top(1) man страници. Притисните било који тастер за "
 "повратак."
 
-#: ../src/top.ml:294
+#: src/top.ml:219
 msgid ""
 "NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
 "Напомена: ако желите да пратите локални хипервизор, обично морате бити админ "
 "корисник"
 
-#: ../src/top.ml:70
+#: src/types.ml:48
 msgid "Net RX bytes"
 msgstr "Мрежни RX бајтови"
 
-#: ../src/top.ml:71
+#: src/types.ml:49
 msgid "Net TX bytes"
 msgstr "Мрежни TX бајтови"
 
-#: ../src/top.ml:1506
+#: src/top.ml:410
 msgid "Not a valid number"
 msgstr "Није исправан број"
 
-#: ../src/top.ml:201
+#: src/top.ml:126
 msgid "Number of iterations to run"
 msgstr "Број понављања за извршавање"
 
-#: ../src/top.ml:1740 ../src/top.ml:1739
+#: src/top.ml:644 src/top.ml:643
 msgid "Off"
 msgstr "Искључи"
 
-#: ../src/top.ml:1740 ../src/top.ml:1739
+#: src/top.ml:644 src/top.ml:643
 msgid "On"
 msgstr "Укључи"
 
-#: ../src/top.ml:1764
+#: src/top.ml:668
 msgid "Quit"
 msgstr "Изађи"
 
-#: ../src/top.ml:208
+#: src/top.ml:133
 msgid "Run from a script (no user interface)"
 msgstr "Извршавање из скрипте (без корисничког окружења)"
 
-#: ../src/top.ml:1771
+#: src/top.ml:675
 msgid "SORTING"
 msgstr "РЕЂАЊЕ"
 
-#: ../src/top.ml:206
+#: src/top.ml:131
 msgid "Secure (\"kiosk\") mode"
 msgstr "Безбедни режим („киоск“)"
 
-#: ../src/top.ml:1780
+#: src/top.ml:684
 msgid "Select sort field"
 msgstr "Одаберите поље по којем се ређа"
 
-#: ../src/top.ml:191
+#: src/top.ml:116
 msgid "Send debug messages to file"
 msgstr "Пошаљи поруке за отклањање грешака у датотеку"
 
-#: ../src/top.ml:197
+#: src/top.ml:122
 msgid "Set name of init file"
 msgstr "Постави име иницијализационе датотеке"
 
-#: ../src/top.ml:203
+#: src/top.ml:128
 msgid "Set sort order (%s)"
 msgstr "Постави начин ређања (%s)"
 
-#: ../src/top.ml:1514
+#: src/top.ml:418
 msgid "Set sort order for main display"
 msgstr "Постави начин ређања за главни приказ"
 
-#: ../src/top.ml:1765
+#: src/top.ml:669
 msgid "Set update interval"
 msgstr "Постави интервал освежавања"
 
-#: ../src/top.ml:1776
+#: src/top.ml:680
 msgid "Sort by %CPU"
 msgstr "Поређај по %CPU"
 
-#: ../src/top.ml:1777
+#: src/top.ml:681
 msgid "Sort by %MEM"
 msgstr "Поређај по %MEM"
 
-#: ../src/top.ml:1779
+#: src/top.ml:683
 msgid "Sort by ID"
 msgstr "Поређај по ID"
 
-#: ../src/top.ml:1778
+#: src/top.ml:682
 msgid "Sort by TIME"
 msgstr "Поређај по ВРЕМЕНУ"
 
-#: ../src/top.ml:171
+#: src/top.ml:96
 msgid "Start by displaying block devices"
 msgstr "Почни са приказивањем блок уређаја"
 
-#: ../src/top.ml:169
+#: src/top.ml:94
 msgid "Start by displaying network interfaces"
 msgstr "Почни са приказивањем мрежних спрега"
 
-#: ../src/top.ml:167
+#: src/top.ml:92
 msgid "Start by displaying pCPUs (default: tasks)"
 msgstr "Почни са приказивањем pCPU-ова (подразумевано: задаци)"
 
-#: ../src/top.ml:67
+#: src/types.ml:45
 msgid "TIME (CPU time)"
 msgstr "ВРЕМЕ (CPU време)"
 
-#: ../src/top.ml:1800
+#: src/top.ml:704
 msgid "Toggle block devices"
 msgstr "Окини блок уређаје"
 
-#: ../src/top.ml:1799
+#: src/top.ml:703
 msgid "Toggle network interfaces"
 msgstr "Окини мрежне спреге"
 
-#: ../src/top.ml:1798
+#: src/top.ml:702
 msgid "Toggle physical CPUs"
 msgstr "Окини физичке процесоре"
 
-#: ../src/top.ml:1515
+#: src/top.ml:419
 msgid "Type key or use up and down cursor keys."
 msgstr "Притистните тастер или користите тастере навигације горе и доле."
 
-#: ../src/top.ml:1809
+#: src/top.ml:713
 msgid "Unknown command - try 'h' for help"
 msgstr "Непозната команда - покушајте 'h' за помоћ"
 
-#: ../src/top.ml:1763
+#: src/top.ml:667
 msgid "Update display"
 msgstr "Освежи приказ"
 
-#: ../src/top.ml:1703
+#: src/top.ml:607
 msgid "Wrote settings to %s"
 msgstr "Уписана подешавања у %s"
 
-#: ../src/top.ml:1745
+#: src/top.ml:649
 msgid "default"
 msgstr "подразумевано"
 
-#: ../src/top.ml:210
+#: src/top.ml:135
 msgid "dump output to stdout (no userinterface)"
 msgstr "испиши излаз на стандардни излаз (без корисничког прочеља)"
 
-#: ../src/opt_xml.ml:46
-msgid "get_xml_desc didn't return <domain/>"
-msgstr "get_xml_desc није вратио <domain/>"
-
-#: ../src/top.ml:212
+#: src/top.ml:137
 msgid "show block device load in bytes rather than reqs"
 msgstr "прикажи оптерећење блок уређаја у бајтовима уместо у захтевима"
 
-#: ../src/top.ml:1767
+#: src/top.ml:671
 msgid "toggle block info req/bytes"
 msgstr "окини податке о блоку захтеви/бајтови"
 
-#: ../src/top.ml:1725
+#: src/top.ml:629
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
 msgstr "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d од Red Hat"
 
-#: ../src/top.ml:218
+#: src/top.ml:143
 msgid ""
 "virt-top : a 'top'-like utility for virtualization\n"
 "\n"
@@ -383,10 +380,12 @@ msgstr ""
 "\n"
 "ОПЦИЈЕ"
 
-#: ../src/top.ml:42
-msgid "virt-top was compiled without support for CSV files"
-msgstr "virt-top је компајлиран без подршке за CSV датотеке"
-
-#: ../src/top.ml:53
+#: src/top.ml:39
 msgid "virt-top was compiled without support for dates and times"
 msgstr "virt-top је компајлиран без подршке за датуме и времена"
+
+#~ msgid "get_xml_desc didn't return <domain/>"
+#~ msgstr "get_xml_desc није вратио <domain/>"
+
+#~ msgid "virt-top was compiled without support for CSV files"
+#~ msgstr "virt-top је компајлиран без подршке за CSV датотеке"
