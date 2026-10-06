@@ -5,14 +5,14 @@
 # Translators:
 # George Machitidze <giomac@gmail.com>, 2013
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-27 11:32+0000\n"
 "PO-Revision-Date: 2026-07-12 03:18+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/virt-"
 "top/master/ka/>\n"
 "Language: ka\n"
@@ -28,18 +28,18 @@ msgstr "# %s virt-top -ის კონფიგურაციის ფაი�
 
 #: ../src/top.ml:1688
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# CSV-ის ჩაწერის ჩართვა მითითებულ ფაილში\n"
 
 #: ../src/top.ml:1691
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
-"# ამ ფაილის თავზე გადაწერისგან დასაცავად კომნტარი მოხსენით შემდეგ ხაზს\n"
+"# ამ ფაილის თავზე გადაწერისგან დასაცავად, მოხსენით კომენტარი შემდეგ ხაზს\n"
 
 #: ../src/top.ml:1685
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
-"#გამართვისა და შეცდომების შეტყობინებების ფაილში ჩასაწერად კომენტარი მოხსენით "
-"შემდეგ ხაზს\n"
+"# გამართვისა და შეცდომების შეტყობინებების ფაილში ჩასაწერად, მოხსენით "
+"კომენტარი შემდეგ ხაზს\n"
 
 #: ../src/top.ml:1671
 msgid "# generated on %s by %s\n"
@@ -58,8 +58,8 @@ msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d დომენი, %d აქტიური, %d გაშვებული, %d სძინავს, %d დაპაუზებული, %d "
-"არააქტიური D:%d O:%d X:%d"
+"%d დომენი, %d აქტიურია, %d გაშვებულია, %d-ს სძინავს, %d შეჩერებულია, %d "
+"არააქტიურია D:%d O:%d X:%d"
 
 #: ../src/top.ml:245
 msgid "%s: could not parse '%s' in init file: expecting %s"
@@ -67,11 +67,11 @@ msgstr "%s: init ფილში '%s' -ის დამუშავების 
 
 #: ../src/top.ml:240
 msgid "%s: could not parse '%s' in init file: expecting a number"
-msgstr "%s: init ფილში '%s' -ის დამუშავების შეცდომა: რიცხვს მოველოდი"
+msgstr "%s: init ფილში '%s' -ის დამუშავების შეცდომა: მოველოდი რიცხვს"
 
 #: ../src/top.ml:235
 msgid "%s: could not parse '%s' in init file: expecting an integer"
-msgstr "%s: init ფილში '%s' -ის დამუშავების შეცდომა: მთელ რიცხვს მოველოდი"
+msgstr "%s: init ფილში '%s' -ის დამუშავების შეცდომა: მოველოდი მთელ რიცხვს"
 
 #: ../src/top.ml:105
 msgid "%s: display should be %s"
@@ -90,24 +90,24 @@ msgid ""
 "%s:%d: configuration item ``%s'' ignored\n"
 "%!"
 msgstr ""
-"%s:%d: კონფიგურაცის ჩანაწერმა ``%s'' დააიგნორა\n"
+"%s:%d: კონფიგურაცის ელემენტი ``%s'' გამოტოვებულია\n"
 "%!"
 
 #: ../src/top.ml:147
 msgid "-d: cannot set a negative delay"
-msgstr "-d: უარყოფით დაყოვნებას ვერ დააყენებთ"
+msgstr "-d: უარყოფითი დაყოვნების დაყენება შეუძლებელია"
 
 #: ../src/top.ml:173
 msgid "Batch mode"
-msgstr ""
+msgstr "პაკეტური რეჟიმი"
 
 #: ../src/top.ml:72
 msgid "Block read reqs"
-msgstr ""
+msgstr "ბლოკის წაკითხვის მოთხოვნები"
 
 #: ../src/top.ml:73
 msgid "Block write reqs"
-msgstr ""
+msgstr "ბლოკის ჩაწერის მოთხოვნები"
 
 #: ../src/top.ml:1244
 msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
@@ -127,11 +127,11 @@ msgstr "დაკავშირება: %s; ჰოსტის სახე�
 
 #: ../src/top.ml:1783
 msgid "DISPLAY MODES"
-msgstr "ეკრანის რეჟიმები"
+msgstr "ჩვენების რეჟიმები"
 
 #: ../src/top.ml:1500
 msgid "Delay must be > 0"
-msgstr "დაყოვნება > 0 უნდა იყოს"
+msgstr "დაყოვნება უნდა იყოს > 0"
 
 #: ../src/top.ml:189
 msgid "Delay time interval (seconds)"
@@ -147,15 +147,15 @@ msgstr "CSV-ში CPU-ის სტატისტიკის გამორ�
 
 #: ../src/top.ml:185
 msgid "Disable block device stats in CSV"
-msgstr "CSV-ში ბლოკური მოწყობილობების სტატისტიკის გამორთვა"
+msgstr "ბლოკური მოწყობილობების სტატისტიკის გამორთვა CSV-ში"
 
 #: ../src/top.ml:183
 msgid "Disable memory stats in CSV"
-msgstr "CSV-ში მეხსიერების სტატისტიკის გამორთვა"
+msgstr "მეხსიერების სტატისტიკის გამორთვა CSV-ში"
 
 #: ../src/top.ml:187
 msgid "Disable net stats in CSV"
-msgstr "CSV-ში ქსელის სტატისტიკის გამორთვა"
+msgstr "ქსელის სტატისტიკის გამორთვა CSV-ში"
 
 #: ../src/top.ml:214
 msgid "Display version number and exit"
@@ -183,7 +183,7 @@ msgstr "შეცდომა"
 
 #: ../src/top.ml:193
 msgid "Exit at given time"
-msgstr "მითითებულ დროს გასვლა"
+msgstr "გასვლა მითითებულ დროს"
 
 #: ../src/top.ml:1766
 msgid "Help"
@@ -195,7 +195,7 @@ msgstr "CPU-ის დაყოვნების ისტორია"
 
 #: ../src/top.ml:179
 msgid "Log statistics to CSV file"
-msgstr "სტატისტიკის CSV ფაილში ჩაწერა"
+msgstr "სტატისტიკის ჩაწერა CSV ფაილში"
 
 #: ../src/top.ml:1749
 msgid "MAIN KEYS"
@@ -211,19 +211,20 @@ msgstr ""
 msgid ""
 "NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
-"NB: თუ გნებავთ ლოკალური ჰაიპერვაიზორის მონიტორინგი, root-ის უფლებებია საჭირო"
+"NB: ლოკალური ჰაიპერვაიზორის მონიტორინგისთვის, ჩვეულებრივ, root-ის უფლებები "
+"გჭირდებათ"
 
 #: ../src/top.ml:70
 msgid "Net RX bytes"
-msgstr "ქსელის RX ბაიტებში"
+msgstr "ქსელის RX ბაიტი"
 
 #: ../src/top.ml:71
 msgid "Net TX bytes"
-msgstr "ქსელის TX ბაიტებში"
+msgstr "ქსელის TX ბაიტი"
 
 #: ../src/top.ml:1506
 msgid "Not a valid number"
-msgstr "არ წარმოადგენს სწორ რიცხვს"
+msgstr "სწორი რიცხვი არაა"
 
 #: ../src/top.ml:201
 msgid "Number of iterations to run"
@@ -235,7 +236,7 @@ msgstr "გამორთ"
 
 #: ../src/top.ml:1740 ../src/top.ml:1739
 msgid "On"
-msgstr ""
+msgstr "ჩართ"
 
 #: ../src/top.ml:1764
 msgid "Quit"
@@ -255,7 +256,7 @@ msgstr "დაცული (\"კიოსკის\") რეჟიმი"
 
 #: ../src/top.ml:1780
 msgid "Select sort field"
-msgstr "აირჩიეთ დასალაგებელი ველი"
+msgstr "აირჩიეთ დალაგების ველი"
 
 #: ../src/top.ml:191
 msgid "Send debug messages to file"
@@ -291,7 +292,7 @@ msgstr "ID-ით დალაგება"
 
 #: ../src/top.ml:1778
 msgid "Sort by TIME"
-msgstr ""
+msgstr "დროით დალაგება"
 
 #: ../src/top.ml:171
 msgid "Start by displaying block devices"
@@ -323,12 +324,11 @@ msgstr "ფიზიკური CPU-ების გადართვა"
 
 #: ../src/top.ml:1515
 msgid "Type key or use up and down cursor keys."
-msgstr ""
-"დააწექით ღილაკს ან გამოიყენეთ მაღლა და დაბლა მაჩვენებელი კურსორის ღილაკები."
+msgstr "დააწექით ღილაკს ან გამოიყენეთ მაღლა და დაბლა მაჩვენებელი ღილაკები."
 
 #: ../src/top.ml:1809
 msgid "Unknown command - try 'h' for help"
-msgstr "უცნობი ბრძანება - დახმარებისთვის სცადეთ \"h\""
+msgstr "უცნობი ბრძანება - დახმარებისთვის სცადეთ 'h'"
 
 #: ../src/top.ml:1763
 msgid "Update display"
@@ -344,11 +344,11 @@ msgstr "ნაგულისხმები"
 
 #: ../src/top.ml:210
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "გამოტანა stdout-ზე (მომხმარებლის ინტერფეისის გარეშე)"
 
 #: ../src/opt_xml.ml:46
 msgid "get_xml_desc didn't return <domain/>"
-msgstr "get_xml_desc-მა არ დააბრუნა<domain/>"
+msgstr "get_xml_desc-მა არ დააბრუნა <domain/>"
 
 #: ../src/top.ml:212
 msgid "show block device load in bytes rather than reqs"
@@ -380,7 +380,7 @@ msgstr ""
 
 #: ../src/top.ml:42
 msgid "virt-top was compiled without support for CSV files"
-msgstr ""
+msgstr "virt-top აგებულია CSV ფაილების აგების გარეშე"
 
 #: ../src/top.ml:53
 msgid "virt-top was compiled without support for dates and times"
