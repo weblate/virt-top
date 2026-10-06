@@ -5,8 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
+"component=libguestfs&product=Virtualization+Tools\n"
+"POT-Creation-Date: 2026-06-30 09:13+0100\n"
 "PO-Revision-Date: 2015-02-21 08:10-0500\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Gujarati <trans-gu@lists.fedoraproject.org>\n"
@@ -17,35 +18,35 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Zanata 4.6.2\n"
 
-#: ../src/top.ml:1670
+#: src/top.ml:574
 msgid "# %s virt-top configuration file\n"
 msgstr ""
 
-#: ../src/top.ml:1688
+#: src/top.ml:592
 msgid "# Enable CSV output to the named file\n"
 msgstr ""
 
-#: ../src/top.ml:1691
+#: src/top.ml:595
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
 
-#: ../src/top.ml:1685
+#: src/top.ml:589
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
 
-#: ../src/top.ml:1671
+#: src/top.ml:575
 msgid "# generated on %s by %s\n"
 msgstr ""
 
-#: ../src/top.ml:65
+#: src/types.ml:43
 msgid "%CPU"
 msgstr "%CPU"
 
-#: ../src/top.ml:66
+#: src/types.ml:44
 msgid "%MEM"
 msgstr "%MEM"
 
-#: ../src/top.ml:1237
+#: src/redraw.ml:480
 msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
@@ -53,302 +54,298 @@ msgstr ""
 "%d ડોમેઇને, %d સક્રિય, %d ચાલી રહ્યુ છે, %d નિષ્ક્રિય, %d અટકેલ, %d નિષ્ક્રિય D:%d O:%d "
 "X:%d"
 
-#: ../src/top.ml:245
+#: src/top.ml:170
 msgid "%s: could not parse '%s' in init file: expecting %s"
 msgstr ""
 
-#: ../src/top.ml:240
+#: src/top.ml:165
 msgid "%s: could not parse '%s' in init file: expecting a number"
 msgstr ""
 
-#: ../src/top.ml:235
+#: src/top.ml:160
 msgid "%s: could not parse '%s' in init file: expecting an integer"
 msgstr ""
 
-#: ../src/top.ml:105
+#: src/types.ml:83
 msgid "%s: display should be %s"
 msgstr "%s: દેખાવ %s હોવુ જ જોઇએ"
 
-#: ../src/top.ml:83
+#: src/types.ml:61
 msgid "%s: sort order should be: %s"
 msgstr "%s: ક્રમ એ હોવો જોઇએ: %s"
 
-#: ../src/top.ml:217
+#: src/top.ml:142
 msgid "%s: unknown parameter"
 msgstr "%s: અજ્ઞાત પરિમાણ"
 
-#: ../src/top.ml:269
+#: src/top.ml:194
 msgid ""
 "%s:%d: configuration item ``%s'' ignored\n"
 "%!"
 msgstr ""
 
-#: ../src/top.ml:147
+#: src/top.ml:72
 msgid "-d: cannot set a negative delay"
 msgstr "-d: નકારાત્મક વિલંબને સુયોજિત કરી શકાતુ નથી"
 
-#: ../src/top.ml:173
+#: src/top.ml:98
 msgid "Batch mode"
 msgstr "બેચ સ્થિતિ"
 
-#: ../src/top.ml:72
+#: src/types.ml:50
 msgid "Block read reqs"
 msgstr "બ્લોક વાંચવાનું જરૂરી છે"
 
-#: ../src/top.ml:73
+#: src/types.ml:51
 msgid "Block write reqs"
 msgstr "બ્લોક લખવાનું જરૂરી છે"
 
-#: ../src/top.ml:1244
+#: src/redraw.ml:487
 msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
 msgstr "CPU: %2.1f%%  Mem: %Ld MB (મહેમાન દ્દારા %Ld MB)"
 
-#: ../src/top.ml:1493
+#: src/top.ml:397
 msgid "Change delay from %.1f to: "
 msgstr "ને %.1f  માંથી વિલંબ સમય ને બદલો: "
 
-#: ../src/top.ml:177 ../src/top.ml:175
+#: src/top.ml:102 src/top.ml:100
 msgid "Connect to libvirt URI"
 msgstr ""
 
-#: ../src/top.ml:1744
+#: src/top.ml:648
 msgid "Connect: %s; Hostname: %s"
 msgstr "જોડો: %s; યજમાનનામ: %s"
 
-#: ../src/top.ml:1783
+#: src/top.ml:687
 msgid "DISPLAY MODES"
 msgstr "સ્થિતિઓને દેખાડો"
 
-#: ../src/top.ml:1500
+#: src/top.ml:404
 msgid "Delay must be > 0"
 msgstr "વિલંબ એ > 0 હોવુ જ જોઇએ"
 
-#: ../src/top.ml:189
+#: src/top.ml:114
 msgid "Delay time interval (seconds)"
 msgstr "વિલંબ સમય સમયગાળો (સેકંડો)"
 
-#: ../src/top.ml:1737
+#: src/top.ml:641
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
 msgstr "વિલંબ: %.1f secs; બેચ: %s; સુરક્ષા: %s; ક્રમ: %s"
 
-#: ../src/top.ml:181
+#: src/top.ml:106
 msgid "Disable CPU stats in CSV"
 msgstr "CSV માં CPU સ્થિતિઓને નિષ્ક્રિય કરો"
 
-#: ../src/top.ml:185
+#: src/top.ml:110
 msgid "Disable block device stats in CSV"
 msgstr "CSV માં બ્લોક ઉપકરણ સ્થિતિઓને નિષ્ક્રિય કરો"
 
-#: ../src/top.ml:183
+#: src/top.ml:108
 msgid "Disable memory stats in CSV"
 msgstr ""
 
-#: ../src/top.ml:187
+#: src/top.ml:112
 msgid "Disable net stats in CSV"
 msgstr "CSV માં નેટ સ્થિતિને નિષ્ક્રિય કરો"
 
-#: ../src/top.ml:214
+#: src/top.ml:139
 msgid "Display version number and exit"
 msgstr "આવૃત્તિ નંબરને દર્શાવો અને બહાર નીકળો"
 
-#: ../src/top.ml:199
+#: src/top.ml:124
 msgid "Do not read init file"
 msgstr "init ફાઇલ વંચાતુ નથી"
 
-#: ../src/top.ml:68
+#: src/types.ml:46
 msgid "Domain ID"
 msgstr "ડોમેઇન ID"
 
-#: ../src/top.ml:69
+#: src/types.ml:47
 msgid "Domain name"
 msgstr "ડોમેઇન નામ"
 
-#: ../src/top.ml:1797
+#: src/top.ml:701
 msgid "Domains display"
 msgstr "ડોમેઇનોનો દેખાવ"
 
-#: ../src/main.ml:69 ../src/main.ml:44 ../src/top.ml:1711 ../src/top.ml:1708
+#: src/top.ml:615 src/top.ml:612 src/main.ml:69 src/main.ml:44
 msgid "Error"
 msgstr "ભૂલ"
 
-#: ../src/top.ml:193
+#: src/top.ml:118
 msgid "Exit at given time"
 msgstr "આપેલ સમય પર બહાર નીકળો"
 
-#: ../src/top.ml:1766
+#: src/top.ml:670
 msgid "Help"
 msgstr "મદદ"
 
-#: ../src/top.ml:195
+#: src/top.ml:120
 msgid "Historical CPU delay"
 msgstr "ઐતિહાસિક CPU વિલંબ"
 
-#: ../src/top.ml:179
+#: src/top.ml:104
 msgid "Log statistics to CSV file"
 msgstr "CSV ફાઇલમાં લોગ પરિસ્થિતિઓ"
 
-#: ../src/top.ml:1749
+#: src/top.ml:653
 msgid "MAIN KEYS"
 msgstr "મુખ્ય કીઓ"
 
-#: ../src/top.ml:1804
+#: src/top.ml:708
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr "virt-top(1) પુસ્તિકા પાનાંમાં વધારે મદદ. પાછુ લાવવા માટે કોઇપણ કીને દબાવો."
 
-#: ../src/top.ml:294
+#: src/top.ml:219
 msgid ""
 "NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
 
-#: ../src/top.ml:70
+#: src/types.ml:48
 msgid "Net RX bytes"
 msgstr "નેટ RX બાઇટો"
 
-#: ../src/top.ml:71
+#: src/types.ml:49
 msgid "Net TX bytes"
 msgstr "નેટ TX બાઇટો"
 
-#: ../src/top.ml:1506
+#: src/top.ml:410
 msgid "Not a valid number"
 msgstr "યોગ્ય નંબર નથી"
 
-#: ../src/top.ml:201
+#: src/top.ml:126
 msgid "Number of iterations to run"
 msgstr "ચલાવવા માટે પુનરાવર્તનોની સંખ્યા"
 
-#: ../src/top.ml:1740 ../src/top.ml:1739
+#: src/top.ml:644 src/top.ml:643
 msgid "Off"
 msgstr "બંધ"
 
-#: ../src/top.ml:1740 ../src/top.ml:1739
+#: src/top.ml:644 src/top.ml:643
 msgid "On"
 msgstr "ચાલુ"
 
-#: ../src/top.ml:1764
+#: src/top.ml:668
 msgid "Quit"
 msgstr "બહાર નીકળો"
 
-#: ../src/top.ml:208
+#: src/top.ml:133
 msgid "Run from a script (no user interface)"
 msgstr "સ્ક્રિપ્ટમાંથી ચલાવો (વપરાશકર્તા ઇન્ટરફેસ નથી)"
 
-#: ../src/top.ml:1771
+#: src/top.ml:675
 msgid "SORTING"
 msgstr "ક્રમમાં કરી રહ્યા છે"
 
-#: ../src/top.ml:206
+#: src/top.ml:131
 msgid "Secure (\"kiosk\") mode"
 msgstr ""
 
-#: ../src/top.ml:1780
+#: src/top.ml:684
 msgid "Select sort field"
 msgstr "ટૂંકા ક્ષેત્રને પસંદ કરો"
 
-#: ../src/top.ml:191
+#: src/top.ml:116
 msgid "Send debug messages to file"
 msgstr "ફાઇલમાં ડિબગ સંદેશાઓને મોકલો"
 
-#: ../src/top.ml:197
+#: src/top.ml:122
 msgid "Set name of init file"
 msgstr "init ફાઇલની નામ ને સુયોજિત કરો"
 
-#: ../src/top.ml:203
+#: src/top.ml:128
 msgid "Set sort order (%s)"
 msgstr "ક્રમને સુયોજિત કરો (%s)"
 
-#: ../src/top.ml:1514
+#: src/top.ml:418
 msgid "Set sort order for main display"
 msgstr "મુખ્ય દેખાવ માટે ક્રમને સુયોજિત કરો"
 
-#: ../src/top.ml:1765
+#: src/top.ml:669
 msgid "Set update interval"
 msgstr "સુધારેલ સમયગાળાને સુયોજિત કરો"
 
-#: ../src/top.ml:1776
+#: src/top.ml:680
 msgid "Sort by %CPU"
 msgstr "%CPU દ્દારા ક્રમમાં કરો"
 
-#: ../src/top.ml:1777
+#: src/top.ml:681
 msgid "Sort by %MEM"
 msgstr "%MEM દ્દારા ક્રમમાં કરો"
 
-#: ../src/top.ml:1779
+#: src/top.ml:683
 msgid "Sort by ID"
 msgstr "ID દ્દારા ક્રમમાં કરો"
 
-#: ../src/top.ml:1778
+#: src/top.ml:682
 msgid "Sort by TIME"
 msgstr "TIME દ્દારા ક્રમમાં કરો"
 
-#: ../src/top.ml:171
+#: src/top.ml:96
 msgid "Start by displaying block devices"
 msgstr "બ્લોક ઉપકરણો દેખાવ દ્દારા શરૂ કરો"
 
-#: ../src/top.ml:169
+#: src/top.ml:94
 msgid "Start by displaying network interfaces"
 msgstr "નેટવર્ક ઇન્ટરફેસો ને દેખાવા દ્દારા શરૂ કરો"
 
-#: ../src/top.ml:167
+#: src/top.ml:92
 msgid "Start by displaying pCPUs (default: tasks)"
 msgstr "pCPUs (મૂળભૂત: કાર્યો) ને દેખાવા દ્દારા શરૂ કરો"
 
-#: ../src/top.ml:67
+#: src/types.ml:45
 msgid "TIME (CPU time)"
 msgstr "TIME (CPU સમય)"
 
-#: ../src/top.ml:1800
+#: src/top.ml:704
 msgid "Toggle block devices"
 msgstr "ટોગલ બ્લોક ઉપકરણો"
 
-#: ../src/top.ml:1799
+#: src/top.ml:703
 msgid "Toggle network interfaces"
 msgstr "ટોગલ નેટવર્ક ઇન્ટરફેસો"
 
-#: ../src/top.ml:1798
+#: src/top.ml:702
 msgid "Toggle physical CPUs"
 msgstr "ટોગલ ભૌતિક CPUs"
 
-#: ../src/top.ml:1515
+#: src/top.ml:419
 msgid "Type key or use up and down cursor keys."
 msgstr "કીને ટાઇપ કરો અથવા ઉપર અને નીચે કર્સર કીઓને વાપરો."
 
-#: ../src/top.ml:1809
+#: src/top.ml:713
 msgid "Unknown command - try 'h' for help"
 msgstr "મદદ માટે અજ્ઞાત આદેશ - try 'h'"
 
-#: ../src/top.ml:1763
+#: src/top.ml:667
 msgid "Update display"
 msgstr "દેખાવને સુધારો"
 
-#: ../src/top.ml:1703
+#: src/top.ml:607
 msgid "Wrote settings to %s"
 msgstr "%s માં સુયોજનોને લખ્યુ"
 
-#: ../src/top.ml:1745
+#: src/top.ml:649
 msgid "default"
 msgstr "મૂળભૂત"
 
-#: ../src/top.ml:210
+#: src/top.ml:135
 msgid "dump output to stdout (no userinterface)"
 msgstr ""
 
-#: ../src/opt_xml.ml:46
-msgid "get_xml_desc didn't return <domain/>"
-msgstr "get_xml_desc થી <domain/> પાછુ મળ્યુ નહિં"
-
-#: ../src/top.ml:212
+#: src/top.ml:137
 msgid "show block device load in bytes rather than reqs"
 msgstr ""
 
-#: ../src/top.ml:1767
+#: src/top.ml:671
 msgid "toggle block info req/bytes"
 msgstr ""
 
-#: ../src/top.ml:1725
+#: src/top.ml:629
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
 msgstr "Red Hat પ્રમાણે virt-top %s ocaml-libvirt %s libvirt %d.%d.%d"
 
-#: ../src/top.ml:218
+#: src/top.ml:143
 msgid ""
 "virt-top : a 'top'-like utility for virtualization\n"
 "\n"
@@ -364,10 +361,12 @@ msgstr ""
 "\n"
 "OPTIONS"
 
-#: ../src/top.ml:42
-msgid "virt-top was compiled without support for CSV files"
-msgstr "CSV ફાઇલો માટે આધાર વગર virt-top એ કમ્પાઇલ થયેલ ન હતુ"
-
-#: ../src/top.ml:53
+#: src/top.ml:39
 msgid "virt-top was compiled without support for dates and times"
 msgstr "તારીખો અને સમયો માટે આધાર વગર virt-top એ કમ્પાઇલ થયેલ હતુ"
+
+#~ msgid "get_xml_desc didn't return <domain/>"
+#~ msgstr "get_xml_desc થી <domain/> પાછુ મળ્યુ નહિં"
+
+#~ msgid "virt-top was compiled without support for CSV files"
+#~ msgstr "CSV ફાઇલો માટે આધાર વગર virt-top એ કમ્પાઇલ થયેલ ન હતુ"
