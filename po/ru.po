@@ -1,43 +1,47 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Andrei Stepanov <adem4ik@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
-"component=libguestfs&product=Virtualization+Tools\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-06-30 09:13+0100\n"
-"PO-Revision-Date: 2015-02-21 08:11-0500\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
+"PO-Revision-Date: 2026-07-16 16:17+0000\n"
+"Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/virt-"
+"top/master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2026.7.1\n"
 
 #: src/top.ml:574
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# Файл конфигурации virt-top %s\n"
 
 #: src/top.ml:592
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Включить вывод в CSV в указанный файл\n"
 
 #: src/top.ml:595
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
+"# Чтобы защитить этот файл от перезаписи, раскомментируйте следующую строку\n"
 
 #: src/top.ml:589
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Чтобы направлять отладочные сообщения и сообщения об ошибках в файл, "
+"раскомментируйте следующую строку\n"
 
 #: src/top.ml:575
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# создан %s пользователем %s\n"
 
 #: src/types.ml:43
 msgid "%CPU"
@@ -57,15 +61,16 @@ msgstr ""
 
 #: src/top.ml:170
 msgid "%s: could not parse '%s' in init file: expecting %s"
-msgstr ""
+msgstr "%s: не удалось разобрать «%s» в файле инициализации: ожидается %s"
 
 #: src/top.ml:165
 msgid "%s: could not parse '%s' in init file: expecting a number"
-msgstr ""
+msgstr "%s: не удалось разобрать «%s» в файле инициализации: ожидается число"
 
 #: src/top.ml:160
 msgid "%s: could not parse '%s' in init file: expecting an integer"
 msgstr ""
+"%s: не удалось разобрать «%s» в файле инициализации: ожидается целое число"
 
 #: src/types.ml:83
 msgid "%s: display should be %s"
@@ -84,6 +89,8 @@ msgid ""
 "%s:%d: configuration item ``%s'' ignored\n"
 "%!"
 msgstr ""
+"%s:%d: элемент конфигурации «%s» проигнорирован\n"
+"%!"
 
 #: src/top.ml:72
 msgid "-d: cannot set a negative delay"
@@ -111,7 +118,7 @@ msgstr "Изменить задержку с %.1f на: "
 
 #: src/top.ml:102 src/top.ml:100
 msgid "Connect to libvirt URI"
-msgstr ""
+msgstr "Подключиться к URI-адресу libvirt"
 
 #: src/top.ml:648
 msgid "Connect: %s; Hostname: %s"
@@ -143,7 +150,7 @@ msgstr "Отключить статистику блочных устройст�
 
 #: src/top.ml:108
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "Отключить статистику памяти в CSV"
 
 #: src/top.ml:112
 msgid "Disable net stats in CSV"
@@ -203,6 +210,8 @@ msgstr ""
 msgid ""
 "NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
+"Примечание: для мониторинга локального гипервизора обычно требуются права "
+"root"
 
 #: src/types.ml:48
 msgid "Net RX bytes"
@@ -242,7 +251,7 @@ msgstr "СОРТИРОВКА"
 
 #: src/top.ml:131
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Защищённый режим («киоск»)"
 
 #: src/top.ml:684
 msgid "Select sort field"
@@ -318,7 +327,7 @@ msgstr "Нажмите кнопку или используйте стрелки
 
 #: src/top.ml:713
 msgid "Unknown command - try 'h' for help"
-msgstr "Неизвестная команда. Введите «h» для получения справки."
+msgstr "Неизвестная команда. Введите «h» для получения справки"
 
 #: src/top.ml:667
 msgid "Update display"
@@ -334,15 +343,15 @@ msgstr "по умолчанию"
 
 #: src/top.ml:135
 msgid "dump output to stdout (no userinterface)"
-msgstr ""
+msgstr "вывод в stdout (без пользовательского интерфейса)"
 
 #: src/top.ml:137
 msgid "show block device load in bytes rather than reqs"
-msgstr ""
+msgstr "показывать нагрузку на блочные устройства в байтах, а не в запросах"
 
 #: src/top.ml:671
 msgid "toggle block info req/bytes"
-msgstr ""
+msgstr "переключить информацию о блочных устройствах запросы/байты"
 
 #: src/top.ml:629
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
