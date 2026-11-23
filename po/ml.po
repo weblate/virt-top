@@ -5,8 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-27 11:32+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/enter_bug.cgi?"
+"component=libguestfs&product=Virtualization+Tools\n"
+"POT-Creation-Date: 2026-06-30 09:13+0100\n"
 "PO-Revision-Date: 2015-02-21 08:10-0500\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Malayalam <discuss@lists.smc.org.in>\n"
@@ -17,339 +18,335 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Zanata 4.6.2\n"
 
-#: ../src/top.ml:1670
+#: src/top.ml:574
 msgid "# %s virt-top configuration file\n"
 msgstr ""
 
-#: ../src/top.ml:1688
+#: src/top.ml:592
 msgid "# Enable CSV output to the named file\n"
 msgstr ""
 
-#: ../src/top.ml:1691
+#: src/top.ml:595
 msgid "# To protect this file from being overwritten, uncomment next line\n"
 msgstr ""
 
-#: ../src/top.ml:1685
+#: src/top.ml:589
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
 
-#: ../src/top.ml:1671
+#: src/top.ml:575
 msgid "# generated on %s by %s\n"
 msgstr ""
 
-#: ../src/top.ml:65
+#: src/types.ml:43
 msgid "%CPU"
 msgstr "%CPU"
 
-#: ../src/top.ml:66
+#: src/types.ml:44
 msgid "%MEM"
 msgstr "%MEM"
 
-#: ../src/top.ml:1237
+#: src/redraw.ml:480
 msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
-"%d ഡൊമേനുകള്‍, %d സജീവം, %d പ്രവര്‍ത്തിക്കുന്നു, %d ഉറങ്ങുന്നു, %d താല്‍കാലികമായി നിര്‍"
-"ത്തിയിരിക്കുന്നു, %d നിര്‍ജ്ജീവം  D:%d O:%d X:%d"
+"%d ഡൊമേനുകള്‍, %d സജീവം, %d പ്രവര്‍ത്തിക്കുന്നു, %d ഉറങ്ങുന്നു, %d താല്‍കാലികമായി "
+"നിര്‍ത്തിയിരിക്കുന്നു, %d നിര്‍ജ്ജീവം  D:%d O:%d X:%d"
 
-#: ../src/top.ml:245
+#: src/top.ml:170
 msgid "%s: could not parse '%s' in init file: expecting %s"
 msgstr ""
 
-#: ../src/top.ml:240
+#: src/top.ml:165
 msgid "%s: could not parse '%s' in init file: expecting a number"
 msgstr ""
 
-#: ../src/top.ml:235
+#: src/top.ml:160
 msgid "%s: could not parse '%s' in init file: expecting an integer"
 msgstr ""
 
-#: ../src/top.ml:105
+#: src/types.ml:83
 msgid "%s: display should be %s"
 msgstr "%s: ഡിസ്പ്ലേ %s ആകണം"
 
-#: ../src/top.ml:83
+#: src/types.ml:61
 msgid "%s: sort order should be: %s"
 msgstr "%s: ക്രമം %s ആകണം"
 
-#: ../src/top.ml:217
+#: src/top.ml:142
 msgid "%s: unknown parameter"
 msgstr "%s: അറിയാത്ത ചരം (പാരാമീറ്റര്‍)"
 
-#: ../src/top.ml:269
+#: src/top.ml:194
 msgid ""
 "%s:%d: configuration item ``%s'' ignored\n"
 "%!"
 msgstr ""
 
-#: ../src/top.ml:147
+#: src/top.ml:72
 msgid "-d: cannot set a negative delay"
 msgstr "-d: പൂജ്യത്തിനു താഴെ ഡിലേ (കാത്തിരിക്കേണ്ട സമയം) വെക്കാന്‍ കഴിയില്ല"
 
-#: ../src/top.ml:173
+#: src/top.ml:98
 msgid "Batch mode"
 msgstr "ബാച് സ്ഥിതി"
 
-#: ../src/top.ml:72
+#: src/types.ml:50
 msgid "Block read reqs"
 msgstr "ബ്ലോക്ക് വായിക്കാന്‍ ആവശ്യങ്ങള്‍"
 
-#: ../src/top.ml:73
+#: src/types.ml:51
 msgid "Block write reqs"
 msgstr "ബ്ലോക്ക് എഴുതാന്‍ ആവശ്യങ്ങള്‍"
 
-#: ../src/top.ml:1244
+#: src/redraw.ml:487
 msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
 msgstr "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB അഥിതികള്‍ വക)"
 
-#: ../src/top.ml:1493
+#: src/top.ml:397
 msgid "Change delay from %.1f to: "
 msgstr "ഡിലേ %.1fല്‍ നിന്നും മാറ്റുക ഇതിലേക്ക് :"
 
-#: ../src/top.ml:177 ../src/top.ml:175
+#: src/top.ml:102 src/top.ml:100
 msgid "Connect to libvirt URI"
 msgstr ""
 
-#: ../src/top.ml:1744
+#: src/top.ml:648
 msgid "Connect: %s; Hostname: %s"
 msgstr "കണക്ട് :  %s; ആഥിതേയന്റെ പേരു്‌: %s"
 
-#: ../src/top.ml:1783
+#: src/top.ml:687
 msgid "DISPLAY MODES"
 msgstr "കാണിക്കാനുള്ള ദശകള്‍"
 
-#: ../src/top.ml:1500
+#: src/top.ml:404
 msgid "Delay must be > 0"
 msgstr "ഡിലേ (കാത്തിരിക്കേണ്ട സമയം) > 0 ആകണം"
 
-#: ../src/top.ml:189
+#: src/top.ml:114
 msgid "Delay time interval (seconds)"
 msgstr "ഡിലേ (കാത്തിരിക്കേണ്ട സമയം) സെകന്റില്‍"
 
-#: ../src/top.ml:1737
+#: src/top.ml:641
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
 msgstr "ഡിലേ (കാത്തിരിക്കേണ്ട സമയം) : %.1f secs; ബാച്ച്: %s; സുരക്ഷിതം: %s;ക്രമം: %s"
 
-#: ../src/top.ml:181
+#: src/top.ml:106
 msgid "Disable CPU stats in CSV"
 msgstr "CSV-ല്‍ CPU അവസ്ഥ പ്രവര്‍ത്തന രഹിതമാക്കുക"
 
-#: ../src/top.ml:185
+#: src/top.ml:110
 msgid "Disable block device stats in CSV"
 msgstr "CSV-ല്‍ ബ്ലോക്ക് ഡിവൈസ് അവസ്ഥ പ്രവര്‍ത്തന രഹിതമാക്കുക"
 
-#: ../src/top.ml:183
+#: src/top.ml:108
 msgid "Disable memory stats in CSV"
 msgstr ""
 
-#: ../src/top.ml:187
+#: src/top.ml:112
 msgid "Disable net stats in CSV"
 msgstr "CSV-ല്‍ net അവസ്ഥ പ്രവര്‍ത്തന രഹിതമാക്കുക"
 
-#: ../src/top.ml:214
+#: src/top.ml:139
 msgid "Display version number and exit"
 msgstr ""
 
-#: ../src/top.ml:199
+#: src/top.ml:124
 msgid "Do not read init file"
 msgstr "ഇനിറ്റ്( init) ഫയല്‍ വായിക്കരുത്"
 
-#: ../src/top.ml:68
+#: src/types.ml:46
 msgid "Domain ID"
 msgstr "ഡൊമേന്‍ തിരിച്ചറിയല്‍"
 
-#: ../src/top.ml:69
+#: src/types.ml:47
 msgid "Domain name"
 msgstr "ഡൊമേന്‍ പേരു്‌"
 
-#: ../src/top.ml:1797
+#: src/top.ml:701
 msgid "Domains display"
 msgstr "ഡൊമേന്‍സ് ഡിസ്പ്ലേ"
 
-#: ../src/main.ml:69 ../src/main.ml:44 ../src/top.ml:1711 ../src/top.ml:1708
+#: src/top.ml:615 src/top.ml:612 src/main.ml:69 src/main.ml:44
 msgid "Error"
 msgstr "പിശക്"
 
-#: ../src/top.ml:193
+#: src/top.ml:118
 msgid "Exit at given time"
 msgstr "തന്ന സമയത്തില്‍ പുറത്തിറങ്ങുക"
 
-#: ../src/top.ml:1766
+#: src/top.ml:670
 msgid "Help"
 msgstr "സഹായം"
 
-#: ../src/top.ml:195
+#: src/top.ml:120
 msgid "Historical CPU delay"
 msgstr "ഹിസ്റ്റോറിക്കല്‍ സിപിയു ഡിലേ"
 
-#: ../src/top.ml:179
+#: src/top.ml:104
 msgid "Log statistics to CSV file"
 msgstr "CSV ഫയലിലേക്കുള്ള ലോഗ് സ്ഥിതിവിവരക്കണക്കുകള്‍"
 
-#: ../src/top.ml:1749
+#: src/top.ml:653
 msgid "MAIN KEYS"
 msgstr "പ്രധാന കീകള്‍"
 
-#: ../src/top.ml:1804
+#: src/top.ml:708
 msgid "More help in virt-top(1) man page. Press any key to return."
 msgstr ""
 "virt-top(1) man താളില്‍ കൂടുതല്‍ സഹായം. തിരികെ പോകുന്നതിനായി ഏതെങ്കിലും കീ അമര്‍ത്തുക."
 
-#: ../src/top.ml:294
+#: src/top.ml:219
 msgid ""
 "NB: If you want to monitor a local hypervisor, you usually need to be root"
 msgstr ""
 
-#: ../src/top.ml:70
+#: src/types.ml:48
 msgid "Net RX bytes"
 msgstr "നെറ്റ് RX ബൈറ്റുകള്‍"
 
-#: ../src/top.ml:71
+#: src/types.ml:49
 msgid "Net TX bytes"
 msgstr "നെറ്റ് TX ബൈറ്റുകള്‍"
 
-#: ../src/top.ml:1506
+#: src/top.ml:410
 msgid "Not a valid number"
 msgstr "ശരിയായ അക്കം അല്ല"
 
-#: ../src/top.ml:201
+#: src/top.ml:126
 msgid "Number of iterations to run"
 msgstr "Number of iterations to run"
 
-#: ../src/top.ml:1740 ../src/top.ml:1739
+#: src/top.ml:644 src/top.ml:643
 msgid "Off"
 msgstr ""
 
-#: ../src/top.ml:1740 ../src/top.ml:1739
+#: src/top.ml:644 src/top.ml:643
 msgid "On"
 msgstr ""
 
-#: ../src/top.ml:1764
+#: src/top.ml:668
 msgid "Quit"
 msgstr "നിര്‍ത്തുക"
 
-#: ../src/top.ml:208
+#: src/top.ml:133
 msgid "Run from a script (no user interface)"
 msgstr "ഒരു സ്ക്രിപ്റ്റില്‍ നിന്നും പ്രവര്‍ത്തിപ്പിക്കുക (no user interface)"
 
-#: ../src/top.ml:1771
+#: src/top.ml:675
 msgid "SORTING"
 msgstr "ക്രമീകരിക്കുന്നു"
 
-#: ../src/top.ml:206
+#: src/top.ml:131
 msgid "Secure (\"kiosk\") mode"
 msgstr ""
 
-#: ../src/top.ml:1780
+#: src/top.ml:684
 msgid "Select sort field"
 msgstr "സോര്‍ട്ട് ഫീള്‍ഡ് തെരഞ്ഞെടുക്കുക"
 
-#: ../src/top.ml:191
+#: src/top.ml:116
 msgid "Send debug messages to file"
 msgstr "ഫയലിലേക്കു് ഡീബഗ് സന്ദേശങ്ങള്‍ അയയ്ക്കുക"
 
-#: ../src/top.ml:197
+#: src/top.ml:122
 msgid "Set name of init file"
 msgstr "init ഫയലിനുള്ള പേരു് സജ്ജമാക്കുക"
 
-#: ../src/top.ml:203
+#: src/top.ml:128
 msgid "Set sort order (%s)"
 msgstr "ക്രമം സജ്ജമാക്കുക (%s)"
 
-#: ../src/top.ml:1514
+#: src/top.ml:418
 msgid "Set sort order for main display"
 msgstr "Set sort order for main display"
 
-#: ../src/top.ml:1765
+#: src/top.ml:669
 msgid "Set update interval"
 msgstr "പരിഷ്കരണത്തിനുള്ള ഇടവേള ക്രമികരിക്കുക"
 
-#: ../src/top.ml:1776
+#: src/top.ml:680
 msgid "Sort by %CPU"
 msgstr "%CPU അനുസരിച്ചു് ക്രമത്തിലാക്കുക"
 
-#: ../src/top.ml:1777
+#: src/top.ml:681
 msgid "Sort by %MEM"
 msgstr "%MEM അനുസരിച്ചു് ക്രമത്തിലാക്കുക"
 
-#: ../src/top.ml:1779
+#: src/top.ml:683
 msgid "Sort by ID"
 msgstr "ഐഡി അനുസരിച്ചു് ക്രമത്തിലാക്കുക"
 
-#: ../src/top.ml:1778
+#: src/top.ml:682
 msgid "Sort by TIME"
 msgstr "സമയമനുസരിച്ചു് ക്രമത്തിലാക്കുക"
 
-#: ../src/top.ml:171
+#: src/top.ml:96
 msgid "Start by displaying block devices"
 msgstr "ബ്ലോക്ക് ഡിവൈസകുള്‍ കാണിച്ചു് ആരംഭിക്കുക"
 
-#: ../src/top.ml:169
+#: src/top.ml:94
 msgid "Start by displaying network interfaces"
 msgstr "സംയോജക ഘടകങ്ങള്‍ കാണിച്ചു് ആരംഭിക്കുക"
 
-#: ../src/top.ml:167
+#: src/top.ml:92
 msgid "Start by displaying pCPUs (default: tasks)"
 msgstr "pCPU കാണിച്ചു് ആരംഭിക്കുക (default: tasks)"
 
-#: ../src/top.ml:67
+#: src/types.ml:45
 msgid "TIME (CPU time)"
 msgstr "സമയം (CPU സമയം)"
 
-#: ../src/top.ml:1800
+#: src/top.ml:704
 msgid "Toggle block devices"
 msgstr "ബ്ലോക്ക് ഡിവൈസുകള്‍ ടൊഗിള്‍ ചെയ്യുക"
 
-#: ../src/top.ml:1799
+#: src/top.ml:703
 msgid "Toggle network interfaces"
 msgstr "നെറ്റ്‌വര്‍ക്ക് സംയോജകഘടകങ്ങള്‍ ടൊഗിള്‍ ചെയ്യുക"
 
-#: ../src/top.ml:1798
+#: src/top.ml:702
 msgid "Toggle physical CPUs"
 msgstr "ഫിസിക്കല്‍ സിപിയുകള്‍ ടൊഗിള്‍ ചെയ്യുക"
 
-#: ../src/top.ml:1515
+#: src/top.ml:419
 msgid "Type key or use up and down cursor keys."
 msgstr "കീ ടൈപ്പ് ചെയ്യുക അല്ലെങ്കില്‍ മുകളിലേക്കും താഴേക്കുമുള്ള കര്‍സര്‍ കീകള്‍ ഉപയോഗിക്കുക"
 
-#: ../src/top.ml:1809
+#: src/top.ml:713
 msgid "Unknown command - try 'h' for help"
 msgstr "സഹായത്തിനായി അപരിചിതമായ നിര്‍ദ്ദേശം - try 'h' ഉപയോഗിക്കുക"
 
-#: ../src/top.ml:1763
+#: src/top.ml:667
 msgid "Update display"
 msgstr "ഡിസ്പ്ലേ പുതുക്കുക"
 
-#: ../src/top.ml:1703
+#: src/top.ml:607
 msgid "Wrote settings to %s"
 msgstr "%s-ലേക്കു് ക്രമികരണങ്ങളിക്ക് എഴുതപ്പെട്ടിരിക്കുന്നു"
 
-#: ../src/top.ml:1745
+#: src/top.ml:649
 msgid "default"
 msgstr ""
 
-#: ../src/top.ml:210
+#: src/top.ml:135
 msgid "dump output to stdout (no userinterface)"
 msgstr ""
 
-#: ../src/opt_xml.ml:46
-msgid "get_xml_desc didn't return <domain/>"
-msgstr "get_xml_desc didn't return <domain/>"
-
-#: ../src/top.ml:212
+#: src/top.ml:137
 msgid "show block device load in bytes rather than reqs"
 msgstr ""
 
-#: ../src/top.ml:1767
+#: src/top.ml:671
 msgid "toggle block info req/bytes"
 msgstr ""
 
-#: ../src/top.ml:1725
+#: src/top.ml:629
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
 msgstr ""
 
-#: ../src/top.ml:218
+#: src/top.ml:143
 msgid ""
 "virt-top : a 'top'-like utility for virtualization\n"
 "\n"
@@ -365,12 +362,12 @@ msgstr ""
 "\n"
 "OPTIONS"
 
-#: ../src/top.ml:42
-msgid "virt-top was compiled without support for CSV files"
-msgstr "CSV ഫയലുകള്‍ക്കുള്ള പിന്തുണ ലഭ്യമല്ലാതെ virt-top കംപൈല്‍ ചെയ്തിരിക്കുന്നു"
-
-#: ../src/top.ml:53
+#: src/top.ml:39
 msgid "virt-top was compiled without support for dates and times"
-msgstr ""
-"തീയതികള്‍ക്കും സമയങ്ങള്‍ക്കുമുള്ള പിന്തുണ ലഭ്യമല്ലാതെ virt-top കംപൈല്‍ "
-"ചെയ്തിരിക്കുന്നു"
+msgstr "തീയതികള്‍ക്കും സമയങ്ങള്‍ക്കുമുള്ള പിന്തുണ ലഭ്യമല്ലാതെ virt-top കംപൈല്‍ ചെയ്തിരിക്കുന്നു"
+
+#~ msgid "get_xml_desc didn't return <domain/>"
+#~ msgstr "get_xml_desc didn't return <domain/>"
+
+#~ msgid "virt-top was compiled without support for CSV files"
+#~ msgstr "CSV ഫയലുകള്‍ക്കുള്ള പിന്തുണ ലഭ്യമല്ലാതെ virt-top കംപൈല്‍ ചെയ്തിരിക്കുന്നു"
