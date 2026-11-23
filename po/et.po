@@ -9,9 +9,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
 "enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
 "POT-Creation-Date: 2026-06-30 09:13+0100\n"
-"PO-Revision-Date: 2026-07-21 20:17+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2026-10-30 11:18+0000\n"
+"Last-Translator: Priit Jõerüüt "
+"<jrtkbfdr@users.noreply.translate.fedoraproject.org>\n"
 "Language-Team: Estonian <https://translate.fedoraproject.org/projects/virt-"
 "top/master/et/>\n"
 "Language: et\n"
@@ -19,41 +19,45 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.10.1\n"
 
 #: src/top.ml:574
 msgid "# %s virt-top configuration file\n"
-msgstr ""
+msgstr "# %s virt-top tarviku seadistusfail\n"
 
 #: src/top.ml:592
 msgid "# Enable CSV output to the named file\n"
-msgstr ""
+msgstr "# Kasuta CSV-väljundit nimetatud faili\n"
 
 #: src/top.ml:595
 msgid "# To protect this file from being overwritten, uncomment next line\n"
-msgstr ""
+msgstr "# Vältimaks selle ülekirjutamist, kommenteeri järgmine rida välja\n"
 
 #: src/top.ml:589
 msgid "# To send debug and error messages to a file, uncomment next line\n"
 msgstr ""
+"# Kommenteeri järgmine rida välja, kui tahad silumist- ja veateated "
+"salvestada faili\n"
 
 #: src/top.ml:575
 msgid "# generated on %s by %s\n"
-msgstr ""
+msgstr "# loodud asukohta %s - koostaja %s\n"
 
 #: src/types.ml:43
 msgid "%CPU"
-msgstr "% CPU"
+msgstr "%CPU"
 
 #: src/types.ml:44
 msgid "%MEM"
-msgstr ""
+msgstr "%MEM"
 
 #: src/redraw.ml:480
 msgid ""
 "%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
 "O:%d X:%d"
 msgstr ""
+"%d domeeni, %d aktiivset, %d töös, %d uinunud, %d peatatud, %d "
+"mitteaktiivset D:%d O:%d X:%d"
 
 #: src/top.ml:170
 msgid "%s: could not parse '%s' in init file: expecting %s"
@@ -123,43 +127,43 @@ msgstr ""
 
 #: src/top.ml:404
 msgid "Delay must be > 0"
-msgstr ""
+msgstr "Viivitus peab olema > 0"
 
 #: src/top.ml:114
 msgid "Delay time interval (seconds)"
-msgstr ""
+msgstr "Viivituse aeg (sekundites)"
 
 #: src/top.ml:641
 msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
-msgstr ""
+msgstr "Viivitus: %.1f secs; Töötluspakk: %s; Turvaline: %s; Järjestus: %s"
 
 #: src/top.ml:106
 msgid "Disable CPU stats in CSV"
-msgstr ""
+msgstr "Jäta CSV-failist välja protsessori statistika"
 
 #: src/top.ml:110
 msgid "Disable block device stats in CSV"
-msgstr ""
+msgstr "Jäta CSV-failist välja plokkseadmete statistika"
 
 #: src/top.ml:108
 msgid "Disable memory stats in CSV"
-msgstr ""
+msgstr "Jäta CSV-failist välja mälustatistika"
 
 #: src/top.ml:112
 msgid "Disable net stats in CSV"
-msgstr ""
+msgstr "Jäta CSV-failist välja võrguühenduse statistika"
 
 #: src/top.ml:139
 msgid "Display version number and exit"
-msgstr ""
+msgstr "Kuva versiooninumbrit ja lõpeta töö"
 
 #: src/top.ml:124
 msgid "Do not read init file"
-msgstr ""
+msgstr "Ära loe init-faili"
 
 #: src/types.ml:46
 msgid "Domain ID"
-msgstr "Domeen"
+msgstr "Domeeni tunnus"
 
 #: src/types.ml:47
 msgid "Domain name"
@@ -167,7 +171,7 @@ msgstr "Domeeni nimi"
 
 #: src/top.ml:701
 msgid "Domains display"
-msgstr ""
+msgstr "Domeenide kuvamine"
 
 #: src/top.ml:615 src/top.ml:612 src/main.ml:69 src/main.ml:44
 msgid "Error"
@@ -175,23 +179,23 @@ msgstr "Viga"
 
 #: src/top.ml:118
 msgid "Exit at given time"
-msgstr ""
+msgstr "Lõpeta etteantud ajal töö"
 
 #: src/top.ml:670
 msgid "Help"
-msgstr "Abi"
+msgstr "Abiteave"
 
 #: src/top.ml:120
 msgid "Historical CPU delay"
-msgstr ""
+msgstr "Protsessori ajalooline viivitus"
 
 #: src/top.ml:104
 msgid "Log statistics to CSV file"
-msgstr ""
+msgstr "Logi statistika CSV-faili"
 
 #: src/top.ml:653
 msgid "MAIN KEYS"
-msgstr ""
+msgstr "PÕHIKLAHVID"
 
 #: src/top.ml:708
 msgid "More help in virt-top(1) man page. Press any key to return."
@@ -212,11 +216,11 @@ msgstr ""
 
 #: src/top.ml:410
 msgid "Not a valid number"
-msgstr ""
+msgstr "See pole korrektne number"
 
 #: src/top.ml:126
 msgid "Number of iterations to run"
-msgstr ""
+msgstr "Käivituskordade arv"
 
 #: src/top.ml:644 src/top.ml:643
 msgid "Off"
@@ -232,63 +236,63 @@ msgstr "Välju"
 
 #: src/top.ml:133
 msgid "Run from a script (no user interface)"
-msgstr ""
+msgstr "Käivita skriptist (ilma kasutajaliideseta)"
 
 #: src/top.ml:675
 msgid "SORTING"
-msgstr ""
+msgstr "JÄRJESTUS"
 
 #: src/top.ml:131
 msgid "Secure (\"kiosk\") mode"
-msgstr ""
+msgstr "Turvaline ehk kioskirežiim"
 
 #: src/top.ml:684
 msgid "Select sort field"
-msgstr ""
+msgstr "Vali järjestuse väli"
 
 #: src/top.ml:116
 msgid "Send debug messages to file"
-msgstr ""
+msgstr "Salvesta silumisteated faili"
 
 #: src/top.ml:122
 msgid "Set name of init file"
-msgstr ""
+msgstr "Määra init-faili nimi"
 
 #: src/top.ml:128
 msgid "Set sort order (%s)"
-msgstr ""
+msgstr "Seadista järjestus (%)"
 
 #: src/top.ml:418
 msgid "Set sort order for main display"
-msgstr ""
+msgstr "Seadista järjestus põhiekraani jaoks"
 
 #: src/top.ml:669
 msgid "Set update interval"
-msgstr "Uuendamise välp"
+msgstr "Seadista uuendamise välp"
 
 #: src/top.ml:680
 msgid "Sort by %CPU"
-msgstr ""
+msgstr "Järjesta %protsessori alusel"
 
 #: src/top.ml:681
 msgid "Sort by %MEM"
-msgstr ""
+msgstr "Järjesta %mälu alusel"
 
 #: src/top.ml:683
 msgid "Sort by ID"
-msgstr ""
+msgstr "Järjesta %tunnuse alusel"
 
 #: src/top.ml:682
 msgid "Sort by TIME"
-msgstr ""
+msgstr "Järjesta %AJA alusel"
 
 #: src/top.ml:96
 msgid "Start by displaying block devices"
-msgstr ""
+msgstr "Alusta plokkseadmete kuvamisega"
 
 #: src/top.ml:94
 msgid "Start by displaying network interfaces"
-msgstr ""
+msgstr "Alusta võrguseadmete kuvamisega"
 
 #: src/top.ml:92
 msgid "Start by displaying pCPUs (default: tasks)"
@@ -300,11 +304,11 @@ msgstr ""
 
 #: src/top.ml:704
 msgid "Toggle block devices"
-msgstr ""
+msgstr "Lülita plokkseadmete kuvamine sisse/välja"
 
 #: src/top.ml:703
 msgid "Toggle network interfaces"
-msgstr "Võrguliideseid ei leidu"
+msgstr "Vaheta võrguliideseid"
 
 #: src/top.ml:702
 msgid "Toggle physical CPUs"
@@ -316,15 +320,15 @@ msgstr ""
 
 #: src/top.ml:713
 msgid "Unknown command - try 'h' for help"
-msgstr ""
+msgstr "Tundmatu käsk - „h“ võtmega näed abiteavet"
 
 #: src/top.ml:667
 msgid "Update display"
-msgstr ""
+msgstr "Uuenda ekraanivaadet"
 
 #: src/top.ml:607
 msgid "Wrote settings to %s"
-msgstr ""
+msgstr "Salvesta seadistused asukohta %s"
 
 #: src/top.ml:649
 msgid "default"
@@ -344,7 +348,7 @@ msgstr ""
 
 #: src/top.ml:629
 msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
-msgstr ""
+msgstr "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d, autoriks Red Hat"
 
 #: src/top.ml:143
 msgid ""
@@ -355,7 +359,13 @@ msgid ""
 "\n"
 "OPTIONS"
 msgstr ""
+"virt-top : top-tarvikule sarnanev programm virtualiseerimise jaoks\n"
+"\n"
+"KOKKUVÕTE\n"
+"  virt-top [-valikud]\n"
+"\n"
+"VALIKUD"
 
 #: src/top.ml:39
 msgid "virt-top was compiled without support for dates and times"
-msgstr ""
+msgstr "virt-top on kompileeritud ilma kuupäevade ja kellaaegade toeta"
