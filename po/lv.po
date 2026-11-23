@@ -1,0 +1,375 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Red Hat Inc.
+# This file is distributed under the same license as the virt-top package.
+# Rihards Prieditis <rprieditis@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: virt-top 1.1.3\n"
+"Report-Msgid-Bugs-To: https://bugzilla.redhat.com/"
+"enter_bug.cgi?component=libguestfs&product=Virtualization+Tools\n"
+"POT-Creation-Date: 2026-06-30 09:13+0100\n"
+"PO-Revision-Date: 2026-11-23 17:18+0000\n"
+"Last-Translator: Rihards Prieditis <rprieditis@gmail.com>\n"
+"Language-Team: Latvian <https://translate.fedoraproject.org/projects/virt-"
+"top/master/lv/>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= "
+"19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
+"X-Generator: Weblate 2026.11.2\n"
+
+#: src/top.ml:574
+msgid "# %s virt-top configuration file\n"
+msgstr "# %s virt-top konfigurācijas fails\n"
+
+#: src/top.ml:592
+msgid "# Enable CSV output to the named file\n"
+msgstr "# Iespējot CSV izvadi norādītajā failā\n"
+
+#: src/top.ml:595
+msgid "# To protect this file from being overwritten, uncomment next line\n"
+msgstr "# Lai šo failu nepārrakstītu, atkomentējiet nākamo rindu\n"
+
+#: src/top.ml:589
+msgid "# To send debug and error messages to a file, uncomment next line\n"
+msgstr ""
+"# Lai sūtītu atkļūdošanas un kļūdu ziņojumus uz failu, atkomentējiet nākamo "
+"rindu\n"
+
+#: src/top.ml:575
+msgid "# generated on %s by %s\n"
+msgstr "# izveidoja %s, %s\n"
+
+#: src/types.ml:43
+msgid "%CPU"
+msgstr "%CPU"
+
+#: src/types.ml:44
+msgid "%MEM"
+msgstr "%MEM"
+
+#: src/redraw.ml:480
+msgid ""
+"%d domains, %d active, %d running, %d sleeping, %d paused, %d inactive D:%d "
+"O:%d X:%d"
+msgstr ""
+"domēni: %d, aktīvi: %d, darbojas: %d, guļ: %d, pauzēti: %d, neaktīvi: %d "
+"D:%d O:%d X:%d"
+
+#: src/top.ml:170
+msgid "%s: could not parse '%s' in init file: expecting %s"
+msgstr "%s: nevar parsēt '%s' sākuma failā: tika gaidīts %s"
+
+#: src/top.ml:165
+msgid "%s: could not parse '%s' in init file: expecting a number"
+msgstr "%s: nevar parsēt '%s' sākuma failā: tika gaidīts skaitlis"
+
+#: src/top.ml:160
+msgid "%s: could not parse '%s' in init file: expecting an integer"
+msgstr "%s: nevar parsēt '%s' sākuma failā: tika gaidīts vesels skaitlis"
+
+#: src/types.ml:83
+msgid "%s: display should be %s"
+msgstr "%s: displejam jābūt %s"
+
+#: src/types.ml:61
+msgid "%s: sort order should be: %s"
+msgstr "%s: kārtošanas secībai jābūt: %s"
+
+#: src/top.ml:142
+msgid "%s: unknown parameter"
+msgstr "%s: nezināms parametrs"
+
+#: src/top.ml:194
+msgid ""
+"%s:%d: configuration item ``%s'' ignored\n"
+"%!"
+msgstr ""
+"%s:%d: konfigurācijas vienums ``%s'' ignorēts\n"
+"%!"
+
+#: src/top.ml:72
+msgid "-d: cannot set a negative delay"
+msgstr "-d: nevar iestatīt negatīvu aizturi"
+
+#: src/top.ml:98
+msgid "Batch mode"
+msgstr "Pakešrežīms"
+
+#: src/types.ml:50
+msgid "Block read reqs"
+msgstr "Bloka lasīšanas piepr."
+
+#: src/types.ml:51
+msgid "Block write reqs"
+msgstr "Bloka rakstīšanas piepr."
+
+#: src/redraw.ml:487
+msgid "CPU: %2.1f%%  Mem: %Ld MB (%Ld MB by guests)"
+msgstr "CPU: %2.1f%%  Atm.: %Ld MB (%Ld MB viesiem)"
+
+#: src/top.ml:397
+msgid "Change delay from %.1f to: "
+msgstr "Mainīt aizturi no %.1f uz: "
+
+#: src/top.ml:102 src/top.ml:100
+msgid "Connect to libvirt URI"
+msgstr "Savienoties ar libvirt URI"
+
+#: src/top.ml:648
+msgid "Connect: %s; Hostname: %s"
+msgstr "Savienojums: %s; resursdators: %s"
+
+#: src/top.ml:687
+msgid "DISPLAY MODES"
+msgstr "ATTĒLOŠANAS REŽĪMI"
+
+#: src/top.ml:404
+msgid "Delay must be > 0"
+msgstr "Aizturei jābūt > 0"
+
+#: src/top.ml:114
+msgid "Delay time interval (seconds)"
+msgstr "Aiztures intervāls (sekundes)"
+
+#: src/top.ml:641
+msgid "Delay: %.1f secs; Batch: %s; Secure: %s; Sort: %s"
+msgstr "Aizture: %.1f s; pakešrežīms: %s; drošais: %s; kārtošana: %s"
+
+#: src/top.ml:106
+msgid "Disable CPU stats in CSV"
+msgstr "Atspējot CPU statistiku CSV failā"
+
+#: src/top.ml:110
+msgid "Disable block device stats in CSV"
+msgstr "Atspējot bloka ierīču statistiku CSV failā"
+
+#: src/top.ml:108
+msgid "Disable memory stats in CSV"
+msgstr "Atspējot atmiņas statistiku CSV failā"
+
+#: src/top.ml:112
+msgid "Disable net stats in CSV"
+msgstr "Atspējot tīkla statistiku CSV failā"
+
+#: src/top.ml:139
+msgid "Display version number and exit"
+msgstr "Parādīt versijas numuru un iziet"
+
+#: src/top.ml:124
+msgid "Do not read init file"
+msgstr "Nelasīt sākuma failu"
+
+#: src/types.ml:46
+msgid "Domain ID"
+msgstr "Domēna ID"
+
+#: src/types.ml:47
+msgid "Domain name"
+msgstr "Domēna nosaukums"
+
+#: src/top.ml:701
+msgid "Domains display"
+msgstr "Domēnu attēlojums"
+
+#: src/top.ml:615 src/top.ml:612 src/main.ml:69 src/main.ml:44
+msgid "Error"
+msgstr "Kļūda"
+
+#: src/top.ml:118
+msgid "Exit at given time"
+msgstr "Iziet norādītajā laikā"
+
+#: src/top.ml:670
+msgid "Help"
+msgstr "Palīdzība"
+
+#: src/top.ml:120
+msgid "Historical CPU delay"
+msgstr "CPU vēstures aizture"
+
+#: src/top.ml:104
+msgid "Log statistics to CSV file"
+msgstr "Reģistrēt statistiku CSV failā"
+
+#: src/top.ml:653
+msgid "MAIN KEYS"
+msgstr "GALVENIE TAUSTIŅI"
+
+#: src/top.ml:708
+msgid "More help in virt-top(1) man page. Press any key to return."
+msgstr ""
+"Vairāk palīdzības virt-top(1) rokasgrāmatas lapā. Lai atgrieztos, nospiediet "
+"jebkuru taustiņu."
+
+#: src/top.ml:219
+msgid ""
+"NB: If you want to monitor a local hypervisor, you usually need to be root"
+msgstr "Piezīme: lai uzraudzītu lokālu hipervizoru, parasti jābūt root"
+
+#: src/types.ml:48
+msgid "Net RX bytes"
+msgstr "Tīkla RX baiti"
+
+#: src/types.ml:49
+msgid "Net TX bytes"
+msgstr "Tīkla TX baiti"
+
+#: src/top.ml:410
+msgid "Not a valid number"
+msgstr "Nav derīgs skaitlis"
+
+#: src/top.ml:126
+msgid "Number of iterations to run"
+msgstr "Izpildāmo iterāciju skaits"
+
+#: src/top.ml:644 src/top.ml:643
+msgid "Off"
+msgstr "Izslēgts"
+
+#: src/top.ml:644 src/top.ml:643
+msgid "On"
+msgstr "Ieslēgts"
+
+#: src/top.ml:668
+msgid "Quit"
+msgstr "Iziet"
+
+#: src/top.ml:133
+msgid "Run from a script (no user interface)"
+msgstr "Palaist no skripta (bez lietotāja saskarnes)"
+
+#: src/top.ml:675
+msgid "SORTING"
+msgstr "KĀRTOŠANA"
+
+#: src/top.ml:131
+msgid "Secure (\"kiosk\") mode"
+msgstr "Drošais („kioska”) režīms"
+
+#: src/top.ml:684
+msgid "Select sort field"
+msgstr "Izvēlēties kārtošanas lauku"
+
+#: src/top.ml:116
+msgid "Send debug messages to file"
+msgstr "Sūtīt atkļūdošanas ziņojumus uz failu"
+
+#: src/top.ml:122
+msgid "Set name of init file"
+msgstr "Iestatīt sākuma faila nosaukumu"
+
+#: src/top.ml:128
+msgid "Set sort order (%s)"
+msgstr "Iestatīt kārtošanas secību (%s)"
+
+#: src/top.ml:418
+msgid "Set sort order for main display"
+msgstr "Iestatīt galvenā attēlojuma kārtošanas secību"
+
+#: src/top.ml:669
+msgid "Set update interval"
+msgstr "Iestatīt atjaunināšanas intervālu"
+
+#: src/top.ml:680
+msgid "Sort by %CPU"
+msgstr "Kārtot pēc %CPU"
+
+#: src/top.ml:681
+msgid "Sort by %MEM"
+msgstr "Kārtot pēc %MEM"
+
+#: src/top.ml:683
+msgid "Sort by ID"
+msgstr "Kārtot pēc ID"
+
+#: src/top.ml:682
+msgid "Sort by TIME"
+msgstr "Kārtot pēc TIME"
+
+#: src/top.ml:96
+msgid "Start by displaying block devices"
+msgstr "Sākumā rādīt bloka ierīces"
+
+#: src/top.ml:94
+msgid "Start by displaying network interfaces"
+msgstr "Sākumā rādīt tīkla saskarnes"
+
+#: src/top.ml:92
+msgid "Start by displaying pCPUs (default: tasks)"
+msgstr "Sākumā rādīt fiziskos CPU (noklusējums: uzdevumi)"
+
+#: src/types.ml:45
+msgid "TIME (CPU time)"
+msgstr "TIME (CPU laiks)"
+
+#: src/top.ml:704
+msgid "Toggle block devices"
+msgstr "Pārslēgt bloka ierīces"
+
+#: src/top.ml:703
+msgid "Toggle network interfaces"
+msgstr "Pārslēgt tīkla saskarnes"
+
+#: src/top.ml:702
+msgid "Toggle physical CPUs"
+msgstr "Pārslēgt fiziskos CPU"
+
+#: src/top.ml:419
+msgid "Type key or use up and down cursor keys."
+msgstr ""
+"Nospiediet taustiņu vai izmantojiet kursora bultiņas uz augšu un uz leju."
+
+#: src/top.ml:713
+msgid "Unknown command - try 'h' for help"
+msgstr "Nezināma komanda — palīdzībai mēģiniet 'h'"
+
+#: src/top.ml:667
+msgid "Update display"
+msgstr "Atjaunināt attēlojumu"
+
+#: src/top.ml:607
+msgid "Wrote settings to %s"
+msgstr "Iestatījumi ierakstīti %s"
+
+#: src/top.ml:649
+msgid "default"
+msgstr "noklusējums"
+
+#: src/top.ml:135
+msgid "dump output to stdout (no userinterface)"
+msgstr "izmest izvadi uz stdout (bez lietotāja saskarnes)"
+
+#: src/top.ml:137
+msgid "show block device load in bytes rather than reqs"
+msgstr "rādīt bloka ierīču slodzi baitos, nevis pieprasījumos"
+
+#: src/top.ml:671
+msgid "toggle block info req/bytes"
+msgstr "pārslēgt bloka informāciju: pieprasījumi/baiti"
+
+#: src/top.ml:629
+msgid "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d by Red Hat"
+msgstr "virt-top %s ocaml-libvirt %s libvirt %d.%d.%d, autors Red Hat"
+
+#: src/top.ml:143
+msgid ""
+"virt-top : a 'top'-like utility for virtualization\n"
+"\n"
+"SUMMARY\n"
+"  virt-top [-options]\n"
+"\n"
+"OPTIONS"
+msgstr ""
+"virt-top: „top” līdzīga utilīta virtualizācijai\n"
+"\n"
+"KOPSAVILKUMS\n"
+"  virt-top [-opcijas]\n"
+"\n"
+"OPCIJAS"
+
+#: src/top.ml:39
+msgid "virt-top was compiled without support for dates and times"
+msgstr "virt-top ir kompilēts bez datumu un laika atbalsta"
